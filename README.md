@@ -85,6 +85,7 @@ This configuration uses the following third-party assets:
 ├── ghostty/         # Ghostty terminal config
 ├── gtk-3.0/         # gtk config / themes
 ├── hyprland/        # Hyprland config (hyprland.lua)
+├── kitty/           # Kitty terminal config
 ├── qt6ct/           # qt6 config / themes
 ├── rofi/            # Rofi config
 ├── screenshots/     # Screenshots
