@@ -12,21 +12,32 @@ $directory\
 $character
 """
 
+# palette = "catppuccin_macchiato"
+
 [username]
-show_always = true
-style_user = "bg:#0ea5e9 fg:#ffffff bold"
-format = "[  $user ]($style)"
+style_user = "bg:blue fg:base bold"
 
 [hostname]
-style = "bg:#0284c7 fg:#ffffff bold"
-format = "[ @ $hostname ]($style)"
-ssh_only = false
+style = "bg:sapphire fg:base bold"
 
 [directory]
-style = "bg:#0369a1 fg:#ffffff bold"
-format = "[  $path ]($style)"
-truncation_length = 3
-truncate_to_repo = false
+style = "bg:sky fg:base bold"
+
+# [username]
+# show_always = true
+# style_user = "bg:#0ea5e9 fg:#ffffff bold"
+# format = "[  $user ]($style)"
+
+# [hostname]
+# style = "bg:#0284c7 fg:#ffffff bold"
+# format = "[ @ $hostname ]($style)"
+# ssh_only = true
+
+# [directory]
+# style = "bg:#0369a1 fg:#ffffff bold"
+# format = "[  $path ]($style)"
+# truncation_length = 3
+# truncate_to_repo = false
 
 [git_branch]
 format = "[ $symbol$branch ]($style)"

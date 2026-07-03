@@ -18,17 +18,17 @@
   // "margin-right": 15,
   // "margin-bottom": 0,
 
-  "modules-left": ["custom/menu", "custom/weather"],
+  "modules-left": ["custom/menu", "custom/weather", "mpris"],
   "modules-center": ["hyprland/workspaces"],
   // "modules-center": ["hyprland/window"],
   // "modules-center":  //["wlr/taskbar"],
 
   "modules-right": [
-    "mpris",
     "cpu",
     "memory",
     "network",
-    "battery",
+    // "custom/kb-battery",
+    // "custom/mouse-battery",
     "pulseaudio",
     "custom/cliphist",
     "tray",
@@ -284,7 +284,7 @@
 
   // FIXME: battery function not working, and can not get it to show battery for both mouse and keyboard, as they seems to share USB dongle
   // "battery": {
-  //   "bat": ["battery_hidpp_battery_0"],
+  //   "bat": ["hidpp_battery_0"],
   //   "format": "{capacity}% {icon}",
   //   "format-icons": ["", "", "", "", ""],
   //   "format-charging": "{capacity}% ",
@@ -295,6 +295,20 @@
   //   },
   //   "tooltip": true,
   //   "tooltip-format": "MX Keys: {capacity}% ({status})",
+  //   "bat-compatibility": true,
+  // },
+
+  // "custom/kb-battery": {
+  //   "exec": "~/.config/waybar/scripts/logi-battery.sh 'MX Keys'",
+  //   "interval": 120,
+  //   "return-type": "text",
+  //   "format": "⌨ {}",
+  // },
+  // "custom/mouse-battery": {
+  //   "exec": "~/.config/waybar/scripts/logi-battery.sh 'MX Master'",
+  //   "interval": 120,
+  //   "return-type": "text",
+  //   "format": " {}",
   // },
 
   "clock": {

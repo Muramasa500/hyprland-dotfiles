@@ -1,11 +1,23 @@
 -- Settings for shortcuts
 require("hypr-shortcuts")
+
 -- Settings for window rules
 require("hypr-window-rules")
+
 -- Settings for styling
 require("hypr-styling")
--- Settings for monitors
-require("hypr-monitor-workspaces")
+
+-- Load Settings for monitors and workspaces if it exists
+local monitor_ok, monitor_err = pcall(require, "hypr-monitor-workspaces")
+if not monitor_ok then
+    print("Could not load hypr-monitor-workspaces.lua: " .. monitor_err)
+end
+
+-- Load environment variables for nvidia if it exists
+local nvidia_ok, nvidia_err = pcall(require, "nvidia")
+if not nvidia_ok then
+    print("Could not load nvidia: " .. nvidia_err)
+end
 
 
 
@@ -22,21 +34,10 @@ hl.config({
 -- ============================================================
 -- ======              ENVIRONMENT VARIABLES             ======
 -- ============================================================
--- Force Hyprland to use nvidia GPU, and not integrated GPU
-hl.env("AQ_DRM_DEVICES", "/dev/dri/card1")
-hl.env("LIBVA_DRIVER_NAME", "nvidia")
-hl.env("GLX_VENDOR_LIBRARY_NAME", "nvidia")
-hl.env("HYPRCURSOR_GPU", "nvidia")
-
 -- # Hyprland integration
 hl.env("GTK_IM_MODULE", "fcitx")
 hl.env("QT_QPA_PLATFORM", "wayland")
 hl.env("SDL_VIDEODRIVER", "wayland")
-
--- NVIDIA setup
-hl.env("__NV_PRIME_RENDER_OFFLOAD", "1")
-hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
-hl.env("__VK_LAYER_NV_optimus", "NVIDIA_only")
 
 -- Force GTK themes
 hl.env("GTK_USE_PORTAL", "1")
@@ -89,9 +90,6 @@ hl.on("hyprland.start", function()
     -- Cliboard
     hl.exec_cmd("wl-paste --type text --watch cliphist store &")
     hl.exec_cmd("wl-paste --type image --watch cliphist store &")
-
-    -- Flameshot in tray
-    hl.exec_cmd("flameshot &")
 end)
 
 

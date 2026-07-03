@@ -30,7 +30,8 @@ hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(gui_editor), { description = "Open GU
 -- ============================================================
 -- ======                  UTILITIES                     ======
 -- ============================================================
-hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("~/.config/hypr/rofi-shortcuts.sh"), { description = "Show keybindings" })
+hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("~/.config/hypr/scripts/rofi-shortcuts.sh"),
+    { description = "Show keybindings" })
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(menu), { description = "Open Application launcher" })
 hl.bind(mainMod .. " + Tab", hl.dsp.exec_cmd("rofi -show window"), { description = "Open window switcher" })
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/waybar/rofi-cliphist.sh"),
@@ -44,14 +45,15 @@ hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(screenLocker), { description = "Lock 
 -- ============================================================
 -- ======          HYPRLAND /  WAYBAR CONFIG             ======
 -- ============================================================
--- Edit coniguration files
--- edit Hyprland: hyprland.lua, hypr-shortcuts.lua. edit Waybar: config.jsonc style.css
+-- Edit Hyprland and waybar configuration files
 hl.bind(mainMod .. " + X",
     hl.dsp.exec_cmd(gui_editor ..
         " + .config/waybar/config.jsonc &&" .. gui_editor .. " + .config/waybar/style.css &&" ..
         gui_editor .. " + ~/.config/hypr/hypr-shortcuts.lua &&" .. gui_editor .. " + ~/.config/hypr/hyprland.lua &&"
         .. gui_editor ..
-        " + ~/.config/hypr/hypr-styling.lua &&" .. gui_editor .. " + ~/.config/hypr/hypr-window-rules.lua"),
+        " + ~/.config/hypr/hypr-styling.lua &&" .. gui_editor .. " + ~/.config/hypr/hypr-window-rules.lua &&"
+        .. gui_editor ..
+        " + ~/.config/hypr/hypr-monitor-workspaces.lua && " .. gui_editor .. " + ~/.config/hypr/nvidia.lua"),
     { description = "Open Hyprland & Waybar configs" })
 -- Reload hyprland
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("ghostty -e hyprctl reload"), { description = "Restart Hyprland" })
@@ -62,7 +64,7 @@ hl.bind(mainMod .. " + 0", hl.dsp.exec_cmd("ghostty -e nohup waybar &"), { descr
 
 
 -- ============================================================
--- ======                MOVE WORKSPACES                 ======
+-- ======            MOVE WORKSPACES / WINDOWS           ======
 -- ============================================================
 -- move focus
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "l" }), { description = "Move focus left" })
@@ -98,18 +100,11 @@ hl.bind(mainMod .. " + ALT + right", hl.dsp.window.swap({ direction = "r" }), { 
 hl.bind(mainMod .. " + ALT + up", hl.dsp.window.swap({ direction = "u" }), { description = "Swap tiled window up" })
 hl.bind(mainMod .. " + ALT + down", hl.dsp.window.swap({ direction = "d" }), { description = "Swap tiled window down" })
 
--- send focused workspace to left/right monitors
-hl.bind(mainMod .. " + ALT + SHIFT + left", hl.dsp.workspace.move({ monitor = "l" }),
-    { description = "Move focused workspace to left monitor" })
-hl.bind(mainMod .. " + ALT + SHIFT + right", hl.dsp.workspace.move({ monitor = "r" }),
-    { description = "Move focused workspace to right monitor" })
-
 -- Move active window to Next Monitor (Right)
-hl.bind(mainMod .. " + ALT + Right", hl.dsp.exec_cmd("hyprctl dispatch moveintomonitorscreen next"),
+hl.bind(mainMod .. " + CTRL + Right", hl.dsp.window.move({ monitor = "+1" }),
     { description = "Move active window to next monitor" })
 
--- Move active window to Previous Monitor (Left)
-hl.bind(mainMod .. " + ALT + Left", hl.dsp.exec_cmd("hyprctl dispatch moveintomonitorscreen prev"),
+hl.bind(mainMod .. " + CTRL + Left", hl.dsp.window.move({ monitor = "-1" }),
     { description = "Move active window to previous monitor" })
 
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"), { description = "Toggle special workspace magic" })
@@ -135,7 +130,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.window.float({ action = "toggle" }), { des
 -- Fullscreen
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }),
     { description = "Toggle Fullscreen" })
-hl.bind(mainMod .. " + P", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }),
+hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }),
     { description = "Toggle Maximize Window" })
 
 -- Split windows

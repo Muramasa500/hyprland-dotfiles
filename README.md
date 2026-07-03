@@ -35,7 +35,7 @@ This is an early work-in-progress. Configs may be incomplete, and the install sc
 <p align="center">
 <img alt="Compositor" src="https://img.shields.io/badge/Compositor-Hyprland-58E1FF?style=for-the-badge&logo=hyprland&logoColor=white">
 <img alt="Bar" src="https://img.shields.io/badge/Bar-Waybar-131C2A?style=for-the-badge">
-<img alt="Theme" src="https://img.shields.io/badge/Theme-Catppuccin%20Macchiato-CAD3F5?style=for-the-badge&logo=catppuccin&logoColor=white">
+<img alt="Theme" src="https://img.shields.io/badge/Theme-Catppuccin%20Macchiato-8aadf4?style=for-the-badge&logo=catppuccin&logoColor=white">
 <img alt="Terminal" src="https://img.shields.io/badge/Terminal-Ghostty-3551F3?style=for-the-badge&logo=ghostty&logoColor=white">
 <img alt="Shell" src="https://img.shields.io/badge/Shell-zsh-F15A24?style=for-the-badge&logo=zsh&logoColor=white">
 <img alt="Launcher" src="https://img.shields.io/badge/Launcher-rofi-E9E5CA?style=for-the-badge">

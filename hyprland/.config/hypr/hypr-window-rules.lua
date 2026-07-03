@@ -66,6 +66,14 @@ hl.window_rule({
 })
 
 hl.window_rule({
+    match = { class = "crashreporter" },
+    float = true,
+    center = true,
+    size = { 800, 600 },
+    opacity = "0.9 0.9",
+})
+
+hl.window_rule({
     match = { class = "firefox", title = "Picture-in-Picture" },
     float = true,
     center = true,
