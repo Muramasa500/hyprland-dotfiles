@@ -24,12 +24,6 @@ These configurations cover the complete desktop experience—from window managem
   <img src="screenshots/desktop2.png" alt="Muramasa's Dotfiles" width="100%">
 </p>
 
-## Overview
-
-⚠️ **WIP**
-
-This is an early work-in-progress. Configs may be incomplete, and the install script may not work correctly on all systems. Not recommended for use yet.
-
 ## Tech Stack
 
 <p align="center">
