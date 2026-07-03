@@ -134,8 +134,6 @@ cp -r gtk-3.0 /.config/* ~/.config/
 - Power Menu: Shutdown, reboot, suspend, hibernate, logout
 - Application launcher: Start an application from a menu
 - A window switcher: Start a ALT-TAB style window switcher
-- Multi-Monitor: Optimized for 3 displays
-- NVIDIA Support: GTX 1070 drivers configured
 - Language Switcher: Select keyboard layout
 
 
@@ -200,7 +198,6 @@ sudo pacman -S \
   ```
 
 ## ⚠️ Hardware Notes
-- **Input:** Logitech wireless keyboard/mouse
 - **Network:** Ethernet (no WiFi configured)
 
 ## Credits
