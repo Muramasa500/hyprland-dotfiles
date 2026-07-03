@@ -150,14 +150,15 @@ cp -r gtk-3.0 /.config/* ~/.config/
 | Keybinding | Action |
 |------------|--------|
 | `Super + A` | Open rofi application launcher|
-| `Super + ENTER` | Open kitty terminal |
+| `Super + H` | Show Shortcuts / keybindings|
+| `Super + Tab` | Open Rofi window switcher |
+| `Super + ENTER` | Open ghostty terminal |
 | `Super + B` | Open firefox browser |
 | `Super + Z` | Open Zed editor |
 | `Super + Q` | Close focused window |
 | `Super + Arrow` | Move focus to a new window |
 | `Super + Shift + Arrow` | Move focused window to new workspace |
 | `Super + 1 ... 9` | Move to workspace  1 .. 9 |
-| `Super + Tab` | Open Rofi window switcher |
 | `Super + F` | Full screen |
 
 *(Check `~/.config/hypr/hypr-shortcuts.lua` for full list)*
@@ -178,7 +179,8 @@ After cloning, you must:
 2. Configure monitors in `~/.config/hypr/`:
    - cp hypr-monitor-workspaces.lua.example hypr-monitor-workspaces.lua
    - Run `hyprctl monitors` to find your output names
-3. It is configured to use dkms Nvidia drivers from AUR, change configuration if needed.
+3. Configure nvidia or AMD environmental variables if needed
+4. It is configured to use dkms Nvidia drivers from AUR, change configuration if needed.
 
 
 ## Dependencies
@@ -203,10 +205,7 @@ sudo pacman -S \
   ```
 
 ## ⚠️ Hardware Notes
-
-- **GPU:** NVIDIA GTX 1070
-  - Uses `nvidia-550xx-dkms` from AUR (newer drivers cause issues)
-- **Input:** Logitech wireless keyboard/mouse via single Bolt USB receiver
+- **Input:** Logitech wireless keyboard/mouse
 - **Network:** Ethernet (no WiFi configured)
 
 ## Credits
