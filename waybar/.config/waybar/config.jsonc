@@ -1,4 +1,6 @@
 {
+  "include": ["language.jsonc"],
+
   // ============================================================
   // ======                   LAYOUT                       ======
   // ============================================================
@@ -199,7 +201,6 @@
 
   // TODO: is it possible to show several network interfaces?
   "network": {
-    "interface": "enp0s31f6",
     "format": "󰈀",
     "format-wifi": "{essid} ({signalStrength}%) ",
     "format-ethernet": "󰈀",
@@ -245,15 +246,6 @@
     "spacing": 10,
     "max-width": 0,
     "rotate": 0,
-  },
-
-  // TODO: Tooltip not yet supported in way, check again later
-  // Change language
-  "hyprland/language": {
-    "format": "  {}",
-    "format-en": "EN",
-    "format-sv": "SE",
-    "on-click": "hyprctl switchxkblayout current next",
   },
 
   "battery": {

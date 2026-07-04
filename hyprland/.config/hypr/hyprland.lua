@@ -7,6 +7,13 @@ require("hypr-window-rules")
 -- Settings for styling
 require("hypr-styling")
 
+-- Settings for language / keyboard
+require("hypr-input")
+
+-- Environment variables for nvidia
+-- Comment if not using nvidia
+require("nvidia")
+
 -- Load Settings for monitors and workspaces if it exists
 local monitor_ok, monitor_err = pcall(require, "hypr-monitor-workspaces")
 if not monitor_ok then
@@ -118,15 +125,4 @@ hl.config({
     scrolling = {
         fullscreen_on_one_column = true,
     },
-})
-
-
--- ============================================================
--- ======                INPUT                           ======
--- ============================================================
-hl.config({
-    input = {
-        kb_layout  = "se,us",
-        kb_options = "grp:alt_shift_toggle",
-    }
 })

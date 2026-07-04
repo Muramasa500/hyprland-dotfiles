@@ -134,8 +134,8 @@ echo "✅ Package installed!"
 
 # 5. Install complete
 echo ""
-echo "📋 Post-install steps:"
+echo "📋 Post-install steps (check README.md for details):"
 echo "  1. Create ~/.config/weather-app/geolocation with your coordinates"
-echo "  2. Change monitor setup on hyprland"
-echo "  3. It is configured to use dkms Nvidia drivers from AUR, change configuration if needed."
+echo "  2. Configure monitors in ~/.config/hypr/hypr-monitor-workspaces.lua"
+echo "  3. Configure nvidia or AMD environmental variables if needed"
 echo "✅ Installation complete! Reboot or start Hyprland."

@@ -1,0 +1,10 @@
+{
+  // TODO: Tooltip not yet supported in way, check again later
+  // Change language
+  "hyprland/language": {
+    "format": "  {}",
+    "format-en": "EN",
+    "format-sv": "SE",
+    "on-click": "hyprctl switchxkblayout current next",
+  },
+}

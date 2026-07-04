@@ -1,11 +1,11 @@
 <h1 align="center"> Muramasa's Dotfiles </h1>
 
 <p align="center">
-I've always enjoyed the Catppuccin Macchiato color palette, and really wanted to use it for my desktop environment. This is my personal configuration for Arch Linux running Hyprland tiling window compositor </p>
+I've always enjoyed the Catppuccin Macchiato color palette, and really wanted to use it for my desktop environment. This is my personal configuration for Arch Linux running Hyprland tiling window compositor  </p>
 
 <h2 align="center"> What You'll Find Here </h2>
 <p align="center">
-These configurations cover the complete desktop experience — from window management, terminal, to status bars, notification systems, and file manager. </p>
+These configurations cover the complete desktop experience — from window management, terminal, to status bars, notification systems, and file manager.  </p>
 
 <p align="center"> My personal configuration files for <b>Arch Linux</b> with <b>Hyprland</b> compositor, featuring <b>Catppuccin Macchiato</b> theming. </p>
 
@@ -126,6 +126,42 @@ cp -r gtk-3.0 /.config/* ~/.config/
  ... repeat for other folders
 ```
 
+## Dependencies
+
+Install required packages (automatically installed if you use `install.sh`):
+
+```bash
+sudo pacman -S \
+  hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprlock \
+  hypridle hyprpaper hyprsunset cliphist wl-clipboard xclip \
+  waybar rofi ghostty swaync gnome-keyring libsecret \
+  zsh starship jq curl playerctl pavucontrol wireplumber \
+  gvfs-mtp glib-networking \
+  networkmanager network-manager-applet \
+  thunar thunar-archive-plugin thunar-media-tags-plugin \
+  thunar-vcs-plugin thunar-volman neovim \
+  zsh-autosuggestions zsh-history-substring-search \
+  zsh-syntax-highlighting slurp eza dust fd bat \
+  ripgrep procs fzf zoxide btop direnv zed \
+  qalculate-gtk brightnessctl fastfetch sudo-rs  \
+  hyprshot ttf-jetbrains-mono-nerd noto-fonts papirus-icon-theme 
+  ```
+
+## Post-install Configuration
+
+After cloning, you must:
+1. Configure weather app in `~/.config/weather-app/`: 
+   - cp geolocation.example geolocation
+   - Add your location to `geolocation`
+2. Configure monitors in `~/.config/hypr/hypr-monitor-workspaces.lua`:
+   - Run `hyprctl monitors` to find your output names
+3. Configure nvidia or AMD GPU environmental variables if needed
+   - Comment out `require("nvidia")` in `~/.config/hypr/hyprland.lua`, if not using nvidia
+
+#### If you want to configure language:
+4. Configure language in `~/.config/waybar/language.jsonc`:
+5. Configure keyboard layout in `~/.config/hypr/hypr-input.lua`:
+
 
 ## Key Features
 
@@ -148,7 +184,7 @@ cp -r gtk-3.0 /.config/* ~/.config/
 | `Super + ENTER` | Open ghostty terminal |
 | `Super + B` | Open firefox browser |
 | `Super + Z` | Open Zed editor |
-| `Super + Q` | Close focused window |
+| `Super + Q` | Close focused window | 
 | `Super + Arrow` | Move focus to a new window |
 | `Super + Shift + Arrow` | Move focused window to new workspace |
 | `Super + 1 ... 9` | Move to workspace  1 .. 9 |
@@ -156,40 +192,6 @@ cp -r gtk-3.0 /.config/* ~/.config/
 
 *(Check `~/.config/hypr/hypr-shortcuts.lua` for full list)*
 
-
-## Post-Clone Configuration
-
-After cloning, you must:
-1. Configure weather app in `~/.config/weather-app/`: 
-   - cp geolocation.example geolocation
-2. Configure monitors in `~/.config/hypr/`:
-   - cp hypr-monitor-workspaces.lua.example hypr-monitor-workspaces.lua
-   - Run `hyprctl monitors` to find your output names
-3. Configure nvidia or AMD environmental variables if needed
-4. Configure network in `~/.config/waybar/config.jsonc`:
-  - In `network`, configure your network interface
-
-
-## Dependencies
-
-Install required packages:
-
-```bash
-sudo pacman -S \
-  hyprland xdg-desktop-portal-hyprland hyprpolkitagent hyprlock \
-  hypridle hyprpaper hyprsunset cliphist wl-clipboard xclip \
-  waybar rofi ghostty swaync gnome-keyring libsecret \
-  zsh starship jq curl playerctl pavucontrol wireplumber \
-  gvfs-mtp glib-networking \
-  networkmanager network-manager-applet \
-  thunar thunar-archive-plugin thunar-media-tags-plugin \
-  thunar-vcs-plugin thunar-volman neovim \
-  zsh-autosuggestions zsh-history-substring-search \
-  zsh-syntax-highlighting slurp eza dust fd bat \
-  ripgrep procs fzf zoxide btop direnv zed \
-  qalculate-gtk brightnessctl fastfetch sudo-rs  \
-  hyprshot ttf-jetbrains-mono-nerd noto-fonts papirus-icon-theme 
-  ```
 
 ## Credits
 
