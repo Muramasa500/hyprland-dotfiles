@@ -1,11 +1,11 @@
 <h1 align="center"> Muramasa's Dotfiles </h1>
 
 <p align="center">
-I've always enjoyed the Catppuccin Macchiato color palette, and really wanted to use it for my desktop environment. This is my personal configuration for Arch Linux runningcc the Hyprland tiling window compositor. Using Catppuccin Macchiato color palette, these dotfiles aim for a clean workflow without compromising on aesthetics. </p>
+I've always enjoyed the Catppuccin Macchiato color palette, and really wanted to use it for my desktop environment. This is my personal configuration for Arch Linux running Hyprland tiling window compositor </p>
 
 <h2 align="center"> What You'll Find Here </h2>
 <p align="center">
-These configurations cover the complete desktop experience—from window management and terminal emulation to status bars, notification systems, and application defaults. Everything here is built around a practical approach, using practical tools with consistent visuals across the environment. </p>
+These configurations cover the complete desktop experience — from window management, terminal, to status bars, notification systems, and file manager. </p>
 
 <p align="center"> My personal configuration files for <b>Arch Linux</b> with <b>Hyprland</b> compositor, featuring <b>Catppuccin Macchiato</b> theming. </p>
 
