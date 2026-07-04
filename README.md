@@ -98,7 +98,7 @@ This configuration uses the following third-party assets:
 Run the following commands to install the dotfiles using the `install.sh` script:
 
 ```bash
-git clone git@github.com:Muramasa500/hyprland-dotfiles~/	dotfiles
+git clone git@github.com:muramasa500/hyprland-dotfiles~/	dotfiles
 cd ~/dotfiles/scripts
 chmod +x install.sh
 ./install.sh
@@ -107,7 +107,7 @@ chmod +x install.sh
 ### Option 2: Using GNU Stow
 
 ```bash
-git clone git@github.com:Muramasa500/hyprland-dotfiles~/	dotfiles
+git clone git@github.com:muramasa500/hyprland-dotfiles ~/dotfiles
 sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jluttine/rofi-power-menu/master/rofi-power-menu
 sudo chmod +x /usr/local/bin/rofi-power-menu
 sudo pacman -S stow
@@ -118,6 +118,7 @@ stow btop fastfetch ghostty gtk-3.0 hyprland kitty qt6ct rofi starship waybar we
 
 ### Option 3: Manual Setup
 ```bash
+git clone git@github.com:muramasa500/hyprland-dotfiles ~/.config
 sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jluttine/rofi-power-menu/master/rofi-power-menu
 sudo chmod +x /usr/local/bin/rofi-power-menu
 cp -r btop/.config/* ~/.config/
