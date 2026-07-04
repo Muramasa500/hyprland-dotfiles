@@ -118,7 +118,7 @@ stow btop fastfetch ghostty gtk-3.0 hyprland kitty qt6ct rofi starship waybar we
 
 ### Option 3: Manual Setup
 ```bash
-git clone git@github.com:muramasa500/hyprland-dotfiles ~/.config
+git clone git@github.com:muramasa500/hyprland-dotfiles ~/Downloads
 sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jluttine/rofi-power-menu/master/rofi-power-menu
 sudo chmod +x /usr/local/bin/rofi-power-menu
 cp -r btop/.config/* ~/.config/
