@@ -69,6 +69,7 @@ PACKAGES=(
     "libsecret"
     "gvfs-mtp"
     "glib-networking"
+    "gthumb"
     "networkmanager"
     "network-manager-applet"
     "playerctl"

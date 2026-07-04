@@ -6,7 +6,9 @@
 -- ======           PROGRAMS (VARIABLES)                 ======
 -- ============================================================
 local mainMod = "SUPER"
+-- HACK: Need to have GTK_IM_MODULE=simple for terminal, to avoid issues with keyboard in Ghostty
 local terminal = "GTK_IM_MODULE=simple ghostty"
+local terminal_command = "GTK_IM_MODULE=simple ghostty -e"
 local fileManager = "thunar"
 local menu = "rofi -show drun -display-drun ''"
 local screenLocker = "hyprlock"
@@ -24,7 +26,6 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser), { description = "Open brows
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(calculator), { description = "Open calculator" })
 -- hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(cli_editor), { description = "Open CLI editor" })
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(gui_editor), { description = "Open GUI editor" })
--- hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("spotify-launcher"), { description = "Open Spotify" })
 
 
 -- ============================================================
@@ -46,6 +47,7 @@ hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(screenLocker), { description = "Lock 
 -- ======          HYPRLAND /  WAYBAR CONFIG             ======
 -- ============================================================
 -- Edit Hyprland and waybar configuration files
+
 hl.bind(mainMod .. " + X",
     hl.dsp.exec_cmd(gui_editor ..
         " + .config/waybar/config.jsonc &&" .. gui_editor .. " + .config/waybar/style.css &&" ..
@@ -56,11 +58,12 @@ hl.bind(mainMod .. " + X",
         " + ~/.config/hypr/hypr-monitor-workspaces.lua && " .. gui_editor .. " + ~/.config/hypr/nvidia.lua"),
     { description = "Open Hyprland & Waybar configs" })
 -- Reload hyprland
-hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("ghostty -e hyprctl reload"), { description = "Restart Hyprland" })
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(terminal_command .. " hyprctl reload"),
+    { description = "Restart Hyprland" })
 -- Reload waybar
-hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd("ghostty -e killall waybar && nohup waybar &"),
+hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd(terminal_command .. " killall waybar && nohup waybar &"),
     { description = "Restarts Waybar" })
-hl.bind(mainMod .. " + 0", hl.dsp.exec_cmd("ghostty -e nohup waybar &"), { description = "Start Waybar" })
+hl.bind(mainMod .. " + 0", hl.dsp.exec_cmd(terminal_command .. " nohup waybar &"), { description = "Start Waybar" })
 
 
 -- ============================================================

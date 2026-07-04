@@ -112,7 +112,7 @@ sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jl
 sudo chmod +x /usr/local/bin/rofi-power-menu
 sudo pacman -S stow
 cd ~/dotfiles
-stow fastfetch gtk-3.0 hyprland kitty qt6ct rofi starship waybar weather-app zed zsh
+stow btop fastfetch ghostty gtk-3.0 hyprland kitty qt6ct rofi starship waybar weather-app zed zsh
 ```
 
 
@@ -136,7 +136,7 @@ sudo pacman -S \
   hypridle hyprpaper hyprsunset cliphist wl-clipboard xclip \
   waybar rofi ghostty swaync gnome-keyring libsecret \
   zsh starship jq curl playerctl pavucontrol wireplumber \
-  gvfs-mtp glib-networking \
+  gvfs-mtp glib-networking gthumb \
   networkmanager network-manager-applet \
   thunar thunar-archive-plugin thunar-media-tags-plugin \
   thunar-vcs-plugin thunar-volman neovim \
