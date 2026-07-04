@@ -1,0 +1,34 @@
+/* ========================================== */
+/* =====          COLOR PALETTE         ===== */
+/* ========================================== */
+/* --- Nord --- */
+/* Use alpha(@color, 0.0-1.0) in style.css for opacity variants */
+
+/* --- Text --- */
+@define-color text #d8dee9;
+@define-color subtext0 #b3bbc9;
+@define-color overlay0 #4c566a;
+@define-color red #bf616a;
+/* --- Surfaces --- */
+@define-color surface1 #434c5e;
+@define-color base #2e3440;
+@define-color mantle #272c36;
+@define-color crust #20242c;
+/* --- Accents --- */
+@define-color accent-cyan #88c0d0;
+@define-color accent-green #a3be8c;
+@define-color ws-accent #81a1c1;
+/* --- Workspace Accent Colors --- */
+@define-color ws-1 rgb(254, 100, 11);
+@define-color ws-2 rgb(249, 226, 175);
+@define-color ws-3 rgb(64, 160, 43);
+@define-color ws-4 rgb(23, 146, 153);
+@define-color ws-5 rgb(4, 165, 229);
+@define-color ws-6 rgb(30, 102, 245);
+@define-color ws-7 rgb(136, 57, 239);
+@define-color ws-8 rgb(234, 118, 203);
+@define-color ws-9 rgb(210, 15, 57);
+@define-color ws-10 rgb(230, 69, 83);
+/* --- Neutrals --- */
+@define-color black #000000;
+@define-color white #ffffff;

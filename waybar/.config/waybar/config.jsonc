@@ -196,7 +196,7 @@
   // Show memory usage
   "memory": {
     "format": "{}% ",
-    "on-click": "~/.config/waybar/launch-btop.sh",
+    "on-click": "~/.config/waybar/scripts/launch-btop.sh",
   },
 
   // TODO: is it possible to show several network interfaces?
@@ -236,7 +236,7 @@
     "format": " ",
     "tooltip": true,
     "tooltip-format": "Clip history",
-    "on-click": "~/.config/waybar/rofi-cliphist.sh",
+    "on-click": "~/.config/waybar/scripts/rofi-cliphist.sh",
     "return-type": "json",
     "interval": "once",
   },
@@ -292,6 +292,6 @@
   "custom/power": {
     "format": "⏻",
     "tooltip-format": "Power Menu",
-    "on-click": "~/.config/waybar/rofi-power-menu.sh",
+    "on-click": "~/.config/waybar/scripts/rofi-power-menu.sh",
   },
 }

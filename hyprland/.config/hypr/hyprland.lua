@@ -48,7 +48,7 @@ hl.env("SDL_VIDEODRIVER", "wayland")
 
 -- Force GTK themes
 hl.env("GTK_USE_PORTAL", "1")
-hl.env("GTK_THEME", "catppuccin-macchiato-blue-standard+default")
+-- hl.env("GTK_THEME", "catppuccin-macchiato-blue-standard+default")
 
 -- Force Qt themes
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")

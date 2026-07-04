@@ -1,11 +1,7 @@
 <h1 align="center"> Muramasa's Hyprland Dotfiles </h1>
 
 <p align="center">
-I've always enjoyed the Catppuccin Macchiato color palette, and really wanted to use it for my desktop environment. This is my personal configuration for Arch Linux running Hyprland tiling window compositor  </p>
-
-<h2 align="center"> What You'll Find Here </h2>
-<p align="center">
-These configurations cover the complete desktop experience — from window management, terminal, to status bars, notification systems, and file manager.  </p>
+I've always enjoyed the Catppuccin Macchiato color palette, and really wanted to use it for my desktop environment. This is my personal configuration for Arch Linux running Hyprland tiling window compositor. These configurations cover the complete desktop experience — from window management, terminal, to status bars, notification systems, and file manager.  </p>
 
 <p align="center"> My personal configuration files for <b>Arch Linux</b> with <b>Hyprland</b> compositor, featuring <b>Catppuccin Macchiato</b> theming. </p>
 
@@ -87,7 +83,7 @@ This configuration uses the following third-party assets:
 ├── starship/        # Starship prompt config
 ├── waybar/          # Waybar config, style.css, scripts
 ├── weather-app/     # Custom weather script + config
-├── zed /            # Zed config / themes
+├── zed/            # Zed config / themes
 └── zsh/             # .zshrc shell config
 ```
 
@@ -98,7 +94,7 @@ This configuration uses the following third-party assets:
 Run the following commands to install the dotfiles using the `install.sh` script:
 
 ```bash
-git clone git@github.com:muramasa500/hyprland-dotfiles~/	dotfiles
+git clone git@github.com:Muramasa500/hyprland-dotfiles.git ~/dotfiles
 cd ~/dotfiles/scripts
 chmod +x install.sh
 ./install.sh
@@ -107,23 +103,23 @@ chmod +x install.sh
 ### Option 2: Using GNU Stow
 
 ```bash
-git clone git@github.com:muramasa500/hyprland-dotfiles ~/dotfiles
+git clone git@github.com:Muramasa500/hyprland-dotfiles.git ~/dotfiles
 sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jluttine/rofi-power-menu/master/rofi-power-menu
 sudo chmod +x /usr/local/bin/rofi-power-menu
 sudo pacman -S stow
 cd ~/dotfiles
-stow btop fastfetch ghostty gtk-3.0 hyprland kitty qt6ct rofi starship waybar weather-app zed zsh
+stow btop fastfetch ghostty gtk-3.0 hyprland kitty qt6ct rofi starship waybar weather-app zedn zsh
 ```
 
 
 ### Option 3: Manual Setup
 ```bash
-git clone git@github.com:muramasa500/hyprland-dotfiles ~/Downloads
+git clone git@github.com:Muramasa500/hyprland-dotfiles.git ~/Downloads
 sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jluttine/rofi-power-menu/master/rofi-power-menu
 sudo chmod +x /usr/local/bin/rofi-power-menu
 cp -r btop/.config/* ~/.config/
 cp -r fastfetch/.config/* ~/.config/
-cp -r gtk-3.0 /.config/* ~/.config/
+cp -r gtk-3.0/.config/* ~/.config/
  ... repeat for other folders
 ```
 

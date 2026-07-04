@@ -1,4 +1,4 @@
-@import "catppuccin-macchiato"
+@import "catppuccin-mocha"
 
 * {
     cyan:   #33ccff;
@@ -10,10 +10,10 @@
 }
 
 window {
-    padding:          24px;
-    background-color: rgba(36, 39, 58, 0.95);
-    border:           1px solid;
-    border-color:     @cyan;
+    padding:          22px;
+    background-color: #1e1e2ef2;
+    border:           2px solid;
+    border-color:     #33ccff40;
     border-radius:    16px;
     width:            550px;
 }
@@ -21,56 +21,74 @@ window {
 mainbox {
     padding: 0;
     border:  0;
-    spacing: 12px;
+    spacing: 14px;
 }
 
 inputbar {
-    padding:          10px 14px;
-    spacing:          12px;
+    padding:          9px 12px;
+    spacing:          10px;
     text-color:       @text;
     background-color: @surface0;
-    border-radius:    12px;
-    border:           2px solid;
+    border-radius:    10px;
+    border:           1px solid;
     border-color:     @surface1;
-
+    children:         [ prompt, entry ];
 }
 
 entry {
     text-color:        @text;
     background-color:  transparent;
     placeholder-color: @overlay0;
-    placeholder:       " Search applications...";
-    cursor:            text;
-    font:              "JetBrains Mono 13";
+    placeholder:        "Search applications...";
+    cursor:             text;
+    font:               "JetBrains Mono 13";
 }
 
 prompt {
-    text-color:   @cyan;
-    font:         "JetBrains Mono Nerd Font Bold 16";
-    margin-right: 6px;
-    padding:      0px 5px 0px 0px;
-    width:        20px;
+    text-color:       @cyan;
+    background-color: @surface1;
+    font:             "JetBrainsMono Nerd Font 14";
+    border-radius:    7px;
+    padding:          4px 9px;
 }
 
 listview {
-    padding:      8px 0px;
+    padding:      2px 0px 0px 0px;
     scrollbar:    true;
+    dynamic:      false;
     spacing:      2px;
-    fixed-height: 0;
+    fixed-height: false;
     border:       0;
     lines:        12;
 }
 
-element {
-    background-color: transparent;
-    padding:          5px;
-    cursor:           pointer;
-    spacing:          12px;
+scrollbar {
+    width:            4px;
+    padding:          0px 0px 0px 8px;
+    handle-color:     @surface2;
     border:           0;
-    border-radius:    10px;
+    border-radius:    2px;
+    background-color: transparent;
 }
 
-/* Normal and Alternate rows have some style */
+scrollbar handle {
+    border-radius:    2px;
+    background-color: @surface2;
+}
+
+element {
+    orientation:      horizontal;
+    children:         [ element-icon, element-text ];
+    background-color: transparent;
+    padding:          9px 10px;
+    cursor:           pointer;
+    spacing:          12px;
+    border:           0px 0px 0px 3px;
+    border-color:     transparent;
+    border-radius:    0px;
+}
+
+/* Normal and Alternate rows */
 element normal.normal,
 element alternate.normal {
     background-color: transparent;
@@ -79,32 +97,29 @@ element alternate.normal {
 
 element normal.normal hover,
 element alternate.normal hover {
-    background-color: @surface1;
-    text-color:       @cyan;
+    background-color: #45475a80;
+    text-color:       @text;
 }
 
-element selected.normal {
-    background-color: @cyan;
-    text-color:       @crust;
-    border-radius:    10px;
-}
-
+/* Selected: left accent bar + subtle tint, not a full color block */
+element selected.normal,
 element selected.active {
-    background-color: @cyan;
-    text-color:       @crust;
-    border-radius:    10px;
+    background-color: #45475a80;
+    text-color:       @cyan;
+    border:           0px 0px 0px 3px;
+    border-color:     @cyan;
 }
 
 element normal.active,
 element alternate.active {
-    background-color: @surface0;
-    text-color:       @cyan;
+    background-color: transparent;
+    text-color:       @green;
 }
 
 element normal.active hover,
 element alternate.active hover {
-    background-color: @surface1;
-    text-color:       @cyan;
+    background-color: #45475a80;
+    text-color:       @green;
 }
 
 element-text {
@@ -116,23 +131,9 @@ element-text {
 
 element-icon {
     background-color: transparent;
-    size:             28px;
+    size:             24px;
     cursor:           inherit;
-    margin-right:     8px;
-}
-
-scrollbar {
-    width:            8px;
-    padding:          4px;
-    handle-color:     @cyan;
-    border:           0;
-    border-radius:    4px;
-    background-color: @surface0;
-}
-
-scrollbar handle {
-    border-radius:    4px;
-    background-color: @cyan;
+    margin-right:     4px;
 }
 
 message {

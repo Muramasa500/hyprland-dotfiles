@@ -1,0 +1,161 @@
+@import "catppuccin-mocha"
+
+* {
+    cyan:   #33ccff;
+    green:  #00ff99;
+
+    background-color: transparent;
+    border-color:     @cyan;
+    text-color:       @text;
+}
+
+window {
+    padding:          24px;
+    background-color: rgba(36, 39, 58, 0.95);
+    border:           1px solid;
+    border-color:     @cyan;
+    border-radius:    16px;
+    width:            550px;
+}
+
+mainbox {
+    padding: 0;
+    border:  0;
+    spacing: 12px;
+}
+
+inputbar {
+    padding:          10px 14px;
+    spacing:          12px;
+    text-color:       @text;
+    background-color: @surface0;
+    border-radius:    12px;
+    border:           2px solid;
+    border-color:     @surface1;
+
+}
+
+entry {
+    text-color:        @text;
+    background-color:  transparent;
+    placeholder-color: @overlay0;
+    placeholder:       " Search applications...";
+    cursor:            text;
+    font:              "JetBrains Mono 13";
+}
+
+prompt {
+    text-color:   @cyan;
+    font:         "JetBrains Mono Nerd Font Bold 16";
+    margin-right: 6px;
+    padding:      0px 5px 0px 0px;
+    width:        20px;
+}
+
+listview {
+    padding:      8px 0px;
+    scrollbar:    true;
+    spacing:      2px;
+    fixed-height: 0;
+    border:       0;
+    lines:        12;
+}
+
+element {
+    background-color: transparent;
+    padding:          5px;
+    cursor:           pointer;
+    spacing:          12px;
+    border:           0;
+    border-radius:    10px;
+}
+
+/* Normal and Alternate rows have some style */
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @text;
+}
+
+element normal.normal hover,
+element alternate.normal hover {
+    background-color: @surface1;
+    text-color:       @cyan;
+}
+
+element selected.normal {
+    background-color: @cyan;
+    text-color:       @crust;
+    border-radius:    10px;
+}
+
+element selected.active {
+    background-color: @cyan;
+    text-color:       @crust;
+    border-radius:    10px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color: @surface0;
+    text-color:       @cyan;
+}
+
+element normal.active hover,
+element alternate.active hover {
+    background-color: @surface1;
+    text-color:       @cyan;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+    font:             "JetBrains Mono 13";
+}
+
+element-icon {
+    background-color: transparent;
+    size:             28px;
+    cursor:           inherit;
+    margin-right:     8px;
+}
+
+scrollbar {
+    width:            8px;
+    padding:          4px;
+    handle-color:     @cyan;
+    border:           0;
+    border-radius:    4px;
+    background-color: @surface0;
+}
+
+scrollbar handle {
+    border-radius:    4px;
+    background-color: @cyan;
+}
+
+message {
+    padding:          12px 16px;
+    border:           0;
+    background-color: @surface0;
+    border-radius:    10px;
+}
+
+textbox {
+    text-color:       @text;
+    background-color: transparent;
+}
+
+button {
+    cursor:           pointer;
+    text-color:       @text;
+    padding:          8px 12px;
+    border-radius:    8px;
+}
+
+button selected {
+    background-color: @cyan;
+    text-color:       @crust;
+    border-radius:    8px;
+}

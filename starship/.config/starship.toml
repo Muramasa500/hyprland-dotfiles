@@ -1,5 +1,5 @@
 # Sets user-defined palette
-palette = "catppuccin_macchiato"
+palette = "catppuccin_mocha"
 
 format = """
 [](fg:#0ea5e9)\

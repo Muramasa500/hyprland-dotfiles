@@ -1,0 +1,34 @@
+/* ========================================== */
+/* =====          COLOR PALETTE         ===== */
+/* ========================================== */
+/* --- Catppuccin Macchiato --- */
+/* Use alpha(@color, 0.0-1.0) in style.css for opacity variants */
+
+/* --- Text --- */
+@define-color text #cad3f5;
+@define-color subtext0 #a5adcb;
+@define-color overlay0 #6e738d;
+@define-color red #ed8796;
+/* --- Surfaces --- */
+@define-color surface1 #494d64;
+@define-color base #24273a;
+@define-color mantle #1e2030;
+@define-color crust #181926;
+/* --- Accents --- */
+@define-color accent-cyan #33ccff;
+@define-color accent-green #00ff99;
+@define-color ws-accent #7287fd;
+/* --- Workspace Accent Colors --- */
+@define-color ws-1 rgb(254, 100, 11);
+@define-color ws-2 rgb(249, 226, 175);
+@define-color ws-3 rgb(64, 160, 43);
+@define-color ws-4 rgb(23, 146, 153);
+@define-color ws-5 rgb(4, 165, 229);
+@define-color ws-6 rgb(30, 102, 245);
+@define-color ws-7 rgb(136, 57, 239);
+@define-color ws-8 rgb(234, 118, 203);
+@define-color ws-9 rgb(210, 15, 57);
+@define-color ws-10 rgb(230, 69, 83);
+/* --- Neutrals --- */
+@define-color black #000000;
+@define-color white #ffffff;

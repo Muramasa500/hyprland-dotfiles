@@ -1,48 +1,50 @@
 /* ~/.config/waybar/style.css */
 
-/* ---------------------------------------- */
-/* -----       TASK BAR DESIGN        ----- */
-/* ---------------------------------------- */
+/*Change this file for color palette*/
+@import "themes/theme-catppuccin-mocha.css";
+/*@import "themes/theme-catppuccin-macchiato.css";*/
+/*@import "themes/theme-nord.css";*/
+
+/* ========================================== */
+/* =====              FONTS             ===== */
+/* ========================================== */
 * {
     font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
     min-height: 0;
 }
 
 window#waybar {
-    background-color: rgba(36, 39, 58, 0.95);
+    background-color: @base;
     margin: 0px 10px;
     padding: 4px 8px;
-    color: #cad3f5;
-    border-radius: 16px;
-    border: 2px solid rgba(51, 204, 238, 0.3);
-    box-shadow:
-        0 8px 24px rgba(0, 0, 0, 0.6),
-        inset 0 1px 0 rgba(255, 255, 255, 0.04),
-        0 0 20px rgba(51, 204, 238, 0.08);
+    color: @text;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px alpha(@black, 0.35);
 }
 
 /* ---------------------------------------- */
 /* -----           TOOLTIP            ----- */
 /* ---------------------------------------- */
 tooltip {
-    background-color: rgba(30, 32, 48, 0.96);
-    border: 2px solid rgba(51, 204, 238, 0.3);
-    border-radius: 12px;
-    padding: 12px 16px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+    background-color: @mantle;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    box-shadow: 0 4px 12px alpha(@black, 0.35);
 }
 
 #tooltip {
     background-color: transparent;
     border: none;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 0;
     font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
     font-size: 14px;
 }
 
 #tooltip label {
-    color: #cad3f5;
+    color: @text;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -52,43 +54,43 @@ tooltip {
 /* -----          WORKSPACES          ----- */
 /* ---------------------------------------- */
 #workspaces {
-    background-color: rgba(24, 25, 38, 0.6);
-    border-radius: 12px;
-    padding: 2px 2px 2px 8px;
+    background-color: transparent;
+    padding: 0;
     margin: 2px 2px;
-    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: none;
 }
 
 #workspaces button {
-    background-color: rgba(73, 77, 100, 0.85);
-    color: #a5adcb;
+    background-color: @surface1;
+    color: @subtext0;
     font-size: 18px;
     padding: 2px 14px 2px 8px;
-    margin: 1px 2px;
+    margin: 1px 0px;
     border-radius: 0px;
-    transition: all 0.2s ease;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
     min-width: 15px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border: none;
+    border-bottom: 4px solid transparent;
 }
 
+/* Round outer corners + add gap: start of each group of 3 */
 #workspaces button:nth-child(3n + 1) {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    margin-left: 2px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-left: 8px;
 }
 
+/* Round outer corners: end of each group of 3 */
 #workspaces button:nth-child(3n) {
-    margin-right: 8px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 #workspaces button:hover {
-    background-color: rgba(73, 77, 100, 0.8);
-    color: #cad3f5;
-    border-bottom: 3px solid rgba(0, 255, 153, 0.6);
+    background-color: alpha(@accent-green, 0.25);
+    color: @text;
 }
 
 /* ======================================== */
@@ -96,60 +98,48 @@ tooltip {
 /* ======================================== */
 #workspaces button.active {
     font-weight: 700;
-    color: #cad3f5;
+    color: @text;
     opacity: 1;
-    /*background-color: rgba(51, 204, 238, 0.25);*/
-    background-color: rgba(114, 135, 253, 0.5);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    background-color: alpha(@ws-accent, 0.25);
+    border-bottom: 4px solid transparent;
 }
 
 /* --- Monitor 1 (WS 1-3) --- */
 #workspaces button.active:nth-child(1) {
-    /*background-color: rgba(254, 100, 11, 0.35);*/
-    border-bottom: 3px solid rgb(254, 100, 11);
-    box-shadow: 0 0 10px rgba(254, 100, 11, 0.4);
+    border-bottom-color: @ws-1;
 }
 #workspaces button.active:nth-child(2) {
-    border-bottom: 3px solid rgb(220, 138, 120);
-    box-shadow: 0 0 10px rgba(220, 138, 120, 0.4);
+    border-bottom-color: @ws-2;
 }
 #workspaces button.active:nth-child(3) {
-    border-bottom: 3px solid rgb(0, 255, 153);
-    box-shadow: 0 0 10px rgba(0, 255, 153, 0.4);
+    border-bottom-color: @ws-3;
 }
 
 /* --- Monitor 2 (WS 4-6) --- */
 #workspaces button.active:nth-child(4) {
-    border-bottom: 3px solid rgb(64, 160, 43);
-    box-shadow: 0 0 10px rgba(64, 160, 43, 0.4);
+    border-bottom-color: @ws-4;
 }
 #workspaces button.active:nth-child(5) {
-    border-bottom: 3px solid rgb(230, 69, 83);
-    box-shadow: 0 0 10px rgba(230, 69, 83, 0.4);
+    border-bottom-color: @ws-5;
 }
 #workspaces button.active:nth-child(6) {
-    border-bottom: 3px solid rgb(0, 255, 153);
-    box-shadow: 0 0 10px rgba(0, 255, 153, 0.4);
+    border-bottom-color: @ws-6;
 }
 
 /* --- Monitor 3 (WS 7-9) --- */
 #workspaces button.active:nth-child(7) {
-    border-bottom: 3px solid rgb(234, 118, 203);
-    box-shadow: 0 0 10px rgba(234, 118, 203, 0.4);
+    border-bottom-color: @ws-7;
 }
 #workspaces button.active:nth-child(8) {
-    border-bottom: 3px solid rgb(51, 204, 238);
-    box-shadow: 0 0 10px rgba(51, 204, 238, 0.4);
+    border-bottom-color: @ws-8;
 }
 #workspaces button.active:nth-child(9) {
-    border-bottom: 3px solid rgb(210, 15, 57);
-    box-shadow: 0 0 10px rgba(210, 15, 57, 0.4);
+    border-bottom-color: @ws-9;
 }
 
 /* Magic workspace */
 #workspaces button.active:nth-child(n + 10) {
-    border-bottom: 3px solid rgb(32, 159, 181);
-    box-shadow: 0 0 10px rgba(32, 159, 181, 0.4);
+    border-bottom-color: @ws-10;
 }
 
 /* ---------------------------------------- */
@@ -167,11 +157,14 @@ tooltip {
 #language,
 #clock,
 #custom-power {
-    border: 1px solid transparent;
+    border: none;
     font-weight: bold;
-    transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background-color: rgba(0, 0, 0, 0);
-    color: #cad3f5;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+    background-color: transparent;
+    color: @text;
+    border-radius: 8px;
 }
 
 #custom-weather:hover,
@@ -182,33 +175,24 @@ tooltip {
 #custom-cliphist:hover,
 #language:hover,
 #clock:hover {
-    background-color: rgba(51, 204, 238, 0.12);
-    color: #33ccff;
-    border-radius: 12px;
-    border: 1px solid rgba(51, 204, 238, 0.2);
-    box-shadow: 0 0 12px rgba(51, 204, 238, 0.08);
+    background-color: alpha(@accent-cyan, 0.15);
+    color: @accent-cyan;
 }
 
 /* ---------------------------------------- */
 /* -----         LEFT MODULES         ----- */
 /* ---------------------------------------- */
 #custom-menu {
-    color: #33ccff;
+    color: @accent-cyan;
     padding: 0px 23px 0px 15px;
     margin: 1px 0px 1px 4px;
-    transition: all 0.2s;
     font-size: 27px;
-    border-top-left-radius: 14px;
-    border-bottom-left-radius: 14px;
-    border-right: 0px;
+    border-radius: 8px 0 0 8px;
 }
 
 #custom-menu:hover {
-    color: #00ff99;
-    background-color: rgba(51, 204, 238, 0.1);
-    border-top-left-radius: 14px;
-    border-bottom-left-radius: 14px;
-    border-right: 0px;
+    color: @base;
+    background-color: @accent-cyan;
 }
 
 #custom-weather {
@@ -226,11 +210,10 @@ tooltip {
 /* ---------------------------------------- */
 /* Music module */
 #mpris {
-    background-color: rgba(36, 39, 58, 0.4);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-    border: 2px solid rgba(51, 204, 238, 0.2);
-    border-radius: 12px;
-    color: #cad3f5;
+    background-color: @surface1;
+    border: none;
+    border-radius: 8px;
+    color: @text;
     padding: 2px 6px 2px 5px;
     margin: 5px 2px;
     font-size: 15px;
@@ -238,9 +221,7 @@ tooltip {
 }
 
 #mpris:hover {
-    background-color: rgba(51, 204, 238, 0.1);
-    border: 2px solid rgba(51, 204, 238, 0.35);
-    border-radius: 12px;
+    background-color: alpha(@accent-cyan, 0.2);
 }
 
 /* CPU & Memory */
@@ -260,15 +241,15 @@ tooltip {
 
 /* Volume control */
 #pulseaudio {
-    background-color: rgba(0, 0, 0, 0);
-    color: #cad3f5;
+    background-color: transparent;
+    color: @text;
     font-size: 16px;
     padding: 3px 10px 3px 5px;
     margin: 4px 2px;
 }
 
 #pulseaudio.muted {
-    color: #6e738d;
+    color: @overlay0;
     font-size: 18px;
     padding: 3px 10px 3px 5px;
     margin: 4px 2px;
@@ -304,9 +285,10 @@ tooltip {
     font-size: 18px;
     margin: 2px 10px 2px 3px;
     font-weight: bold;
+    border-radius: 0 8px 8px 0;
 }
 
 #custom-power:hover {
-    color: #ed8796;
-    font-weight: bold;
+    color: @base;
+    background-color: @red;
 }

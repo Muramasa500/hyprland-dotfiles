@@ -1,0 +1,36 @@
+/* ========================================== */
+/* =====          COLOR PALETTE         ===== */
+/* ========================================== */
+/* --- Catppuccin Mocha --- */
+/* Use alpha(@color, 0.0-1.0) in style.css for opacity variants */
+
+/* --- Text --- */
+@define-color text #ffffff;
+@define-color subtext0 #d0d0d0;
+@define-color overlay0 #8a8a8a;
+@define-color red #ff4d6d;
+/* --- Surfaces --- */
+@define-color surface1 #2a2a3d;
+@define-color base #0a0a12;
+@define-color mantle #06060c;
+@define-color crust #030305;
+/* --- Accents --- */
+@define-color accent-cyan #00e5ff;
+@define-color accent-green #39ff14;
+@define-color ws-accent #7c4dff;
+
+/* --- Workspace Accent Colors --- */
+@define-color ws-1 rgb(254, 147, 84);
+@define-color ws-2 rgb(251, 235, 199);
+@define-color ws-3 rgb(121, 189, 107);
+@define-color ws-4 rgb(93, 179, 184);
+@define-color ws-5 rgb(79, 192, 237);
+@define-color ws-6 rgb(98, 148, 248);
+@define-color ws-7 rgb(172, 116, 244);
+@define-color ws-8 rgb(240, 159, 219);
+@define-color ws-9 rgb(224, 87, 116);
+@define-color ws-10 rgb(238, 125, 135);
+
+/* --- Neutrals --- */
+@define-color black #000000;
+@define-color white #ffffff;
