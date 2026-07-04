@@ -1,4 +1,4 @@
-<h1 align="center"> Muramasa's Dotfiles </h1>
+<h1 align="center"> Muramasa's Hyprland Dotfiles </h1>
 
 <p align="center">
 I've always enjoyed the Catppuccin Macchiato color palette, and really wanted to use it for my desktop environment. This is my personal configuration for Arch Linux running Hyprland tiling window compositor  </p>
@@ -12,10 +12,10 @@ These configurations cover the complete desktop experience — from window manag
 <p align="center">
 	<img alt="OS" src="https://img.shields.io/badge/OS-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=white"/>
 	<img alt="WM" src="https://img.shields.io/badge/Hyprland-Dotfiles-00E0FF?style=for-the-badge&logo=hyprland&logoColor=white"/>
-	<img alt="Stars" src="https://img.shields.io/github/stars/Muramasa500/muramasa-hyprland-dotfiles?style=for-the-badge">
-	<img alt="Last Commit" src="https://img.shields.io/github/last-commit/Muramasa500/muramasa-hyprland-dotfiles?style=for-the-badge">
-	<img alt="License" src="https://img.shields.io/github/license/Muramasa500/muramasa-hyprland-dotfiles?style=for-the-badge">
-	<img alt="Top Language" src="https://img.shields.io/github/languages/top/Muramasa500/muramasa-hyprland-dotfiles?style=for-the-badge">
+	<img alt="Stars" src="https://img.shields.io/github/stars/Muramasa500/hyprland-dotfiles?style=for-the-badge">
+	<img alt="Last Commit" src="https://img.shields.io/github/last-commit/Muramasa500/hyprland-dotfiles?style=for-the-badge">
+	<img alt="License" src="https://img.shields.io/github/license/Muramasa500/hyprland-dotfiles?style=for-the-badge">
+	<img alt="Top Language" src="https://img.shields.io/github/languages/top/Muramasa500/hyprland-dotfiles?style=for-the-badge">
 </p>
 
 
@@ -98,7 +98,7 @@ This configuration uses the following third-party assets:
 Run the following commands to install the dotfiles using the `install.sh` script:
 
 ```bash
-git clone git@github.com:Muramasa500/muramasa500-hyprland-dotfiles~/	dotfiles
+git clone git@github.com:Muramasa500/hyprland-dotfiles~/	dotfiles
 cd ~/dotfiles/scripts
 chmod +x install.sh
 ./install.sh
@@ -107,7 +107,7 @@ chmod +x install.sh
 ### Option 2: Using GNU Stow
 
 ```bash
-git clone git@github.com:Muramasa500/muramasa500-hyprland-dotfiles~/	dotfiles
+git clone git@github.com:Muramasa500/hyprland-dotfiles~/	dotfiles
 sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jluttine/rofi-power-menu/master/rofi-power-menu
 sudo chmod +x /usr/local/bin/rofi-power-menu
 sudo pacman -S stow
