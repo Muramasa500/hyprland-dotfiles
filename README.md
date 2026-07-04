@@ -157,13 +157,6 @@ cp -r gtk-3.0 /.config/* ~/.config/
 *(Check `~/.config/hypr/hypr-shortcuts.lua` for full list)*
 
 
-
-## Important Notes
-
-Files NOT in this repo (ignored):
-- weather-app/geolocation (GPS coordinates for weather app)
-
-
 ## Post-Clone Configuration
 
 After cloning, you must:
@@ -173,7 +166,8 @@ After cloning, you must:
    - cp hypr-monitor-workspaces.lua.example hypr-monitor-workspaces.lua
    - Run `hyprctl monitors` to find your output names
 3. Configure nvidia or AMD environmental variables if needed
-4. It is configured to use dkms Nvidia drivers from AUR, change configuration if needed.
+4. Configure network in `~/.config/waybar/config.jsonc`:
+  - In `network`, configure your network interface
 
 
 ## Dependencies
@@ -196,9 +190,6 @@ sudo pacman -S \
   qalculate-gtk brightnessctl fastfetch sudo-rs  \
   hyprshot ttf-jetbrains-mono-nerd noto-fonts papirus-icon-theme 
   ```
-
-## ⚠️ Hardware Notes
-- **Network:** Ethernet (no WiFi configured)
 
 ## Credits
 

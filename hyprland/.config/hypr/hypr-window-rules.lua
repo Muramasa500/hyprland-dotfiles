@@ -109,7 +109,7 @@ hl.window_rule({
     match = { class = "org.gnome.Calendar" },
     float = true,
     center = true,
-    size = { 800, 600 },
+    size = { 900, 700 },
     opacity = "0.9 0.9",
 })
 

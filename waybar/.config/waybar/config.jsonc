@@ -13,22 +13,14 @@
   "margin-left": 10,
   "margin-right": 10,
 
-  // "margin-top": 4,
-  // "margin-left": 15,
-  // "margin-right": 15,
-  // "margin-bottom": 0,
-
   "modules-left": ["custom/menu", "custom/weather", "mpris"],
   "modules-center": ["hyprland/workspaces"],
-  // "modules-center": ["hyprland/window"],
-  // "modules-center":  //["wlr/taskbar"],
 
   "modules-right": [
     "cpu",
     "memory",
     "network",
-    // "custom/kb-battery",
-    // "custom/mouse-battery",
+    "battery",
     "pulseaudio",
     "custom/cliphist",
     "tray",
@@ -131,6 +123,7 @@
     "disable-scroll": true,
     "on-click": "activate",
     "sort-by": "creation_time",
+
     // "on-scroll-up": "hyprctl workspace +1",
     // "on-scroll-down": "hyprctl workspace -1",
   },
@@ -171,17 +164,6 @@
     "on-click": "xdg-open https://www.smhi.se",
   },
 
-  // TODO: Changing layout not working yet
-  // "custom/layout": {
-  //   "format": "{}",
-  //   "return-type": "json",
-  //   "exec": "~/.config/waybar/hypr_layout.sh",
-  //   "interval": 5,
-  //   "tooltip": true,
-  //   "on-click": "~/.config/waybar/toggle_layout.sh",
-  //   "restart-interval": 1,
-  // },
-
   // ============================================================
   // ======                MIDDLE MODULES                  ======
   // ============================================================
@@ -196,12 +178,10 @@
     "format-no-player": " No Music",
     "format-stopped": "No Music",
     "format-paused": " {artist} - {title}",
-    // "tooltip-format": "{title} by {artist}",
     "tooltip-format": "Title: {title}\nArtist: {artist}\nAlbum: {album}",
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
-    //"max-length": 15,
     "max-length": 35,
   },
 
@@ -225,9 +205,7 @@
     "format-ethernet": "󰈀",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format": "{bandwidthUpBytes}/{bandwidthDownBytes}",
-    // "tooltip-format-wifi": "{essid} ({signalStrength}%) \nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
-    // "tooltip-format-wifi": "{essid} ({signalStrength}%) \n↓ {bandwidthDownKiB}/s ↑ {bandwidthUpKiB}/s",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) \n↓ {bandwidthDownKiB}/s ↑ {bandwidthUpKiB}/s",
     "tooltip-format-ethernet": "{ifname}: {bandwidthUpBytes}/{bandwidthDownBytes}",
     "tooltip-format-disconnected": "󰈂",
     "max-length": 40,
@@ -258,7 +236,6 @@
     "tooltip": true,
     "tooltip-format": "Clip history",
     "on-click": "~/.config/waybar/rofi-cliphist.sh",
-    // "on-click-right": "cliphist delete",
     "return-type": "json",
     "interval": "once",
   },
@@ -268,57 +245,38 @@
     "spacing": 10,
     "max-width": 0,
     "rotate": 0,
-    /*"show-passive-items": true, */
   },
 
-  // TODO: fix tooltip
+  // TODO: Tooltip not yet supported in way, check again later
   // Change language
   "hyprland/language": {
     "format": "  {}",
     "format-en": "EN",
     "format-sv": "SE",
-    "format-en-tootip": "English (US)",
-    "format-sv-tootip": "Swedish",
     "on-click": "hyprctl switchxkblayout current next",
   },
 
-  // FIXME: battery function not working, and can not get it to show battery for both mouse and keyboard, as they seems to share USB dongle
-  // "battery": {
-  //   "bat": ["hidpp_battery_0"],
-  //   "format": "{capacity}% {icon}",
-  //   "format-icons": ["", "", "", "", ""],
-  //   "format-charging": "{capacity}% ",
-  //   "states": {
-  //     "good": 95,
-  //     "warning": 30,
-  //     "critical": 15,
-  //   },
-  //   "tooltip": true,
-  //   "tooltip-format": "MX Keys: {capacity}% ({status})",
-  //   "bat-compatibility": true,
-  // },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{icon}  {capacity}%",
+    "format-full": "{icon}  Full",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+  },
 
-  // "custom/kb-battery": {
-  //   "exec": "~/.config/waybar/scripts/logi-battery.sh 'MX Keys'",
-  //   "interval": 120,
-  //   "return-type": "text",
-  //   "format": "⌨ {}",
-  // },
-  // "custom/mouse-battery": {
-  //   "exec": "~/.config/waybar/scripts/logi-battery.sh 'MX Master'",
-  //   "interval": 120,
-  //   "return-type": "text",
-  //   "format": " {}",
-  // },
-
+  // TODO: fix so right-click changes mode to format-alt
   "clock": {
     // "format": "{:%H:%M}",
     "format": "{:%H:%M\n%Y/%m/%d}",
-    "format-alt": "{:%A\n%B %d, %Y} ",
+    // "format-alt": "{:%A\n%B %d, %Y} ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    // TODO: Opening calendear does not work
-    //"on-click": "org.gnome.Calendar",
-    "on-click-right": "date",
+    "on-click": "gnome-calendar",
+    // "on-click-right": "date",
     "calendar": {
       "mode": "year",
       "mode-mon-col": 3,
@@ -333,9 +291,6 @@
       },
     },
     "actions": {
-      "on-click-right": "mode",
-      // "on-scroll-up": "tz_up",
-      // "on-scroll-down": "tz_down",
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down",
     },
