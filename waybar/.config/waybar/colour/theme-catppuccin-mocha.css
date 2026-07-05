@@ -1,0 +1,30 @@
+/* ========================================== */
+/* =====          COLOR PALETTE         ===== */
+/* ========================================== */
+/* --- Catppuccin Mocha (classic, native colors only) --- */
+/* Use alpha(@color, 0.0-1.0) in style.css for opacity variants */
+/* --- Text --- */
+@define-color text #cdd6f4;
+@define-color subtext0 #a6adc8;
+@define-color overlay0 #6c7086;
+@define-color red #f38ba8;
+/* --- Surfaces --- */
+@define-color surface1 #45475a;
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
+/* --- Accents (native Mocha) --- */
+@define-color accent-cyan #74c7ec; /* Sapphire */
+@define-color accent-green #a6e3a1; /* Green */
+@define-color ws-accent #89b4fa; /* Blue — single flat workspace color */
+
+@define-color ws-1 #fab387;
+@define-color ws-2 #f9e2af;
+@define-color ws-3 #a6e3a1;
+@define-color ws-4 #94e2d5;
+@define-color ws-5 #89dceb;
+@define-color ws-6 #89b4fa;
+@define-color ws-7 #cba6f7;
+@define-color ws-8 #f5c2e7;
+@define-color ws-9 #f38ba8;
+@define-color ws-10 #eba0ac;

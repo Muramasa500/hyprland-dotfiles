@@ -81,9 +81,10 @@ This configuration uses the following third-party assets:
 ├── screenshots/     # Screenshots
 ├── scripts/         # Custom scripts
 ├── starship/        # Starship prompt config
+├── themes/          # GTK themes
 ├── waybar/          # Waybar config, style.css, scripts
 ├── weather-app/     # Custom weather script + config
-├── zed/            # Zed config / themes
+├── zed/             # Zed config / themes
 └── zsh/             # .zshrc shell config
 ```
 
@@ -108,7 +109,7 @@ sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jl
 sudo chmod +x /usr/local/bin/rofi-power-menu
 sudo pacman -S stow
 cd ~/dotfiles
-stow btop fastfetch ghostty gtk-3.0 hyprland kitty qt6ct rofi starship waybar weather-app zedn zsh
+stow btop fastfetch ghostty gtk-3.0 hyprland kitty qt6ct rofi starship themes waybar weather-app zedn zsh
 ```
 
 

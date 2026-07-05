@@ -1,17 +1,19 @@
 @import "catppuccin-mocha"
-/* @import "catppuccin-macchiato" */
 
 * {
+    cyan:   #33ccff;
+    green:  #00ff99;
+
     background-color: transparent;
-    border-color:     @sapphire;
+    border-color:     @cyan;
     text-color:       @text;
 }
 
 window {
     padding:          22px;
-    background-color: @base;
-    border:           1px solid;
-    border-color:     @mauve;
+    background-color: #1e1e2ef2;
+    border:           2px solid;
+    border-color:     #33ccff40;
     border-radius:    16px;
     width:            550px;
 }
@@ -43,7 +45,7 @@ entry {
 }
 
 prompt {
-    text-color:       @sapphire;
+    text-color:       @cyan;
     background-color: @surface1;
     font:             "JetBrainsMono Nerd Font 14";
     border-radius:    7px;
@@ -55,9 +57,23 @@ listview {
     scrollbar:    true;
     dynamic:      false;
     spacing:      2px;
-    fixed-height: true;
+    fixed-height: false;
     border:       0;
     lines:        12;
+}
+
+scrollbar {
+    width:            4px;
+    padding:          0px 0px 0px 8px;
+    handle-color:     @surface2;
+    border:           0;
+    border-radius:    2px;
+    background-color: transparent;
+}
+
+scrollbar handle {
+    border-radius:    2px;
+    background-color: @surface2;
 }
 
 element {
@@ -85,12 +101,13 @@ element alternate.normal hover {
     text-color:       @text;
 }
 
+/* Selected: left accent bar + subtle tint, not a full color block */
 element selected.normal,
 element selected.active {
     background-color: #45475a80;
-    text-color:       @sapphire;
+    text-color:       @cyan;
     border:           0px 0px 0px 3px;
-    border-color:     @sapphire;
+    border-color:     @cyan;
 }
 
 element normal.active,
@@ -119,20 +136,6 @@ element-icon {
     margin-right:     4px;
 }
 
-scrollbar {
-    width:            4px;
-    padding:          0px 0px 0px 8px;
-    handle-color:     @surface2;
-    border:           0;
-    border-radius:    2px;
-    background-color: transparent;
-}
-
-scrollbar handle {
-    border-radius:    2px;
-    background-color: @surface2;
-}
-
 message {
     padding:          12px 16px;
     border:           0;
@@ -153,7 +156,7 @@ button {
 }
 
 button selected {
-    background-color: @sapphire;
+    background-color: @cyan;
     text-color:       @crust;
     border-radius:    8px;
 }

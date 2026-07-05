@@ -19,16 +19,16 @@
 @define-color accent-green #00ff99;
 @define-color ws-accent #7287fd;
 /* --- Workspace Accent Colors --- */
-@define-color ws-1 rgb(254, 100, 11);
-@define-color ws-2 rgb(249, 226, 175);
-@define-color ws-3 rgb(64, 160, 43);
-@define-color ws-4 rgb(23, 146, 153);
-@define-color ws-5 rgb(4, 165, 229);
-@define-color ws-6 rgb(30, 102, 245);
-@define-color ws-7 rgb(136, 57, 239);
-@define-color ws-8 rgb(234, 118, 203);
-@define-color ws-9 rgb(210, 15, 57);
-@define-color ws-10 rgb(230, 69, 83);
+@define-color ws-1 #fab387;
+@define-color ws-2 #f9e2af;
+@define-color ws-3 #a6e3a1;
+@define-color ws-4 #94e2d5;
+@define-color ws-5 #89dceb;
+@define-color ws-6 #89b4fa;
+@define-color ws-7 #cba6f7;
+@define-color ws-8 #f5c2e7;
+@define-color ws-9 #f38ba8;
+@define-color ws-10 #eba0ac;
 /* --- Neutrals --- */
 @define-color black #000000;
 @define-color white #ffffff;

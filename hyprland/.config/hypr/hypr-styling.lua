@@ -1,25 +1,29 @@
 -- ============================================================
+-- ======                   SET THEME                    ======
+-- ============================================================
+local state   = require("theme.current-theme")
+local colours = require("theme." .. state.colours)
+local style   = require("theme." .. state.style)
+
+
+-- ============================================================
 -- ======                LOOK AND FEEL                   ======
 -- ============================================================
 
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in          = 8,
-        gaps_out         = 10,
+        gaps_in          = style.gaps_in,
+        gaps_out         = style.gaps_out,
 
-        border_size      = 2,
+        border_size      = style.border_size,
 
-        -- Catppuccin mocchiato
-        -- col              = {
-        --     active_border   = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 },
-        --     inactive_border = "rgba(595959aa)",
-        -- },
-
-        -- Catppuccin mocha
         col              = {
-            active_border   = { colors = { "rgba(cba6f7ff)", "rgba(a6e3a1ff)" }, angle = 45 },
-            inactive_border = "rgba(45475a80)",
+            active_border   = {
+                colors = { "rgba(" .. colours.border1 .. "ee)", "rgba(" .. colours.border2 .. "ee)" },
+                angle  = 45,
+            },
+            inactive_border = "rgba(" .. colours.surface1 .. "aa)",
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -35,27 +39,29 @@ hl.config({
     -- ============================================================
     -- ======                  DECORATION                    ======
     -- ============================================================
-
     decoration = {
-        rounding         = 12, -- Slightly rounder corners (10 -> 12)
-        rounding_power   = 2,
+        -- rounding         = 12,
+        -- rounding_power = 2,
+
+        rounding         = style.rounding_style,
+        rounding_power   = style.rounding_power_style,
 
         active_opacity   = 1.0,
         inactive_opacity = 0.92, -- Slightly more transparent when unfocused
 
         shadow           = {
             enabled      = true,
-            range        = 12,               -- Wider shadow range (4 -> 12) for a softer glow
-            render_power = 3,
-            color        = "rgba(000000bb)", -- Softer black shadow
+            range        = style.shadow_range,
+            render_power = style.shadow_render_power,
+            color        = colours.shadow,
         },
 
         blur             = {
             enabled           = true,
-            size              = 6,    -- Stronger blur (2 -> 6)
-            passes            = 2,    -- More passes for smoother blur (1 -> 2)
+            size              = style.blur_size,
+            passes            = style.blur_passes,
             vibrancy          = 0.1696,
-            new_optimizations = true, -- Enable newer blur optimizations
+            new_optimizations = true,
         },
     },
     animations = {
@@ -67,15 +73,11 @@ hl.config({
 -- ======                    ANIMATIONS                  ======
 -- ============================================================
 
--- Define smoother, more modern curves
 hl.curve("easeOutCirc", { type = "bezier", points = { { 0.0, 0.0 }, { 0.0, 1.0 } } })       -- Very smooth start/end
 hl.curve("easeInOutCubic", { type = "bezier", points = { { 0.65, 0.05 }, { 0.36, 1.0 } } }) -- Classic modern ease
 hl.curve("easeOutQuart", { type = "bezier", points = { { 0.16, 1.0 }, { 0.3, 1.0 } } })     -- Fast start, long smooth tail
+hl.curve("easeOutCubic", { type = "bezier", points = { { 0.33, 1.0 }, { 0.66, 1.0 } } })    -- Approximation
 hl.curve("linear", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
-hl.curve("easeOutCirc", { type = "bezier", points = { { 0.0, 0.0 }, { 0.0, 1.0 } } })
-hl.curve("easeOutCubic", { type = "bezier", points = { { 0.33, 1.0 }, { 0.66, 1.0 } } }) -- Approximation
-hl.curve("easeOutQuart", { type = "bezier", points = { { 0.16, 1.0 }, { 0.3, 1.0 } } })
-
 
 hl.animation({ leaf = "global", enabled = true, speed = 8.0, bezier = "easeOutCubic" })
 hl.animation({ leaf = "border", enabled = true, speed = 6.0, bezier = "easeOutQuart" })

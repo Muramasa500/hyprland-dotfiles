@@ -1,0 +1,257 @@
+/* ~/.config/waybar/style.css */
+
+/*Change this file for color palette*/
+@import "themes/theme-catppuccin-mocha.css";
+/*@import "themes/theme-catppuccin-macchiato.css";*/
+/*@import "themes/theme-nord.css";*/
+
+/* ========================================== */
+/* =====              FONTS             ===== */
+/* ========================================== */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @base;
+    margin: 0px 10px;
+    padding: 4px 8px;
+    color: @text;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px alpha(@black, 0.35);
+}
+
+/* ---------------------------------------- */
+/* -----           TOOLTIP            ----- */
+/* ---------------------------------------- */
+tooltip {
+    background-color: @mantle;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    box-shadow: 0 4px 12px alpha(@black, 0.35);
+}
+
+#tooltip {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+
+#tooltip label {
+    color: @text;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* ---------------------------------------- */
+/* -----          WORKSPACES          ----- */
+/* ---------------------------------------- */
+#workspaces {
+    background-color: transparent;
+    padding: 0;
+    margin: 2px 2px;
+    border: none;
+}
+
+#workspaces button {
+    background-color: @surface1;
+    color: @subtext0;
+    font-size: 18px;
+    padding: 4px 14px 2px 8px;
+    margin: 1px 0px;
+    border-radius: 0px;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+    min-width: 15px;
+    border: none;
+    /*border-bottom: 4px solid @surface1;*/
+}
+
+/* Round outer corners + add gap: start of each group of 3 */
+#workspaces button:nth-child(3n + 1) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-left: 8px;
+}
+
+/* Round outer corners: end of each group of 3 */
+#workspaces button:nth-child(3n) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#workspaces button:hover {
+    background-color: alpha(@accent-green, 0.25);
+    color: @text;
+    /*border-bottom: 4px solid alpha(@accent-green, 0.25);*/
+}
+
+/* ======================================== */
+/* -----          ACTIVE COLORS       ----- */
+/* ======================================== */
+#workspaces button.active {
+    font-weight: 700;
+    color: @text;
+    opacity: 1;
+    background-color: alpha(@ws-accent, 0.75);
+    /*border-bottom: 4px solid transparent;*/
+}
+
+/* ---------------------------------------- */
+/* -----       GENERAL MODULES        ----- */
+/* ---------------------------------------- */
+#custom-menu,
+#custom-weather,
+#mpris,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#custom-cliphist,
+#tray,
+#language,
+#clock,
+#custom-power {
+    border: none;
+    font-weight: bold;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+    background-color: transparent;
+    color: @text;
+    border-radius: 8px;
+}
+
+#custom-weather:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-cliphist:hover,
+#language:hover,
+#clock:hover {
+    background-color: alpha(@accent-cyan, 0.15);
+    color: @accent-cyan;
+}
+
+/* ---------------------------------------- */
+/* -----         LEFT MODULES         ----- */
+/* ---------------------------------------- */
+#custom-menu {
+    color: @accent-cyan;
+    padding: 0px 23px 0px 15px;
+    margin: 1px 0px 1px 4px;
+    font-size: 27px;
+    border-radius: 8px 0 0 8px;
+}
+
+#custom-menu:hover {
+    color: @base;
+    background-color: @accent-cyan;
+}
+
+#custom-weather {
+    font-size: 16px;
+    padding: 0px 6px 0px 5px;
+    margin: 4px 2px;
+}
+
+/* ---------------------------------------- */
+/* -----        MIDDLE MODULES        ----- */
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+/* -----        RIGHT MODULES         ----- */
+/* ---------------------------------------- */
+/* Music module */
+#mpris {
+    background-color: @surface1;
+    border: none;
+    border-radius: 8px;
+    color: @text;
+    padding: 2px 6px 2px 5px;
+    margin: 5px 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#mpris:hover {
+    background-color: alpha(@accent-cyan, 0.2);
+}
+
+/* CPU & Memory */
+#cpu,
+#memory {
+    font-size: 16px;
+    padding: 3px 10px 3px 5px;
+    margin: 4px 2px;
+}
+
+/* Network */
+#network {
+    font-size: 18px;
+    padding: 3px 8px 3px 3px;
+    margin: 4px 2px;
+}
+
+/* Volume control */
+#pulseaudio {
+    background-color: transparent;
+    color: @text;
+    font-size: 16px;
+    padding: 3px 10px 3px 5px;
+    margin: 4px 2px;
+}
+
+#pulseaudio.muted {
+    color: @overlay0;
+    font-size: 18px;
+    padding: 3px 10px 3px 5px;
+    margin: 4px 2px;
+}
+
+#custom-cliphist {
+    font-size: 16px;
+    padding: 3px 1px 3px 5px;
+    margin: 4px 2px;
+}
+
+#tray {
+    padding: 2px 4px;
+    font-size: 15px;
+    margin: 4px 2px;
+}
+
+#language {
+    font-size: 16px;
+    padding: 0px 3px;
+    margin: 4px 2px;
+}
+
+#clock {
+    font-size: 12px;
+    padding: 0px 7px;
+    margin: 2px 2px;
+}
+
+#custom-power {
+    min-width: 20px;
+    padding: 0px 7px;
+    font-size: 18px;
+    margin: 2px 10px 2px 3px;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+}
+
+#custom-power:hover {
+    color: @base;
+    background-color: @red;
+}

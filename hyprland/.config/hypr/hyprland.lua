@@ -10,10 +10,6 @@ require("hypr-styling")
 -- Settings for language / keyboard
 require("hypr-input")
 
--- Environment variables for nvidia
--- Comment out if not using nvidia
-require("nvidia")
-
 -- Load Settings for monitors and workspaces if it exists
 local monitor_ok, monitor_err = pcall(require, "hypr-monitor-workspaces")
 if not monitor_ok then
@@ -21,11 +17,11 @@ if not monitor_ok then
 end
 
 -- Load environment variables for nvidia if it exists
+-- Comment out if not using nvidia
 local nvidia_ok, nvidia_err = pcall(require, "nvidia")
 if not nvidia_ok then
     print("Could not load nvidia: " .. nvidia_err)
 end
-
 
 
 -- ============================================================
