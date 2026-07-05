@@ -1,1 +1,1 @@
-/home/mlj/.config/hypr/styles/rounded.lua
+/home/mlj/dotfiles/hyprland/.config/hypr/styles/rounded.lua

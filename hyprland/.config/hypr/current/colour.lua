@@ -1,1 +1,1 @@
-/home/mlj/.config/hypr/colours/catppuccin-macchiato.lua
+/home/mlj/dotfiles/hyprland/.config/hypr/colours/catppuccin-macchiato.lua

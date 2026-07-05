@@ -47,9 +47,17 @@ window#waybar {
     border-bottom-color: @ws-10;
 }
 
+#custom-menu:hover {
+    color: @text;
+}
+
 #mpris {
     background-color: alpha(@surface1, 0.4);
 }
 #mpris:hover {
     background-color: alpha(@surface1, 0.7);
+}
+
+#custom-power:hover {
+    color: @red;
 }

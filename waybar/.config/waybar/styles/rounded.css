@@ -24,9 +24,19 @@ window#waybar {
     background-color: alpha(@ws-accent, 0.75);
 }
 
+#custom-menu:hover {
+    background-color: alpha(@accent-cyan, 0.15);
+    color: @text;
+}
+
 #mpris {
     background-color: @surface1;
 }
 #mpris:hover {
     background-color: alpha(@accent-cyan, 0.2);
+}
+
+#custom-power:hover {
+    background-color: alpha(@accent-cyan, 0.15);
+    color: @red;
 }

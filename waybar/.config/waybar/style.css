@@ -127,10 +127,6 @@ tooltip {
     border-radius: 8px 0 0 8px;
 }
 
-#custom-menu:hover {
-    color: @text;
-}
-
 #custom-weather {
     font-size: 16px;
     padding: 0px 6px 0px 5px;
@@ -214,9 +210,9 @@ tooltip {
     border-radius: 0 8px 8px 0;
 }
 
-#custom-power:hover {
+/*#custom-power:hover {
     color: @red;
-}
+}*/
 
 /* ---------------------------------------- */
 /* -----          SET THEME           ----- */
