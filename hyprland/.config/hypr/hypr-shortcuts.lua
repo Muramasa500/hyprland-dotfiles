@@ -41,6 +41,7 @@ hl.bind(mainMod .. " + ESCAPE ", hl.dsp.exec_cmd("~/.config/waybar/rofi-power-me
     { description = "Start Power Menu" })
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close(), { description = "Close window" })
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(screenLocker), { description = "Lock screen" })
+hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd("~/.local/bin/switch-theme.sh"))
 
 
 -- ============================================================

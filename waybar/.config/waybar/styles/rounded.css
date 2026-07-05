@@ -1,0 +1,32 @@
+window#waybar {
+    border-radius: 16px;
+}
+
+#workspaces button {
+    background-color: @surface1;
+}
+
+#workspaces button:nth-child(3n + 1) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#workspaces button:nth-child(3n) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#workspaces button:hover {
+    background-color: alpha(@accent-green, 0.25);
+}
+
+#workspaces button.active {
+    background-color: alpha(@ws-accent, 0.75);
+}
+
+#mpris {
+    background-color: @surface1;
+}
+#mpris:hover {
+    background-color: alpha(@accent-cyan, 0.2);
+}

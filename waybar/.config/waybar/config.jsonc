@@ -1,6 +1,5 @@
 {
-  "include": ["language.jsonc"],
-  "include": ["workspaces.jsonc"],
+  "include": ["language.jsonc", "workspaces.jsonc", "current/style.jsonc"],
 
   // ============================================================
   // ======                   LAYOUT                       ======
@@ -10,11 +9,6 @@
   "position": "top",
   "height": 45,
   "spacing": 2,
-
-  "margin-top": 0,
-  "margin-bottom": 0,
-  "margin-left": 0,
-  "margin-right": 0,
 
   "modules-left": ["custom/menu", "custom/weather", "mpris"],
   "modules-center": ["hyprland/workspaces"],

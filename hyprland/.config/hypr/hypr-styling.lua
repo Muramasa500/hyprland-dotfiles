@@ -1,9 +1,8 @@
 -- ============================================================
 -- ======                   SET THEME                    ======
 -- ============================================================
-local state   = require("theme.current-theme")
-local colours = require("theme." .. state.colours)
-local style   = require("theme." .. state.style)
+local colours = require("current.colour")
+local style   = require("current.style")
 
 
 -- ============================================================

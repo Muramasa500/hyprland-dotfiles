@@ -1,14 +1,225 @@
-/* ~/.config/waybar/style.css */
+/* ========================================== */
+/* =====              FONTS             ===== */
+/* ========================================== */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    min-height: 0;
+}
 
-/* ========================================== */
-/* =====         COLOUR PALETTE         ===== */
-/* ========================================== */
-@import "colour/theme-catppuccin-mocha.css";
-/*@import "themes/theme-catppuccin-macchiato.css";*/
-/*@import "themes/theme-nord.css";*/
+window#waybar {
+    background-color: @base;
+    margin: 0px 10px;
+    padding: 4px 8px;
+    color: @text;
+    border: none;
+    box-shadow: 0 4px 12px alpha(@black, 0.35);
+}
 
-/* ========================================== */
-/* =====              STYLE             ===== */
-/* ========================================== */
-@import "style/style-flat.css";
-/*@import "style/style-rounded.css";*/
+/* ---------------------------------------- */
+/* -----           TOOLTIP            ----- */
+/* ---------------------------------------- */
+tooltip {
+    background-color: @mantle;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    box-shadow: 0 4px 12px alpha(@black, 0.35);
+}
+
+#tooltip {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+
+#tooltip label {
+    color: @text;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* ---------------------------------------- */
+/* -----          WORKSPACES          ----- */
+/* ---------------------------------------- */
+#workspaces {
+    background-color: transparent;
+    padding: 0;
+    margin: 2px 2px;
+    border: none;
+}
+
+#workspaces button {
+    color: @subtext0;
+    font-size: 18px;
+    padding: 3px 12px;
+    margin: 1px 0px;
+    border-radius: 0px;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
+        border-color 0.15s ease;
+    min-width: 15px;
+    border: none;
+}
+
+#workspaces button:nth-child(3n + 1) {
+    margin-left: 8px;
+}
+
+/* ======================================== */
+/* -----          ACTIVE COLORS       ----- */
+/* ======================================== */
+#workspaces button.active {
+    font-weight: 700;
+    color: @text;
+    opacity: 1;
+}
+
+/* ---------------------------------------- */
+/* -----       GENERAL MODULES        ----- */
+/* ---------------------------------------- */
+#custom-menu,
+#custom-weather,
+#mpris,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#custom-cliphist,
+#tray,
+#language,
+#clock,
+#custom-power {
+    border: none;
+    font-weight: bold;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+    background-color: transparent;
+    color: @text;
+    border-radius: 8px;
+}
+
+#custom-weather:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-cliphist:hover,
+#language:hover,
+#clock:hover {
+    background-color: alpha(@accent-cyan, 0.15);
+    color: @accent-cyan;
+}
+
+/* ---------------------------------------- */
+/* -----         LEFT MODULES         ----- */
+/* ---------------------------------------- */
+#custom-menu {
+    color: @accent-cyan;
+    padding: 0px 23px 0px 15px;
+    margin: 1px 0px 1px 4px;
+    font-size: 27px;
+    border-radius: 8px 0 0 8px;
+}
+
+#custom-menu:hover {
+    color: @text;
+}
+
+#custom-weather {
+    font-size: 16px;
+    padding: 0px 6px 0px 5px;
+    margin: 4px 2px;
+}
+
+/* ---------------------------------------- */
+/* -----        RIGHT MODULES         ----- */
+/* ---------------------------------------- */
+#mpris {
+    border: none;
+    border-radius: 8px;
+    color: @text;
+    padding: 3px 10px;
+    margin: 5px 2px;
+    font-size: 15px;
+    font-weight: 500;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+#cpu,
+#memory {
+    font-size: 16px;
+    padding: 3px 10px 3px 5px;
+    margin: 4px 2px;
+}
+
+#network {
+    font-size: 18px;
+    padding: 3px 8px 3px 3px;
+    margin: 4px 2px;
+}
+
+#pulseaudio {
+    background-color: transparent;
+    color: @text;
+    font-size: 16px;
+    padding: 3px 10px 3px 5px;
+    margin: 4px 2px;
+}
+
+#pulseaudio.muted {
+    color: @overlay0;
+    font-size: 18px;
+    padding: 3px 10px 3px 5px;
+    margin: 4px 2px;
+}
+
+#custom-cliphist {
+    font-size: 16px;
+    padding: 3px 1px 3px 5px;
+    margin: 4px 2px;
+}
+
+#tray {
+    padding: 2px 4px;
+    font-size: 15px;
+    margin: 4px 2px;
+}
+
+#language {
+    font-size: 16px;
+    padding: 0px 3px;
+    margin: 4px 2px;
+}
+
+#clock {
+    font-size: 12px;
+    padding: 0px 7px;
+    margin: 2px 2px;
+}
+
+#custom-power {
+    min-width: 20px;
+    padding: 0px 7px;
+    font-size: 18px;
+    margin: 2px 10px 2px 3px;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+}
+
+#custom-power:hover {
+    color: @red;
+}
+
+/* ---------------------------------------- */
+/* -----          SET THEME           ----- */
+/* ---------------------------------------- */
+@import "current/colour.css";
+@import "current/style.css";
