@@ -1,0 +1,31 @@
+/* ========================================== */
+/* =====          COLOR PALETTE         ===== */
+/* ========================================== */
+/* --- Gruvbox Dark --- */
+/* --- Text --- */
+@define-color text #ebdbb2;
+@define-color subtext0 #bdae93;
+@define-color overlay0 #928374;
+@define-color red #fb4934;
+/* --- Surfaces --- */
+@define-color surface1 #504945;
+@define-color base #282828;
+@define-color mantle #1d2021;
+@define-color crust #161819;
+/* --- Accents --- */
+@define-color accent-cyan #83a598;
+@define-color accent-green #b8bb26;
+@define-color ws-accent #d3869b;
+/* --- Workspace Accent Colors --- */
+@define-color ws-1 #fe8019;
+@define-color ws-2 #fabd2f;
+@define-color ws-3 #b8bb26;
+@define-color ws-4 #8ec07c;
+@define-color ws-5 #83a598;
+@define-color ws-6 #458588;
+@define-color ws-7 #d3869b;
+@define-color ws-8 #b16286;
+@define-color ws-9 #fb4934;
+@define-color ws-10 #cc241d;
+@define-color black #000000;
+@define-color white #ffffff;

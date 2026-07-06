@@ -1,7 +1,7 @@
 -- ============================================================
 -- ======                   SET THEME                    ======
 -- ============================================================
-local colours = require("current.colour")
+local colours = require("current.color")
 local style   = require("current.style")
 
 

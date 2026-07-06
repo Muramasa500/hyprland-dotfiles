@@ -1,0 +1,1 @@
+/home/mlj/dotfiles/hyprland/.config/hypr/colors/tokyo-night.lua

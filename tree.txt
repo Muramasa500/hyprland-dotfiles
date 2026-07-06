@@ -1,0 +1,2071 @@
+.
+├── btop
+│   └── .config
+│       └── btop
+│           ├── btop.conf
+│           └── themes
+│               ├── catppuccin_macchiato.theme
+│               └── catppuccin_mocha.theme
+├── fastfetch
+│   └── .config
+│       └── fastfetch
+│           └── config.jsonc
+├── ghostty
+│   └── .config
+│       └── ghostty
+│           ├── config.ghostty
+│           └── themes
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   ├── exclude
+│   │   └── refs
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   ├── eww-test
+│   │       │   ├── main
+│   │       │   ├── test
+│   │       │   ├── waybar-pre-changes
+│   │       │   └── waybar-test
+│   │       └── remotes
+│   │           └── origin
+│   │               ├── eww-test
+│   │               ├── HEAD
+│   │               ├── main
+│   │               ├── test
+│   │               ├── waybar-pre-changes
+│   │               └── waybar-test
+│   ├── objects
+│   │   ├── 04
+│   │   │   ├── 5269bd434b00c60d7d5e132a0560f3f328dc43
+│   │   │   └── d257ed5d43b725e989a8cd411f49d7b4f45b8e
+│   │   ├── 05
+│   │   │   └── 78369ec6cf1636df8339cc404fcc0c322a66d7
+│   │   ├── 06
+│   │   │   └── ed94fc3ce443d1f467de2cbc930472a7c69696
+│   │   ├── 07
+│   │   │   └── 6d147c4515b237fd7884d6b488f113121272c9
+│   │   ├── 0a
+│   │   │   └── 6d91acdf2b98ea3d50cb5da5e740217cbca232
+│   │   ├── 0f
+│   │   │   ├── 807b716efc665194feadcf9f71a7cb5f654319
+│   │   │   ├── 9f1c16d09f94f3d5194599c16580742774dfc7
+│   │   │   └── f61c56b026c6c9534e1985368d7f28f1718200
+│   │   ├── 16
+│   │   │   └── 89ae64759d36f656a0d650d02748a64374c3c8
+│   │   ├── 18
+│   │   │   ├── 821d2dee154f22fe71e3ca321c4415ad04a790
+│   │   │   ├── b2ca6ab2ab91c141ca775172403022e7885e4e
+│   │   │   └── d1df1832701a0e6dce37e7ea37042093ff93d7
+│   │   ├── 1d
+│   │   │   └── 8e912f05daf65ae00dce58be1ffcc912f6ae37
+│   │   ├── 1e
+│   │   │   ├── 4a8090e86bf9b30dd0128c4b352426cf7db59a
+│   │   │   └── b8bcc87347824c7e95aba17e54da894ea5f87a
+│   │   ├── 1f
+│   │   │   └── 05da231f609ab6aa585eaf23c29704971c60e8
+│   │   ├── 20
+│   │   │   └── 692716278fd23118c8cefc8c1a7eca1707f8db
+│   │   ├── 21
+│   │   │   ├── 107040ba7383b0dca5636a952729341de74ccf
+│   │   │   └── bf36d7c53925f5c9a22c938f4aee16f5741c78
+│   │   ├── 22
+│   │   │   ├── 4b06e14bbb4c1b532c6897e7b9d6b0e286760b
+│   │   │   └── 732f3b50b87aec14f8d51fe2ab03cee9807672
+│   │   ├── 23
+│   │   │   ├── c900ccc1c7acd5ec1b9f8bc1228e84908d39e7
+│   │   │   └── cd0830bc61d3511082afa49886ec176916bf28
+│   │   ├── 24
+│   │   │   └── aa6b873df14c450fca5b6456dc9ac150c56b41
+│   │   ├── 25
+│   │   │   └── 0a8fa947d61b3fa13e2ced00b885d06556666e
+│   │   ├── 29
+│   │   │   └── f1641b4c5a4167edea67098621aaa81841fa29
+│   │   ├── 2c
+│   │   │   ├── 43360129fc76a3e940a9de70b959f3e1391183
+│   │   │   ├── 5be3cd22e56b06fc6611caab88d8b586ba3f42
+│   │   │   ├── 7d11041e73f728e0da653045492d8211ec27b4
+│   │   │   └── c69a3e2b9425ab25120ed86343e74495388b3d
+│   │   ├── 2d
+│   │   │   ├── d45cbdd0c153e11da496254994586c20b16a84
+│   │   │   └── ea966136f041ec2b83f7b43cc24946cd620b3c
+│   │   ├── 2e
+│   │   │   ├── 63d22340b3b98c74cdd92da069f9b096d3679c
+│   │   │   └── 6c332d452d50bfa837bc867d59fce6aae29417
+│   │   ├── 2f
+│   │   │   └── 4744e8042c93bd4b2192289b6690a569ade653
+│   │   ├── 31
+│   │   │   ├── 26de88bdb67f2fe35e5b46746a0731c3b957b8
+│   │   │   ├── a8a8f557cf79ca5a6c138667093fd16423a57b
+│   │   │   └── aca82e3e0d53185668c44af2b03bf60f23400c
+│   │   ├── 32
+│   │   │   ├── 369de9e9bdce6cf336addf8dfa260a7e5b9b08
+│   │   │   └── bec9da5bf99b06eb8f56226efbf90dc5dc476e
+│   │   ├── 34
+│   │   │   └── c8b388c646e611c68f953b76a469b5179eaf6a
+│   │   ├── 35
+│   │   │   └── c0ca3acc89230ca0caff4c320ef5558c137a77
+│   │   ├── 37
+│   │   │   └── c0aa463d07dc3d52bb5b24f1441713b45b5606
+│   │   ├── 38
+│   │   │   ├── 759f4e35ff89b8925b51ff548822f7297ab28f
+│   │   │   ├── a57a75d8ac9ece270c80095604f2cc0857cf84
+│   │   │   └── be0bb026c05ed84a3d3d810437020c1e624826
+│   │   ├── 3b
+│   │   │   └── 68b3eae47df740eb96ec734ffa126793f090af
+│   │   ├── 3c
+│   │   │   ├── 6aa9f013efb2bd02bc76ed05b11bc3027b1511
+│   │   │   ├── 6c23f01e08a589041174a7ac66befae526b522
+│   │   │   └── c35b2ef6f6944fe20e918b8d128e9aa17bb9ff
+│   │   ├── 3d
+│   │   │   ├── 8fafb7402684a95f90fd2bfd51301f2be336d9
+│   │   │   └── e6ef55f8f2af57ec2ce415a80c62ae1d983dcc
+│   │   ├── 3f
+│   │   │   └── 2c2b66761a86d1db1024d47963cf15c312be5f
+│   │   ├── 41
+│   │   │   ├── 3ffe18f3a514e51b62f28f178b89822c4eff15
+│   │   │   └── c74cdcc3dc43b3af99b2de8b8e9e6619cb35d0
+│   │   ├── 44
+│   │   │   ├── a026ab36ca952a428eb34ba36ffb98b8d70f9f
+│   │   │   └── a1f540108131fef550286b10cd19f3c1f6dea7
+│   │   ├── 47
+│   │   │   └── 08f8b12f35b6fe9e40b3255debdc5bb71062ca
+│   │   ├── 48
+│   │   │   └── 31a0f9e1ab01f9c05181e4f158941a9896e012
+│   │   ├── 4a
+│   │   │   ├── 49a8760baf52e68afc996f3bffcdf2de68bcd7
+│   │   │   ├── 55e1489fb06140a4deef05041929f6f8f850e4
+│   │   │   └── 9f65eed124095fd3c8dd61aa405ce2d9271b3a
+│   │   ├── 4c
+│   │   │   └── 04802af2fb51c9f4c15535ec03b01a4fbaae3e
+│   │   ├── 4d
+│   │   │   ├── 33cbf75d00a04dd1681540a51db48f8dde8eeb
+│   │   │   └── a60890582be3b8df6789401ec0effdd0a2a4a8
+│   │   ├── 4e
+│   │   │   └── 5146c73af567ff253fd80da7c6d251eb8a90ff
+│   │   ├── 4f
+│   │   │   ├── 11771aefb06a464ef8322495d299f15db6bcb4
+│   │   │   └── f9a957a7ad31611e0c810183cdbd24e6b7f66b
+│   │   ├── 53
+│   │   │   ├── 0e72fdb2bbe3136b87966c65cfe00aad6b2119
+│   │   │   └── e6dd13d906bdde7076a55dfa2f5bf852c56ecc
+│   │   ├── 54
+│   │   │   └── d4d8308d9d3fe543d5369da2a36923660bb70b
+│   │   ├── 55
+│   │   │   ├── 1b34d489177d17a327145c9087a585348f1b1f
+│   │   │   ├── 39e561a6eba5634e7dd0a2a1c4e9dc57698796
+│   │   │   ├── a7041c82ff70259e260111acc3a72e00a12a61
+│   │   │   ├── c3600f2ad1d02812c77a55c16492b3f703c0a7
+│   │   │   └── cab282fda033803f777d9eea1ec6e877cb395a
+│   │   ├── 56
+│   │   │   ├── 1bd06366837cdac81e2f5e588efc7ce0027274
+│   │   │   ├── 2ac74de15a66a5c6534c35468f0276a3920b7d
+│   │   │   └── 6f7aba0bdf4062c877ec2f7e985209033ad433
+│   │   ├── 57
+│   │   │   ├── 91a2a07d2cb6fd695e86a0d96d0fdd905eb88f
+│   │   │   └── bd02f1e6b514e0e74b5fbcb792a7fca450b5b6
+│   │   ├── 58
+│   │   │   ├── 2d6ffd5e7dbefe744d6af8de8e3343d3595e7c
+│   │   │   └── 74b8d45d39fdaf0029c4cc395a842542f74f60
+│   │   ├── 59
+│   │   │   └── f0879307f3d6a8f18211de06ff55bf5552cdcc
+│   │   ├── 5b
+│   │   │   ├── 77e0468bb502da03c24a775ab0236472fb2c61
+│   │   │   ├── e04ef920df1b07448de905e00ebb4ee9c41639
+│   │   │   └── e6c9a1c581dedfbee06b6db69fc7f41edf6441
+│   │   ├── 5c
+│   │   │   └── 6fc7756ecca3206c9f587ed2b092dad85d2397
+│   │   ├── 5e
+│   │   │   └── edd73c1063f2cc461477d5707c9c68d8aa4dea
+│   │   ├── 61
+│   │   │   ├── 0c0056de88fefea449c868f473095e9ea84dda
+│   │   │   ├── 21ec3eec7abe15ae6cbcddc7324149e01860fc
+│   │   │   └── 9efad209ba795d036017eae2033b8ef8af4c4d
+│   │   ├── 62
+│   │   │   ├── 6b46f8d91b97ec7e48f704f8c167d7f1d4d65f
+│   │   │   └── eeb0ba5c9e3d657ea05f9075a40d2602e7a2b9
+│   │   ├── 66
+│   │   │   ├── 17dbc7c18bc24808d5a6e10add840b604e7f0e
+│   │   │   └── a88a9281ff25d00242fc4e6eab170b7611d70d
+│   │   ├── 67
+│   │   │   └── 4923af88daa4d7e75565878d9f62ba8775c990
+│   │   ├── 68
+│   │   │   └── ba1b7aaafe82245fda3e1d6886262e1aad8019
+│   │   ├── 69
+│   │   │   ├── 5005fa59a766b61afc6fd5ef9011ff97c9dcf0
+│   │   │   ├── 5565f03226489feb28ae415a7ba168999a491f
+│   │   │   └── 5c130cbab8ac76728ab99450f99fdb8a66edc2
+│   │   ├── 6a
+│   │   │   └── 1b34a86f96d6acc0e9db0e919588315b3f081b
+│   │   ├── 6b
+│   │   │   ├── 2f685b54f17f341b790f6dd10ea6cca4012f29
+│   │   │   ├── 4f7b93206b8903dd088a880c360abb71854847
+│   │   │   └── e41e1f67a864dacff3ede4fe81f2fbf87fd217
+│   │   ├── 6c
+│   │   │   ├── 5dd5b50499c2a14888526f3aae6dba26aa62e9
+│   │   │   └── 931b374e5df6479f3ba3bab787b0e5cc1a3372
+│   │   ├── 6d
+│   │   │   └── 23ca9f30dcca06fa88e5201c9738074453927d
+│   │   ├── 6e
+│   │   │   └── d2e15d37ff589a426897abc78034f0c49abf8e
+│   │   ├── 6f
+│   │   │   └── cab79ba85212b233772d984a5ee7f6387e3280
+│   │   ├── 70
+│   │   │   ├── 499bbb33266a68a3e3b7e82b66521c28684a11
+│   │   │   └── f056379bf2a79ce349e65a749eefc6c69ecf49
+│   │   ├── 71
+│   │   │   ├── 38454c39ff9076e548fd4e017be5c68c319a75
+│   │   │   └── 879adee0f23ff114a2e2ffcf09d26b32f24fa0
+│   │   ├── 72
+│   │   │   └── b3f5875e7ed50e3f442938946dda018d38f6db
+│   │   ├── 73
+│   │   │   ├── 2a6a96755d02293db9e3af224bdc2fc7efd7e4
+│   │   │   ├── 9f16a1e8ed83d3f59507be34b7f8d60edeb730
+│   │   │   └── f3210324edcc19d51877843df86dcbbce15ddf
+│   │   ├── 76
+│   │   │   ├── 9cf8ddde4014f9ab3c25d44c3a6a039554edfe
+│   │   │   └── f119c8820edcbc72e0d2d4c6d78c47c29e61b7
+│   │   ├── 7a
+│   │   │   └── 4aecfdfa3ae834f5498166d133e10b6d567fce
+│   │   ├── 7b
+│   │   │   └── 3334bcb9c5e735680c31ac4e85bd43643fb6e3
+│   │   ├── 7c
+│   │   │   └── 4d4695cd3aa2135accb62504278136a95b3520
+│   │   ├── 7d
+│   │   │   └── 76a994a650f9fb40d62c21b1f57fe3c380ff3c
+│   │   ├── 7e
+│   │   │   ├── 417ee5f405f78a3044f065e9b2b9a79ca5e52c
+│   │   │   ├── c9f34fc9891b55ad4776ef7646f285f1ee649b
+│   │   │   ├── d3d57fe17a917ef969c5ea7f7b73ef4555c86b
+│   │   │   └── e652d82e05fbe8860e01ecb16c0e5c5f8b5b9a
+│   │   ├── 80
+│   │   │   └── a562d33e6113a73aa64d89123d0dd1e2546428
+│   │   ├── 81
+│   │   │   ├── 5b293d420ba3143d779ad6a1f7381920358895
+│   │   │   └── c785cad38bda5898d912cddb100320e4f24482
+│   │   ├── 82
+│   │   │   ├── 2383d34e00c35a0a68818d3f664c27938a41e9
+│   │   │   └── ec8dafc059ade887dd4bd9dda2b178e45673ce
+│   │   ├── 83
+│   │   │   ├── 49b0e88c2f9b84830f4b944d8bb9036dab1058
+│   │   │   └── 7c2cdbe90e648073202b806cc2b9743ae7f29f
+│   │   ├── 84
+│   │   │   └── 7eb5d84849a908620159398ed0e4ef3fae3893
+│   │   ├── 85
+│   │   │   ├── b1feff3c4620100da347aca3d49f6dc5efc125
+│   │   │   └── e9559d6cf84fd351521ace54a0362fccc4ff82
+│   │   ├── 89
+│   │   │   ├── 0d0839623028cd66e398209f9c934c732bb95a
+│   │   │   ├── 543faf66163cf6dcd5c6d3f69cea45ebeb88c7
+│   │   │   └── 94546d103fac2f1050fcc7049556f1e6b6d3ba
+│   │   ├── 8a
+│   │   │   ├── 087bc42ed300199c80a27cb367a249923f6c30
+│   │   │   └── 83f0b2680c37cdfb9564cc117f75fd664e878d
+│   │   ├── 8d
+│   │   │   ├── b7cf0cfc9b5f0666bafad217a26829542cdc25
+│   │   │   └── d25731373a6b6cc733f0cb3e4f6f47d29f7b95
+│   │   ├── 90
+│   │   │   ├── 06414580bd01dad509fe3ade62543e4df34503
+│   │   │   └── 965da84f83991a09dc34c6694aa268d6cd86dd
+│   │   ├── 92
+│   │   │   └── daab2165ce90dd5692562b288dc039b13ceda6
+│   │   ├── 93
+│   │   │   └── 73f23f1a63c301dabdeca0d41b513755f0181f
+│   │   ├── 96
+│   │   │   └── ef448dd624093c36a89dd119d54173c72ff703
+│   │   ├── 97
+│   │   │   └── d332d1227847295d76d165917c158e56bfc3aa
+│   │   ├── 98
+│   │   │   └── d42343355e739b4c0baafa9ed05010e2682ced
+│   │   ├── 99
+│   │   │   ├── 30a987dc4c1c59356b89ff8dd4ef878a55eb77
+│   │   │   ├── a71a8ae28dbf50e4e0a2fd462a78cfb0f33991
+│   │   │   └── f87dc92a5add336216fe49a175e3df0f3394c8
+│   │   ├── 9b
+│   │   │   ├── 05dd27dc38585e14aa7dece6390607952aafc6
+│   │   │   └── 527cf92d92a7fca45e0f22646c394dd4cc0edd
+│   │   ├── 9f
+│   │   │   ├── 3f195d3852cdf4cf3940049387bda921b266d1
+│   │   │   ├── 570c8dacf5f604e74f44da3c604d2302678fa0
+│   │   │   └── d5a60534c4370e850bac118b8a288904367932
+│   │   ├── a0
+│   │   │   └── 48e63382c519ee8702b3878a3f8b1058165cb3
+│   │   ├── a3
+│   │   │   ├── 6bc5b072367670cbb17169d2cc46af714a8460
+│   │   │   ├── 9ee222052966a52763653ec1d8d987edb533c3
+│   │   │   └── b5375bc570b1faac50e228c370183364f4588f
+│   │   ├── a5
+│   │   │   ├── 01a6617b1b64779b47ac4d86db153ae2f3583f
+│   │   │   ├── 1a1cd0779ec14d3d2afb5ac8c95c413a882916
+│   │   │   └── d23cf3a534dd73fe0a4eb79ab6a8a35af7e714
+│   │   ├── a8
+│   │   │   └── 55a81fe4f5a81f700a0a96dcec88fd288b56ab
+│   │   ├── ab
+│   │   │   └── d3d877d049327e0625738a09cfedbdf2d6b04c
+│   │   ├── ac
+│   │   │   ├── a8fe6079b099790e4a9173fad0f5e0a2cf0352
+│   │   │   └── d1720884c42a25eeeb5da1e1340b48aca45a73
+│   │   ├── ae
+│   │   │   └── 670eda1d4d2b8b077cde6342a3ffe3b0b3b937
+│   │   ├── b0
+│   │   │   └── 65993c86237cce8167fe725b4d190235d5d20e
+│   │   ├── b1
+│   │   │   ├── 0c3287bdaad68db230f388db6e29c96e0e2b69
+│   │   │   └── fd5cd30ed2b3b089ce23a6feea5ca89386e1f7
+│   │   ├── b3
+│   │   │   └── 2e273df4151f7e85401dcce9652810c569043d
+│   │   ├── b5
+│   │   │   └── 4b94bcab1ad281c3cc76b951a17d781bf0ab1f
+│   │   ├── b7
+│   │   │   ├── 2d45c76aaf23692a28eec966e7755f3699e0ca
+│   │   │   └── d2b6e3ea4de01bf54bbf3ab5f8f15c04961b6d
+│   │   ├── b8
+│   │   │   ├── 469f7e5f7bc220c5a48bb0e221016490aa301c
+│   │   │   └── a8c4f191b3c0eaa9aa1f6890fd351fa42ced2a
+│   │   ├── b9
+│   │   │   ├── 47d9fd2a63b212cdf522498d0f0e1111df4601
+│   │   │   └── 9e8fccd8772517096ee14c1c8fabe9f934f966
+│   │   ├── ba
+│   │   │   └── 0f0861f6e09fcc97ad0823f778ab4155ac72a4
+│   │   ├── bc
+│   │   │   ├── 2db8319a09b7352ed72d035679a84b67044fc2
+│   │   │   └── ab6ce802ad5970a42a1ce742e03006048d65e0
+│   │   ├── be
+│   │   │   └── 78a6a740ba72ccbf2bca5dd2e370f47d95f651
+│   │   ├── c0
+│   │   │   ├── 2f29f7980243573ba521feee7bf456c3fd9553
+│   │   │   └── 61f9046a0c81c93c57a79110a8da6778dcc584
+│   │   ├── c1
+│   │   │   └── b42a24f16975425620adc183496de3317ec563
+│   │   ├── c2
+│   │   │   ├── 6d608728aecd106d35c39e0f4d5b037a436a30
+│   │   │   └── 88da359294f6d683dc5c7ca68ea8742aed6562
+│   │   ├── c5
+│   │   │   └── 1b6fedc6195b3366774e63f80020c43ea04c96
+│   │   ├── c6
+│   │   │   └── 8bd64973d1d94fbc492368450a417594795174
+│   │   ├── c7
+│   │   │   ├── 3b18361d600b6f0d579e8e2f379138ed8d3648
+│   │   │   └── 823e3755a7dada5adbc6a9396501979cf7e167
+│   │   ├── c8
+│   │   │   ├── 4719b351d5a046c3d9f3af406d1560241151e2
+│   │   │   └── e1c48107e7171bb3832a0c8ae2f6bffd4599c0
+│   │   ├── c9
+│   │   │   └── cfbe6d67755337dcba8c7e2066cc6568512131
+│   │   ├── cb
+│   │   │   └── 61fa654fec6832fbd4cf0af50a972db0aebea4
+│   │   ├── cc
+│   │   │   ├── 98574e23181e86b428aa7d16f49660417ffcd0
+│   │   │   └── dfd567ce66565ded1dce2c87912f2e512326dc
+│   │   ├── d0
+│   │   │   ├── 96c73dccf3f6122106062f634a3e0c44174e9d
+│   │   │   └── be5f03fbaf4abd3ec73bb6cf8f638eda643a50
+│   │   ├── d1
+│   │   │   └── 6d77362fe1dcaa401190966196f87fed7dc9eb
+│   │   ├── d3
+│   │   │   └── b99b68113d472c87ba486b2c39e85783c422ac
+│   │   ├── d5
+│   │   │   └── 92412f9408b59d740920adf9d2a5c6142a4387
+│   │   ├── d8
+│   │   │   └── f63aacfb44d9766cd9867bafaabd47302d996a
+│   │   ├── d9
+│   │   │   └── a1aa72b5e2125f0c8f7b828cfaaed1751e0f8f
+│   │   ├── db
+│   │   │   └── 0c0a0438a84f3f1e1c97f46f65b5dde239d08d
+│   │   ├── dc
+│   │   │   ├── 0c322613801bc22ca92e9df1152a2ed263b7bf
+│   │   │   └── 70724ebc2eebf475e68b8b1de2e154d2ba1e30
+│   │   ├── dd
+│   │   │   └── 7ab9195171bc293a5738ab46066637a0f9fd2c
+│   │   ├── de
+│   │   │   └── e03a8e60a7855c6ea6766618e0174f23dffe6b
+│   │   ├── df
+│   │   │   └── 6f042c835174310efa872860a32fda107ff78f
+│   │   ├── e0
+│   │   │   └── 9f521526e4fb0f6d4eb018134e9165ba5cc380
+│   │   ├── e1
+│   │   │   └── a9ffd07c16eafc5f8efa5ce18951445e41d556
+│   │   ├── e2
+│   │   │   ├── 6a266fad8981294b548b34bc820900a4fee329
+│   │   │   ├── 6bb240d49041143b209cb5c189eddf20ca6be6
+│   │   │   └── d19f7b34cb0eeb0791e99f11a3b35ac9e8ce78
+│   │   ├── e4
+│   │   │   └── 91d6903e5675451e1d6a8947a3f5f4a9fea379
+│   │   ├── e5
+│   │   │   ├── b1acc95b71563e4e2bcac471f26e61caa4f480
+│   │   │   └── d5f0d4723ae3da31e6dbaebf93982c24e5e70f
+│   │   ├── e8
+│   │   │   └── cdcf7eaf471cd5ad5540637be70d104baeed90
+│   │   ├── ea
+│   │   │   ├── 926e5a94c38cf1e74c5e0cc3acbd81bb2d17bc
+│   │   │   └── dc10fb16321af112c940f67195dbc6ec12c6c4
+│   │   ├── eb
+│   │   │   ├── 11c7d76cf0f6c37b14da132c63888e48b188fb
+│   │   │   └── 5a2189feac3f8285f5374e544b9990db4e7ec9
+│   │   ├── ec
+│   │   │   └── 5173c82775b985d5bbeaab78d28c23f99edf4e
+│   │   ├── ef
+│   │   │   └── cf825b81a43e0a81b7ef30816158996021c657
+│   │   ├── f0
+│   │   │   └── 1a6f3b506e03a6cc99d30570a60a0c230ee968
+│   │   ├── f1
+│   │   │   └── 77414117b998905d0960d1717e140ebff11598
+│   │   ├── f4
+│   │   │   └── c28bf3d1d2aec0d044b9cbdacd7b75936e61af
+│   │   ├── f5
+│   │   │   ├── 02f2bacedc22a44ae847c348119d0af8581a7a
+│   │   │   ├── 998867ee7baa264d134afe5807de11c5102516
+│   │   │   └── f31562ad12eab62885ae8bed91a6757602edac
+│   │   ├── f7
+│   │   │   ├── 0d207548c68e7b77357b9e89972ac1122fe499
+│   │   │   └── bdd8686e38be39c2696b7617e63e244ea77083
+│   │   ├── f9
+│   │   │   └── 0a6f041984b5697351dcc72b13a14532db8e5e
+│   │   ├── fc
+│   │   │   └── 22673f6326922dbfcd755e2889a4a5e01085b2
+│   │   ├── info
+│   │   │   └── packs
+│   │   └── pack
+│   │       ├── multi-pack-index
+│   │       ├── pack-2be4dd976e557b3c8922b3830627154fbc67e3fb.idx
+│   │       ├── pack-2be4dd976e557b3c8922b3830627154fbc67e3fb.mtimes
+│   │       ├── pack-2be4dd976e557b3c8922b3830627154fbc67e3fb.pack
+│   │       ├── pack-2be4dd976e557b3c8922b3830627154fbc67e3fb.rev
+│   │       ├── pack-e64e944e1c6daf78aedea0f2e53fb3991ec95df4.idx
+│   │       ├── pack-e64e944e1c6daf78aedea0f2e53fb3991ec95df4.pack
+│   │       └── pack-e64e944e1c6daf78aedea0f2e53fb3991ec95df4.rev
+│   ├── ORIG_HEAD
+│   └── refs
+│       ├── heads
+│       │   ├── eww-test
+│       │   ├── main
+│       │   ├── test
+│       │   ├── waybar-pre-changes
+│       │   └── waybar-test
+│       ├── remotes
+│       │   └── origin
+│       │       ├── eww-test
+│       │       ├── HEAD
+│       │       ├── main
+│       │       ├── test
+│       │       ├── waybar-pre-changes
+│       │       └── waybar-test
+│       └── tags
+│           └── 0.4.0
+├── .github
+│   └── ISSUE_TEMPLATE
+│       ├── bug_report.md
+│       └── feature_request.md
+├── .gitignore
+├── gtk-3.0
+│   └── .config
+│       └── gtk-3.0
+│           ├── bookmarks
+│           └── settings.ini
+├── hyprland
+│   └── .config
+│       └── hypr
+│           ├── colors
+│           │   ├── catppuccin-macchiato.lua
+│           │   ├── catppuccin-mocha.lua
+│           │   ├── gruvbox.lua
+│           │   ├── nord.lua
+│           │   └── tokyo-night.lua
+│           ├── current
+│           │   ├── color.lua -> /home/mlj/dotfiles/hyprland/.config/hypr/colors/gruvbox.lua
+│           │   └── style.lua -> /home/mlj/dotfiles/hyprland/.config/hypr/styles/rounded.lua
+│           ├── hypridle.conf
+│           ├── hypr-input.lua
+│           ├── hyprland.lua
+│           ├── hyprland.lua.bak
+│           ├── hyprlock.conf
+│           ├── hypr-monitor-workspaces.lua
+│           ├── hyprpaper.conf
+│           ├── hypr-shortcuts.lua
+│           ├── hypr-styling.lua
+│           ├── hyprsunset.conf
+│           ├── hypr-window-rules.lua
+│           ├── nohup.out
+│           ├── nvidia.lua
+│           ├── scripts
+│           │   └── rofi-shortcuts.sh
+│           ├── styles
+│           │   ├── flat.lua
+│           │   └── rounded.lua
+│           └── wallpapers
+│               ├── nohup.out
+│               ├── wallpaper1.jpg
+│               ├── wallpaper2.jpg
+│               └── wallpaper3.jpg
+├── install
+│   └── install.sh
+├── kitty
+│   └── .config
+│       └── kitty
+│           └── kitty.conf
+├── LICENSE
+├── qt6ct
+│   └── .config
+│       └── qt6ct
+│           ├── colors
+│           │   ├── catppuccin-frappe-blue.conf
+│           │   ├── catppuccin-frappe-flamingo.conf
+│           │   ├── catppuccin-frappe-green.conf
+│           │   ├── catppuccin-frappe-lavender.conf
+│           │   ├── catppuccin-frappe-maroon.conf
+│           │   ├── catppuccin-frappe-mauve.conf
+│           │   ├── catppuccin-frappe-peach.conf
+│           │   ├── catppuccin-frappe-pink.conf
+│           │   ├── catppuccin-frappe-red.conf
+│           │   ├── catppuccin-frappe-rosewater.conf
+│           │   ├── catppuccin-frappe-sapphire.conf
+│           │   ├── catppuccin-frappe-sky.conf
+│           │   ├── catppuccin-frappe-teal.conf
+│           │   ├── catppuccin-frappe-yellow.conf
+│           │   ├── catppuccin-latte-blue.conf
+│           │   ├── catppuccin-latte-flamingo.conf
+│           │   ├── catppuccin-latte-green.conf
+│           │   ├── catppuccin-latte-lavender.conf
+│           │   ├── catppuccin-latte-maroon.conf
+│           │   ├── catppuccin-latte-mauve.conf
+│           │   ├── catppuccin-latte-peach.conf
+│           │   ├── catppuccin-latte-pink.conf
+│           │   ├── catppuccin-latte-red.conf
+│           │   ├── catppuccin-latte-rosewater.conf
+│           │   ├── catppuccin-latte-sapphire.conf
+│           │   ├── catppuccin-latte-sky.conf
+│           │   ├── catppuccin-latte-teal.conf
+│           │   ├── catppuccin-latte-yellow.conf
+│           │   ├── catppuccin-macchiato-blue.conf
+│           │   ├── catppuccin-macchiato-flamingo.conf
+│           │   ├── catppuccin-macchiato-green.conf
+│           │   ├── catppuccin-macchiato-lavender.conf
+│           │   ├── catppuccin-macchiato-maroon.conf
+│           │   ├── catppuccin-macchiato-mauve.conf
+│           │   ├── catppuccin-macchiato-peach.conf
+│           │   ├── catppuccin-macchiato-pink.conf
+│           │   ├── catppuccin-macchiato-red.conf
+│           │   ├── catppuccin-macchiato-rosewater.conf
+│           │   ├── catppuccin-macchiato-sapphire.conf
+│           │   ├── catppuccin-macchiato-sky.conf
+│           │   ├── catppuccin-macchiato-teal.conf
+│           │   ├── catppuccin-macchiato-yellow.conf
+│           │   ├── catppuccin-mocha-blue.conf
+│           │   ├── catppuccin-mocha-flamingo.conf
+│           │   ├── catppuccin-mocha-green.conf
+│           │   ├── catppuccin-mocha-lavender.conf
+│           │   ├── catppuccin-mocha-maroon.conf
+│           │   ├── catppuccin-mocha-mauve.conf
+│           │   ├── catppuccin-mocha-peach.conf
+│           │   ├── catppuccin-mocha-pink.conf
+│           │   ├── catppuccin-mocha-red.conf
+│           │   ├── catppuccin-mocha-rosewater.conf
+│           │   ├── catppuccin-mocha-sapphire.conf
+│           │   ├── catppuccin-mocha-sky.conf
+│           │   ├── catppuccin-mocha-teal.conf
+│           │   └── catppuccin-mocha-yellow.conf
+│           ├── current
+│           │   └── current.conf -> /home/mlj/.config/qt6ct/colors/gruvbox-dark.conf
+│           ├── qss
+│           └── qt6ct.conf
+├── README.md
+├── rofi
+│   └── .config
+│       └── rofi
+│           ├── catppuccin-macchiato.rasi
+│           ├── catppuccin-mocha.rasi
+│           ├── config.rasi
+│           ├── style-default copy.rasi
+│           ├── style-default copy really good.rasi
+│           ├── style-default.rasi
+│           └── themes
+├── screenshots
+│   ├── desktop1.png
+│   └── desktop2.png
+├── scripts
+│   └── .local
+│       └── bin
+│           ├── switch-theme hypr and waybar works.sh
+│           ├── switch-theme hypr works.sh
+│           └── switch-theme.sh
+├── starship
+│   └── .config
+│       └── starship.toml
+├── themes
+│   └── .local
+│       └── share
+│           └── themes
+│               ├── catppuccin-macchiato-blue-standard+default
+│               │   ├── cinnamon
+│               │   │   ├── assets
+│               │   │   │   ├── add-workspace-active.svg
+│               │   │   │   ├── add-workspace-hover.svg
+│               │   │   │   ├── add-workspace.svg
+│               │   │   │   ├── calendar-arrow-left.svg
+│               │   │   │   ├── calendar-arrow-right.svg
+│               │   │   │   ├── checkbox-dark.svg
+│               │   │   │   ├── checkbox-off.svg
+│               │   │   │   ├── checkbox.svg
+│               │   │   │   ├── close-active.svg
+│               │   │   │   ├── close-hover.svg
+│               │   │   │   ├── close.svg
+│               │   │   │   ├── corner-ripple.svg
+│               │   │   │   ├── radiobutton-dark.svg
+│               │   │   │   ├── radiobutton-off.svg
+│               │   │   │   ├── radiobutton.svg
+│               │   │   │   ├── toggle-off.svg
+│               │   │   │   ├── toggle-on-dark.svg
+│               │   │   │   ├── toggle-on.svg
+│               │   │   │   └── trash-icon.svg
+│               │   │   ├── cinnamon.css
+│               │   │   └── thumbnail.png
+│               │   ├── gnome-shell
+│               │   │   ├── assets
+│               │   │   │   ├── calendar-arrow-left.svg
+│               │   │   │   ├── calendar-arrow-right.svg
+│               │   │   │   ├── calendar-today.svg
+│               │   │   │   ├── checkbox-dark.svg
+│               │   │   │   ├── checkbox-off-active.svg
+│               │   │   │   ├── checkbox-off-hover.svg
+│               │   │   │   ├── checkbox-off.svg
+│               │   │   │   ├── checkbox.svg
+│               │   │   │   ├── dash-placeholder.svg
+│               │   │   │   ├── noise-texture.svg
+│               │   │   │   ├── process-working.svg
+│               │   │   │   ├── toggle-off.svg
+│               │   │   │   ├── toggle-on-dark.svg
+│               │   │   │   └── toggle-on.svg
+│               │   │   ├── gnome-shell.css
+│               │   │   └── pad-osd.css
+│               │   ├── gtk-3.0
+│               │   │   ├── assets
+│               │   │   │   ├── checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── checkbox-checked-symbolic.svg
+│               │   │   │   ├── checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── checkbox-mixed-symbolic.svg
+│               │   │   │   ├── close-symbolic@2.svg
+│               │   │   │   ├── close-symbolic.svg
+│               │   │   │   ├── cursor-handle-symbolic.svg
+│               │   │   │   ├── maximize-symbolic@2.svg
+│               │   │   │   ├── maximize-symbolic.svg
+│               │   │   │   ├── menu-radio-symbolic@2.svg
+│               │   │   │   ├── menu-radio-symbolic.svg
+│               │   │   │   ├── minimize-symbolic@2.svg
+│               │   │   │   ├── minimize-symbolic.svg
+│               │   │   │   ├── radio-checked-symbolic@2.svg
+│               │   │   │   ├── radio-checked-symbolic.svg
+│               │   │   │   ├── radio-mixed-symbolic@2.svg
+│               │   │   │   ├── radio-mixed-symbolic.svg
+│               │   │   │   ├── scale-horz-marks-after-slider@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-dark.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled.svg
+│               │   │   │   ├── scale-horz-marks-after-slider.svg
+│               │   │   │   ├── scale-horz-marks-before-slider@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-dark.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled.svg
+│               │   │   │   ├── scale-horz-marks-before-slider.svg
+│               │   │   │   ├── scale-vert-marks-after-slider@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-dark.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled.svg
+│               │   │   │   ├── scale-vert-marks-after-slider.svg
+│               │   │   │   ├── scale-vert-marks-before-slider@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-dark.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled.svg
+│               │   │   │   ├── scale-vert-marks-before-slider.svg
+│               │   │   │   ├── selectionmode-checkbox-checked@2.svg
+│               │   │   │   ├── selectionmode-checkbox-checked-dark@2.svg
+│               │   │   │   ├── selectionmode-checkbox-checked-dark.svg
+│               │   │   │   ├── selectionmode-checkbox-checked.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked@2.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark@2.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic.svg
+│               │   │   │   ├── small-radio-checked-symbolic@2.svg
+│               │   │   │   ├── small-radio-checked-symbolic.svg
+│               │   │   │   ├── small-radio-mixed-symbolic@2.svg
+│               │   │   │   ├── small-radio-mixed-symbolic.svg
+│               │   │   │   ├── unmaximize-symbolic@2.svg
+│               │   │   │   └── unmaximize-symbolic.svg
+│               │   │   ├── gtk.css
+│               │   │   ├── gtk-dark.css
+│               │   │   └── thumbnail.png
+│               │   ├── gtk-4.0
+│               │   │   ├── assets
+│               │   │   │   ├── checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── checkbox-checked-symbolic.svg
+│               │   │   │   ├── checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── checkbox-mixed-symbolic.svg
+│               │   │   │   ├── close-symbolic@2.svg
+│               │   │   │   ├── close-symbolic.svg
+│               │   │   │   ├── cursor-handle-symbolic.svg
+│               │   │   │   ├── maximize-symbolic@2.svg
+│               │   │   │   ├── maximize-symbolic.svg
+│               │   │   │   ├── menu-radio-symbolic@2.svg
+│               │   │   │   ├── menu-radio-symbolic.svg
+│               │   │   │   ├── minimize-symbolic@2.svg
+│               │   │   │   ├── minimize-symbolic.svg
+│               │   │   │   ├── radio-checked-symbolic@2.svg
+│               │   │   │   ├── radio-checked-symbolic.svg
+│               │   │   │   ├── radio-mixed-symbolic@2.svg
+│               │   │   │   ├── radio-mixed-symbolic.svg
+│               │   │   │   ├── scale-horz-marks-after-slider@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-dark.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled.svg
+│               │   │   │   ├── scale-horz-marks-after-slider.svg
+│               │   │   │   ├── scale-horz-marks-before-slider@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-dark.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled.svg
+│               │   │   │   ├── scale-horz-marks-before-slider.svg
+│               │   │   │   ├── scale-vert-marks-after-slider@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-dark.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled.svg
+│               │   │   │   ├── scale-vert-marks-after-slider.svg
+│               │   │   │   ├── scale-vert-marks-before-slider@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-dark.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled.svg
+│               │   │   │   ├── scale-vert-marks-before-slider.svg
+│               │   │   │   ├── selectionmode-checkbox-checked@2.svg
+│               │   │   │   ├── selectionmode-checkbox-checked-dark@2.svg
+│               │   │   │   ├── selectionmode-checkbox-checked-dark.svg
+│               │   │   │   ├── selectionmode-checkbox-checked.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked@2.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark@2.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic.svg
+│               │   │   │   ├── small-radio-checked-symbolic@2.svg
+│               │   │   │   ├── small-radio-checked-symbolic.svg
+│               │   │   │   ├── small-radio-mixed-symbolic@2.svg
+│               │   │   │   ├── small-radio-mixed-symbolic.svg
+│               │   │   │   ├── unmaximize-symbolic@2.svg
+│               │   │   │   └── unmaximize-symbolic.svg
+│               │   │   ├── gtk.css
+│               │   │   ├── gtk-dark.css
+│               │   │   └── thumbnail.png
+│               │   ├── index.theme
+│               │   ├── metacity-1
+│               │   │   ├── assets
+│               │   │   ├── metacity-theme-3.xml
+│               │   │   └── thumbnail.png
+│               │   ├── plank
+│               │   │   └── dock.theme
+│               │   └── xfwm4
+│               │       └── themerc
+│               ├── catppuccin-macchiato-blue-standard+default-hdpi
+│               │   └── xfwm4
+│               │       └── themerc
+│               ├── catppuccin-macchiato-blue-standard+default-xhdpi
+│               │   └── xfwm4
+│               │       └── themerc
+│               ├── catppuccin-mocha-blue-standard+default
+│               │   ├── cinnamon
+│               │   │   ├── assets
+│               │   │   │   ├── add-workspace-active.svg
+│               │   │   │   ├── add-workspace-hover.svg
+│               │   │   │   ├── add-workspace.svg
+│               │   │   │   ├── calendar-arrow-left.svg
+│               │   │   │   ├── calendar-arrow-right.svg
+│               │   │   │   ├── checkbox-dark.svg
+│               │   │   │   ├── checkbox-off.svg
+│               │   │   │   ├── checkbox.svg
+│               │   │   │   ├── close-active.svg
+│               │   │   │   ├── close-hover.svg
+│               │   │   │   ├── close.svg
+│               │   │   │   ├── corner-ripple.svg
+│               │   │   │   ├── radiobutton-dark.svg
+│               │   │   │   ├── radiobutton-off.svg
+│               │   │   │   ├── radiobutton.svg
+│               │   │   │   ├── toggle-off.svg
+│               │   │   │   ├── toggle-on-dark.svg
+│               │   │   │   ├── toggle-on.svg
+│               │   │   │   └── trash-icon.svg
+│               │   │   ├── cinnamon.css
+│               │   │   └── thumbnail.png
+│               │   ├── gnome-shell
+│               │   │   ├── assets
+│               │   │   │   ├── calendar-arrow-left.svg
+│               │   │   │   ├── calendar-arrow-right.svg
+│               │   │   │   ├── calendar-today.svg
+│               │   │   │   ├── checkbox-dark.svg
+│               │   │   │   ├── checkbox-off-active.svg
+│               │   │   │   ├── checkbox-off-hover.svg
+│               │   │   │   ├── checkbox-off.svg
+│               │   │   │   ├── checkbox.svg
+│               │   │   │   ├── dash-placeholder.svg
+│               │   │   │   ├── noise-texture.svg
+│               │   │   │   ├── process-working.svg
+│               │   │   │   ├── toggle-off.svg
+│               │   │   │   ├── toggle-on-dark.svg
+│               │   │   │   └── toggle-on.svg
+│               │   │   ├── gnome-shell.css
+│               │   │   └── pad-osd.css
+│               │   ├── gtk-3.0
+│               │   │   ├── assets
+│               │   │   │   ├── checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── checkbox-checked-symbolic.svg
+│               │   │   │   ├── checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── checkbox-mixed-symbolic.svg
+│               │   │   │   ├── close-symbolic@2.svg
+│               │   │   │   ├── close-symbolic.svg
+│               │   │   │   ├── cursor-handle-symbolic.svg
+│               │   │   │   ├── maximize-symbolic@2.svg
+│               │   │   │   ├── maximize-symbolic.svg
+│               │   │   │   ├── menu-radio-symbolic@2.svg
+│               │   │   │   ├── menu-radio-symbolic.svg
+│               │   │   │   ├── minimize-symbolic@2.svg
+│               │   │   │   ├── minimize-symbolic.svg
+│               │   │   │   ├── radio-checked-symbolic@2.svg
+│               │   │   │   ├── radio-checked-symbolic.svg
+│               │   │   │   ├── radio-mixed-symbolic@2.svg
+│               │   │   │   ├── radio-mixed-symbolic.svg
+│               │   │   │   ├── scale-horz-marks-after-slider@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-dark.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled.svg
+│               │   │   │   ├── scale-horz-marks-after-slider.svg
+│               │   │   │   ├── scale-horz-marks-before-slider@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-dark.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled.svg
+│               │   │   │   ├── scale-horz-marks-before-slider.svg
+│               │   │   │   ├── scale-vert-marks-after-slider@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-dark.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled.svg
+│               │   │   │   ├── scale-vert-marks-after-slider.svg
+│               │   │   │   ├── scale-vert-marks-before-slider@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-dark.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled.svg
+│               │   │   │   ├── scale-vert-marks-before-slider.svg
+│               │   │   │   ├── selectionmode-checkbox-checked@2.svg
+│               │   │   │   ├── selectionmode-checkbox-checked-dark@2.svg
+│               │   │   │   ├── selectionmode-checkbox-checked-dark.svg
+│               │   │   │   ├── selectionmode-checkbox-checked.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked@2.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark@2.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic.svg
+│               │   │   │   ├── small-radio-checked-symbolic@2.svg
+│               │   │   │   ├── small-radio-checked-symbolic.svg
+│               │   │   │   ├── small-radio-mixed-symbolic@2.svg
+│               │   │   │   ├── small-radio-mixed-symbolic.svg
+│               │   │   │   ├── unmaximize-symbolic@2.svg
+│               │   │   │   └── unmaximize-symbolic.svg
+│               │   │   ├── gtk.css
+│               │   │   ├── gtk-dark.css
+│               │   │   └── thumbnail.png
+│               │   ├── gtk-4.0
+│               │   │   ├── assets
+│               │   │   │   ├── checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── checkbox-checked-symbolic.svg
+│               │   │   │   ├── checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── checkbox-mixed-symbolic.svg
+│               │   │   │   ├── close-symbolic@2.svg
+│               │   │   │   ├── close-symbolic.svg
+│               │   │   │   ├── cursor-handle-symbolic.svg
+│               │   │   │   ├── maximize-symbolic@2.svg
+│               │   │   │   ├── maximize-symbolic.svg
+│               │   │   │   ├── menu-radio-symbolic@2.svg
+│               │   │   │   ├── menu-radio-symbolic.svg
+│               │   │   │   ├── minimize-symbolic@2.svg
+│               │   │   │   ├── minimize-symbolic.svg
+│               │   │   │   ├── radio-checked-symbolic@2.svg
+│               │   │   │   ├── radio-checked-symbolic.svg
+│               │   │   │   ├── radio-mixed-symbolic@2.svg
+│               │   │   │   ├── radio-mixed-symbolic.svg
+│               │   │   │   ├── scale-horz-marks-after-slider@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-dark.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled.svg
+│               │   │   │   ├── scale-horz-marks-after-slider.svg
+│               │   │   │   ├── scale-horz-marks-before-slider@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-dark.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled.svg
+│               │   │   │   ├── scale-horz-marks-before-slider.svg
+│               │   │   │   ├── scale-vert-marks-after-slider@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-dark.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled.svg
+│               │   │   │   ├── scale-vert-marks-after-slider.svg
+│               │   │   │   ├── scale-vert-marks-before-slider@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-dark.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark@2.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled.svg
+│               │   │   │   ├── scale-vert-marks-before-slider.svg
+│               │   │   │   ├── selectionmode-checkbox-checked@2.svg
+│               │   │   │   ├── selectionmode-checkbox-checked-dark@2.svg
+│               │   │   │   ├── selectionmode-checkbox-checked-dark.svg
+│               │   │   │   ├── selectionmode-checkbox-checked.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked@2.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark@2.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark.svg
+│               │   │   │   ├── selectionmode-checkbox-unchecked.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic.svg
+│               │   │   │   ├── small-radio-checked-symbolic@2.svg
+│               │   │   │   ├── small-radio-checked-symbolic.svg
+│               │   │   │   ├── small-radio-mixed-symbolic@2.svg
+│               │   │   │   ├── small-radio-mixed-symbolic.svg
+│               │   │   │   ├── unmaximize-symbolic@2.svg
+│               │   │   │   └── unmaximize-symbolic.svg
+│               │   │   ├── gtk.css
+│               │   │   ├── gtk-dark.css
+│               │   │   └── thumbnail.png
+│               │   ├── index.theme
+│               │   ├── metacity-1
+│               │   │   ├── assets
+│               │   │   ├── metacity-theme-3.xml
+│               │   │   └── thumbnail.png
+│               │   ├── plank
+│               │   │   └── dock.theme
+│               │   └── xfwm4
+│               │       └── themerc
+│               ├── catppuccin-mocha-blue-standard+default-hdpi
+│               │   └── xfwm4
+│               │       └── themerc
+│               ├── catppuccin-mocha-blue-standard+default-xhdpi
+│               │   └── xfwm4
+│               │       └── themerc
+│               ├── Gruvbox-Dark
+│               │   ├── cinnamon
+│               │   │   ├── assets
+│               │   │   │   ├── add-workspace-active.svg
+│               │   │   │   ├── add-workspace-hover.svg
+│               │   │   │   ├── add-workspace.svg
+│               │   │   │   ├── calendar-arrow-left.svg
+│               │   │   │   ├── calendar-arrow-right.svg
+│               │   │   │   ├── checkbox-dark.svg
+│               │   │   │   ├── checkbox-off.svg
+│               │   │   │   ├── checkbox.svg
+│               │   │   │   ├── close-active.svg
+│               │   │   │   ├── close-hover.svg
+│               │   │   │   ├── close.svg
+│               │   │   │   ├── corner-ripple.svg
+│               │   │   │   ├── radiobutton-dark.svg
+│               │   │   │   ├── radiobutton-off.svg
+│               │   │   │   ├── radiobutton.svg
+│               │   │   │   ├── toggle-off.svg
+│               │   │   │   ├── toggle-on-dark.svg
+│               │   │   │   ├── toggle-on.svg
+│               │   │   │   └── trash-icon.svg
+│               │   │   ├── cinnamon.css
+│               │   │   └── thumbnail.png
+│               │   ├── gnome-shell
+│               │   │   ├── assets
+│               │   │   │   ├── calendar-arrow-left.svg
+│               │   │   │   ├── calendar-arrow-right.svg
+│               │   │   │   ├── calendar-today.svg
+│               │   │   │   ├── checkbox-dark.svg
+│               │   │   │   ├── checkbox-off-active.svg
+│               │   │   │   ├── checkbox-off-hover.svg
+│               │   │   │   ├── checkbox-off.svg
+│               │   │   │   ├── checkbox.svg
+│               │   │   │   ├── dash-placeholder.svg
+│               │   │   │   ├── no-events.svg
+│               │   │   │   ├── noise-texture.svg
+│               │   │   │   ├── no-notifications.svg
+│               │   │   │   ├── process-working.svg
+│               │   │   │   ├── toggle-off.svg
+│               │   │   │   ├── toggle-on-dark.svg
+│               │   │   │   └── toggle-on.svg
+│               │   │   ├── gnome-shell.css
+│               │   │   ├── no-events.svg -> assets/no-events.svg
+│               │   │   ├── no-notifications.svg -> assets/no-notifications.svg
+│               │   │   ├── pad-osd.css
+│               │   │   └── process-working.svg -> assets/process-working.svg
+│               │   ├── gtk-2.0
+│               │   │   ├── apps.rc
+│               │   │   ├── assets
+│               │   │   │   ├── border.png
+│               │   │   │   ├── button-active.png
+│               │   │   │   ├── button-disabled.png
+│               │   │   │   ├── button-hover.png
+│               │   │   │   ├── button.png
+│               │   │   │   ├── checkbox-checked-active.png
+│               │   │   │   ├── checkbox-checked-disabled.png
+│               │   │   │   ├── checkbox-checked-hover.png
+│               │   │   │   ├── checkbox-checked.png
+│               │   │   │   ├── checkbox-mixed-active.png
+│               │   │   │   ├── checkbox-mixed-disabled.png
+│               │   │   │   ├── checkbox-mixed-hover.png
+│               │   │   │   ├── checkbox-mixed.png
+│               │   │   │   ├── checkbox-unchecked-active.png
+│               │   │   │   ├── checkbox-unchecked-disabled.png
+│               │   │   │   ├── checkbox-unchecked-hover.png
+│               │   │   │   ├── checkbox-unchecked.png
+│               │   │   │   ├── combo-left-entry-active.png
+│               │   │   │   ├── combo-left-entry-disabled.png
+│               │   │   │   ├── combo-left-entry-hover.png
+│               │   │   │   ├── combo-left-entry.png
+│               │   │   │   ├── combo-right-entry-active.png
+│               │   │   │   ├── combo-right-entry-disabled.png
+│               │   │   │   ├── combo-right-entry-hover.png
+│               │   │   │   ├── combo-right-entry.png
+│               │   │   │   ├── entry-active.png
+│               │   │   │   ├── entry-background-disabled.png
+│               │   │   │   ├── entry-background.png
+│               │   │   │   ├── entry-disabled.png
+│               │   │   │   ├── entry-hover.png
+│               │   │   │   ├── entry.png
+│               │   │   │   ├── flat-button-active.png
+│               │   │   │   ├── flat-button-disabled.png
+│               │   │   │   ├── flat-button-hover.png
+│               │   │   │   ├── flat-button.png
+│               │   │   │   ├── focus.png
+│               │   │   │   ├── frame-inline.png
+│               │   │   │   ├── frame-notebook.png
+│               │   │   │   ├── frame.png
+│               │   │   │   ├── handle-horz-active.png
+│               │   │   │   ├── handle-horz-hover.png
+│               │   │   │   ├── handle-horz.png
+│               │   │   │   ├── handle-vert-active.png
+│               │   │   │   ├── handle-vert-hover.png
+│               │   │   │   ├── handle-vert.png
+│               │   │   │   ├── menu-checkbox-checked-disabled.png
+│               │   │   │   ├── menu-checkbox-checked.png
+│               │   │   │   ├── menu-checkbox-mixed-disabled.png
+│               │   │   │   ├── menu-checkbox-mixed.png
+│               │   │   │   ├── menu-checkbox-unchecked-disabled.png
+│               │   │   │   ├── menu-checkbox-unchecked.png
+│               │   │   │   ├── menu-radio-checked-disabled.png
+│               │   │   │   ├── menu-radio-checked.png
+│               │   │   │   ├── menu-radio-mixed-disabled.png
+│               │   │   │   ├── menu-radio-mixed.png
+│               │   │   │   ├── menu-radio-unchecked-disabled.png
+│               │   │   │   ├── menu-radio-unchecked.png
+│               │   │   │   ├── pan-down-alt-disabled.png
+│               │   │   │   ├── pan-down-alt.png
+│               │   │   │   ├── pan-down-disabled.png
+│               │   │   │   ├── pan-down.png
+│               │   │   │   ├── pan-left-alt-disabled.png
+│               │   │   │   ├── pan-left-alt.png
+│               │   │   │   ├── pan-left-disabled.png
+│               │   │   │   ├── pan-left.png
+│               │   │   │   ├── pan-left-semi.png
+│               │   │   │   ├── pan-right-alt-disabled.png
+│               │   │   │   ├── pan-right-alt.png
+│               │   │   │   ├── pan-right-disabled.png
+│               │   │   │   ├── pan-right.png
+│               │   │   │   ├── pan-right-semi.png
+│               │   │   │   ├── pan-up-alt-disabled.png
+│               │   │   │   ├── pan-up-alt.png
+│               │   │   │   ├── pan-up-disabled.png
+│               │   │   │   ├── pan-up.png
+│               │   │   │   ├── progressbar-progress.png
+│               │   │   │   ├── progressbar-trough.png
+│               │   │   │   ├── radio-checked-active.png
+│               │   │   │   ├── radio-checked-disabled.png
+│               │   │   │   ├── radio-checked-hover.png
+│               │   │   │   ├── radio-checked.png
+│               │   │   │   ├── radio-mixed-active.png
+│               │   │   │   ├── radio-mixed-disabled.png
+│               │   │   │   ├── radio-mixed-hover.png
+│               │   │   │   ├── radio-mixed.png
+│               │   │   │   ├── radio-unchecked-active.png
+│               │   │   │   ├── radio-unchecked-disabled.png
+│               │   │   │   ├── radio-unchecked-hover.png
+│               │   │   │   ├── radio-unchecked.png
+│               │   │   │   ├── scale-horz-trough-active.png
+│               │   │   │   ├── scale-horz-trough-disabled.png
+│               │   │   │   ├── scale-horz-trough.png
+│               │   │   │   ├── scale-slider-active.png
+│               │   │   │   ├── scale-slider-disabled.png
+│               │   │   │   ├── scale-slider-hover.png
+│               │   │   │   ├── scale-slider.png
+│               │   │   │   ├── scale-vert-trough-active.png
+│               │   │   │   ├── scale-vert-trough-disabled.png
+│               │   │   │   ├── scale-vert-trough.png
+│               │   │   │   ├── scrollbar-horz-slider-active.png
+│               │   │   │   ├── scrollbar-horz-slider-disabled.png
+│               │   │   │   ├── scrollbar-horz-slider-hover.png
+│               │   │   │   ├── scrollbar-horz-slider.png
+│               │   │   │   ├── scrollbar-horz-trough.png
+│               │   │   │   ├── scrollbar-vert-ltr-slider-active.png
+│               │   │   │   ├── scrollbar-vert-ltr-slider-disabled.png
+│               │   │   │   ├── scrollbar-vert-ltr-slider-hover.png
+│               │   │   │   ├── scrollbar-vert-ltr-slider.png
+│               │   │   │   ├── scrollbar-vert-ltr-trough.png
+│               │   │   │   ├── scrollbar-vert-rtl-slider-active.png
+│               │   │   │   ├── scrollbar-vert-rtl-slider-disabled.png
+│               │   │   │   ├── scrollbar-vert-rtl-slider-hover.png
+│               │   │   │   ├── scrollbar-vert-rtl-slider.png
+│               │   │   │   ├── scrollbar-vert-rtl-trough.png
+│               │   │   │   ├── spin-ltr-down-active.png
+│               │   │   │   ├── spin-ltr-down-disabled.png
+│               │   │   │   ├── spin-ltr-down-hover.png
+│               │   │   │   ├── spin-ltr-down.png
+│               │   │   │   ├── spin-ltr-up-active.png
+│               │   │   │   ├── spin-ltr-up-disabled.png
+│               │   │   │   ├── spin-ltr-up-hover.png
+│               │   │   │   ├── spin-ltr-up.png
+│               │   │   │   ├── spin-rtl-down-active.png
+│               │   │   │   ├── spin-rtl-down-disabled.png
+│               │   │   │   ├── spin-rtl-down-hover.png
+│               │   │   │   ├── spin-rtl-down.png
+│               │   │   │   ├── spin-rtl-up-active.png
+│               │   │   │   ├── spin-rtl-up-disabled.png
+│               │   │   │   ├── spin-rtl-up-hover.png
+│               │   │   │   ├── spin-rtl-up.png
+│               │   │   │   ├── tab.png
+│               │   │   │   ├── treeview-ltr-button-active.png
+│               │   │   │   ├── treeview-ltr-button-hover.png
+│               │   │   │   ├── treeview-ltr-button.png
+│               │   │   │   ├── treeview-rtl-button-active.png
+│               │   │   │   ├── treeview-rtl-button-hover.png
+│               │   │   │   └── treeview-rtl-button.png
+│               │   │   ├── gtkrc
+│               │   │   ├── hacks.rc
+│               │   │   └── main.rc
+│               │   ├── gtk-3.0
+│               │   │   ├── assets
+│               │   │   │   ├── scalable
+│               │   │   │   │   ├── checkbox-checked-symbolic@2.svg
+│               │   │   │   │   ├── checkbox-checked-symbolic.svg
+│               │   │   │   │   ├── checkbox-mixed-symbolic@2.svg
+│               │   │   │   │   ├── checkbox-mixed-symbolic.svg
+│               │   │   │   │   ├── close.svg
+│               │   │   │   │   ├── cursor-handle-symbolic.svg
+│               │   │   │   │   ├── maximize.svg
+│               │   │   │   │   ├── minimize.svg
+│               │   │   │   │   ├── radio-checked-symbolic@2.svg
+│               │   │   │   │   ├── radio-checked-symbolic.svg
+│               │   │   │   │   ├── radio-mixed-symbolic@2.svg -> checkbox-mixed-symbolic@2.svg
+│               │   │   │   │   ├── radio-mixed-symbolic.svg -> checkbox-mixed-symbolic.svg
+│               │   │   │   │   ├── scale-horz-marks-after-slider-symbolic.svg
+│               │   │   │   │   ├── scale-horz-marks-before-slider-symbolic.svg
+│               │   │   │   │   ├── scale-slider-hover-symbolic@2.svg
+│               │   │   │   │   ├── scale-slider-hover-symbolic.svg
+│               │   │   │   │   ├── scale-slider-symbolic@2.svg
+│               │   │   │   │   ├── scale-slider-symbolic.svg
+│               │   │   │   │   ├── scale-vert-marks-after-slider-symbolic.svg
+│               │   │   │   │   ├── scale-vert-marks-before-slider-symbolic.svg
+│               │   │   │   │   ├── small-checkbox-checked-symbolic@2.svg
+│               │   │   │   │   ├── small-checkbox-checked-symbolic.svg
+│               │   │   │   │   ├── small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   │   ├── small-checkbox-mixed-symbolic.svg
+│               │   │   │   │   ├── small-radio-checked-symbolic@2.svg
+│               │   │   │   │   ├── small-radio-checked-symbolic.svg
+│               │   │   │   │   ├── small-radio-mixed-symbolic@2.svg -> small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   │   ├── small-radio-mixed-symbolic.svg -> small-checkbox-mixed-symbolic.svg
+│               │   │   │   │   └── unmaximize.svg
+│               │   │   │   ├── scale-horz-marks-after-slider@2.png
+│               │   │   │   ├── scale-horz-marks-after-slider-dark@2.png
+│               │   │   │   ├── scale-horz-marks-after-slider-dark.png
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled@2.png
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark@2.png
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark.png
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled.png
+│               │   │   │   ├── scale-horz-marks-after-slider.png
+│               │   │   │   ├── scale-horz-marks-before-slider@2.png
+│               │   │   │   ├── scale-horz-marks-before-slider-dark@2.png
+│               │   │   │   ├── scale-horz-marks-before-slider-dark.png
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled@2.png
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark@2.png
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark.png
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled.png
+│               │   │   │   ├── scale-horz-marks-before-slider.png
+│               │   │   │   ├── scale-vert-marks-after-slider@2.png
+│               │   │   │   ├── scale-vert-marks-after-slider-dark@2.png
+│               │   │   │   ├── scale-vert-marks-after-slider-dark.png
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled@2.png
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark@2.png
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark.png
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled.png
+│               │   │   │   ├── scale-vert-marks-after-slider.png
+│               │   │   │   ├── scale-vert-marks-before-slider@2.png
+│               │   │   │   ├── scale-vert-marks-before-slider-dark@2.png
+│               │   │   │   ├── scale-vert-marks-before-slider-dark.png
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled@2.png
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark@2.png
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark.png
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled.png
+│               │   │   │   ├── scale-vert-marks-before-slider.png
+│               │   │   │   ├── selectionmode-checkbox-checked@2.png
+│               │   │   │   ├── selectionmode-checkbox-checked-dark@2.png
+│               │   │   │   ├── selectionmode-checkbox-checked-dark.png
+│               │   │   │   ├── selectionmode-checkbox-checked.png
+│               │   │   │   ├── selectionmode-checkbox-unchecked@2.png
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark@2.png
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark.png
+│               │   │   │   └── selectionmode-checkbox-unchecked.png
+│               │   │   ├── gtk.css
+│               │   │   ├── gtk-dark.css
+│               │   │   └── thumbnail.png
+│               │   ├── gtk-4.0
+│               │   │   ├── assets
+│               │   │   │   ├── checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── checkbox-checked-symbolic.svg
+│               │   │   │   ├── checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── checkbox-mixed-symbolic.svg
+│               │   │   │   ├── close.svg
+│               │   │   │   ├── cursor-handle-symbolic.svg
+│               │   │   │   ├── maximize.svg
+│               │   │   │   ├── minimize.svg
+│               │   │   │   ├── radio-checked-symbolic@2.svg
+│               │   │   │   ├── radio-checked-symbolic.svg
+│               │   │   │   ├── radio-mixed-symbolic@2.svg -> checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── radio-mixed-symbolic.svg -> checkbox-mixed-symbolic.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-symbolic.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-symbolic.svg
+│               │   │   │   ├── scale-slider-hover-symbolic@2.svg
+│               │   │   │   ├── scale-slider-hover-symbolic.svg
+│               │   │   │   ├── scale-slider-symbolic@2.svg
+│               │   │   │   ├── scale-slider-symbolic.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-symbolic.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-symbolic.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic.svg
+│               │   │   │   ├── small-radio-checked-symbolic@2.svg
+│               │   │   │   ├── small-radio-checked-symbolic.svg
+│               │   │   │   ├── small-radio-mixed-symbolic@2.svg -> small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── small-radio-mixed-symbolic.svg -> small-checkbox-mixed-symbolic.svg
+│               │   │   │   └── unmaximize.svg
+│               │   │   ├── gtk.css
+│               │   │   ├── gtk-dark.css
+│               │   │   └── thumbnail.png
+│               │   ├── index.theme
+│               │   ├── metacity-1
+│               │   │   ├── assets
+│               │   │   │   ├── button.svg
+│               │   │   │   ├── close.svg
+│               │   │   │   ├── maximize.svg
+│               │   │   │   ├── menu.svg
+│               │   │   │   ├── minimize.svg
+│               │   │   │   ├── shade.svg
+│               │   │   │   ├── unmaximize.svg
+│               │   │   │   └── unshade.svg
+│               │   │   ├── metacity-theme-1.xml -> metacity-theme-3.xml
+│               │   │   ├── metacity-theme-2.xml -> metacity-theme-3.xml
+│               │   │   ├── metacity-theme-3.xml
+│               │   │   └── thumbnail.png
+│               │   ├── plank
+│               │   │   └── dock.theme
+│               │   └── xfwm4
+│               │       ├── bottom-active.png
+│               │       ├── bottom-inactive.png
+│               │       ├── bottom-left-active.png
+│               │       ├── bottom-left-inactive.png
+│               │       ├── bottom-right-active.png
+│               │       ├── bottom-right-inactive.png
+│               │       ├── close-active.png
+│               │       ├── close-inactive.png
+│               │       ├── close-prelight.png
+│               │       ├── close-pressed.png
+│               │       ├── hide-active.png
+│               │       ├── hide-inactive.png
+│               │       ├── hide-prelight.png
+│               │       ├── hide-pressed.png
+│               │       ├── left-active.png
+│               │       ├── left-inactive.png
+│               │       ├── maximize-active.png
+│               │       ├── maximize-inactive.png
+│               │       ├── maximize-prelight.png
+│               │       ├── maximize-pressed.png
+│               │       ├── maximize-toggled-active.png
+│               │       ├── maximize-toggled-inactive.png
+│               │       ├── maximize-toggled-prelight.png
+│               │       ├── maximize-toggled-pressed.png
+│               │       ├── menu-active.png
+│               │       ├── menu-inactive.png
+│               │       ├── menu-prelight.png
+│               │       ├── menu-pressed.png
+│               │       ├── right-active.png
+│               │       ├── right-inactive.png
+│               │       ├── shade-active.png
+│               │       ├── shade-inactive.png
+│               │       ├── shade-prelight.png
+│               │       ├── shade-pressed.png
+│               │       ├── shade-toggled-active.png
+│               │       ├── shade-toggled-inactive.png
+│               │       ├── shade-toggled-prelight.png
+│               │       ├── shade-toggled-pressed.png
+│               │       ├── stick-active.png
+│               │       ├── stick-inactive.png
+│               │       ├── stick-prelight.png
+│               │       ├── stick-pressed.png
+│               │       ├── stick-toggled-active.png
+│               │       ├── stick-toggled-inactive.png
+│               │       ├── stick-toggled-prelight.png
+│               │       ├── stick-toggled-pressed.png
+│               │       ├── themerc
+│               │       ├── title-1-active.png
+│               │       ├── title-1-inactive.png
+│               │       ├── title-2-active.png
+│               │       ├── title-2-inactive.png
+│               │       ├── title-3-active.png
+│               │       ├── title-3-inactive.png
+│               │       ├── title-4-active.png
+│               │       ├── title-4-inactive.png
+│               │       ├── title-5-active.png
+│               │       ├── title-5-inactive.png
+│               │       ├── top-left-active.png
+│               │       ├── top-left-inactive.png
+│               │       ├── top-right-active.png
+│               │       └── top-right-inactive.png
+│               ├── Gruvbox-Dark-hdpi
+│               │   └── xfwm4
+│               │       ├── bottom-active.png
+│               │       ├── bottom-inactive.png
+│               │       ├── bottom-left-active.png
+│               │       ├── bottom-left-inactive.png
+│               │       ├── bottom-right-active.png
+│               │       ├── bottom-right-inactive.png
+│               │       ├── close-active.png
+│               │       ├── close-inactive.png
+│               │       ├── close-prelight.png
+│               │       ├── close-pressed.png
+│               │       ├── hide-active.png
+│               │       ├── hide-inactive.png
+│               │       ├── hide-prelight.png
+│               │       ├── hide-pressed.png
+│               │       ├── left-active.png
+│               │       ├── left-inactive.png
+│               │       ├── maximize-active.png
+│               │       ├── maximize-inactive.png
+│               │       ├── maximize-prelight.png
+│               │       ├── maximize-pressed.png
+│               │       ├── maximize-toggled-active.png
+│               │       ├── maximize-toggled-inactive.png
+│               │       ├── maximize-toggled-prelight.png
+│               │       ├── maximize-toggled-pressed.png
+│               │       ├── menu-active.png
+│               │       ├── menu-inactive.png
+│               │       ├── menu-prelight.png
+│               │       ├── menu-pressed.png
+│               │       ├── right-active.png
+│               │       ├── right-inactive.png
+│               │       ├── shade-active.png
+│               │       ├── shade-inactive.png
+│               │       ├── shade-prelight.png
+│               │       ├── shade-pressed.png
+│               │       ├── shade-toggled-active.png
+│               │       ├── shade-toggled-inactive.png
+│               │       ├── shade-toggled-prelight.png
+│               │       ├── shade-toggled-pressed.png
+│               │       ├── stick-active.png
+│               │       ├── stick-inactive.png
+│               │       ├── stick-prelight.png
+│               │       ├── stick-pressed.png
+│               │       ├── stick-toggled-active.png
+│               │       ├── stick-toggled-inactive.png
+│               │       ├── stick-toggled-prelight.png
+│               │       ├── stick-toggled-pressed.png
+│               │       ├── themerc
+│               │       ├── title-1-active.png
+│               │       ├── title-1-inactive.png
+│               │       ├── title-2-active.png
+│               │       ├── title-2-inactive.png
+│               │       ├── title-3-active.png
+│               │       ├── title-3-inactive.png
+│               │       ├── title-4-active.png
+│               │       ├── title-4-inactive.png
+│               │       ├── title-5-active.png
+│               │       ├── title-5-inactive.png
+│               │       ├── top-left-active.png
+│               │       ├── top-left-inactive.png
+│               │       ├── top-right-active.png
+│               │       └── top-right-inactive.png
+│               ├── Gruvbox-Dark-xhdpi
+│               │   └── xfwm4
+│               │       ├── bottom-active.png
+│               │       ├── bottom-inactive.png
+│               │       ├── bottom-left-active.png
+│               │       ├── bottom-left-inactive.png
+│               │       ├── bottom-right-active.png
+│               │       ├── bottom-right-inactive.png
+│               │       ├── close-active.png
+│               │       ├── close-inactive.png
+│               │       ├── close-prelight.png
+│               │       ├── close-pressed.png
+│               │       ├── hide-active.png
+│               │       ├── hide-inactive.png
+│               │       ├── hide-prelight.png
+│               │       ├── hide-pressed.png
+│               │       ├── left-active.png
+│               │       ├── left-inactive.png
+│               │       ├── maximize-active.png
+│               │       ├── maximize-inactive.png
+│               │       ├── maximize-prelight.png
+│               │       ├── maximize-pressed.png
+│               │       ├── maximize-toggled-active.png
+│               │       ├── maximize-toggled-inactive.png
+│               │       ├── maximize-toggled-prelight.png
+│               │       ├── maximize-toggled-pressed.png
+│               │       ├── menu-active.png
+│               │       ├── menu-inactive.png
+│               │       ├── menu-prelight.png
+│               │       ├── menu-pressed.png
+│               │       ├── right-active.png
+│               │       ├── right-inactive.png
+│               │       ├── shade-active.png
+│               │       ├── shade-inactive.png
+│               │       ├── shade-prelight.png
+│               │       ├── shade-pressed.png
+│               │       ├── shade-toggled-active.png
+│               │       ├── shade-toggled-inactive.png
+│               │       ├── shade-toggled-prelight.png
+│               │       ├── shade-toggled-pressed.png
+│               │       ├── stick-active.png
+│               │       ├── stick-inactive.png
+│               │       ├── stick-prelight.png
+│               │       ├── stick-pressed.png
+│               │       ├── stick-toggled-active.png
+│               │       ├── stick-toggled-inactive.png
+│               │       ├── stick-toggled-prelight.png
+│               │       ├── stick-toggled-pressed.png
+│               │       ├── themerc
+│               │       ├── title-1-active.png
+│               │       ├── title-1-inactive.png
+│               │       ├── title-2-active.png
+│               │       ├── title-2-inactive.png
+│               │       ├── title-3-active.png
+│               │       ├── title-3-inactive.png
+│               │       ├── title-4-active.png
+│               │       ├── title-4-inactive.png
+│               │       ├── title-5-active.png
+│               │       ├── title-5-inactive.png
+│               │       ├── top-left-active.png
+│               │       ├── top-left-inactive.png
+│               │       ├── top-right-active.png
+│               │       └── top-right-inactive.png
+│               ├── Gruvbox-Light
+│               │   ├── cinnamon
+│               │   │   ├── assets
+│               │   │   │   ├── add-workspace-active.svg
+│               │   │   │   ├── add-workspace-hover.svg
+│               │   │   │   ├── add-workspace.svg
+│               │   │   │   ├── calendar-arrow-left.svg
+│               │   │   │   ├── calendar-arrow-right.svg
+│               │   │   │   ├── checkbox-dark.svg
+│               │   │   │   ├── checkbox-off.svg
+│               │   │   │   ├── checkbox.svg
+│               │   │   │   ├── close-active.svg
+│               │   │   │   ├── close-hover.svg
+│               │   │   │   ├── close.svg
+│               │   │   │   ├── corner-ripple.svg
+│               │   │   │   ├── radiobutton-dark.svg
+│               │   │   │   ├── radiobutton-off.svg
+│               │   │   │   ├── radiobutton.svg
+│               │   │   │   ├── toggle-off.svg
+│               │   │   │   ├── toggle-on-dark.svg
+│               │   │   │   ├── toggle-on.svg
+│               │   │   │   └── trash-icon.svg
+│               │   │   ├── cinnamon.css
+│               │   │   └── thumbnail.png
+│               │   ├── gnome-shell
+│               │   │   ├── assets
+│               │   │   │   ├── calendar-arrow-left.svg
+│               │   │   │   ├── calendar-arrow-right.svg
+│               │   │   │   ├── calendar-today.svg
+│               │   │   │   ├── checkbox-dark.svg
+│               │   │   │   ├── checkbox-off-active.svg
+│               │   │   │   ├── checkbox-off-hover.svg
+│               │   │   │   ├── checkbox-off.svg
+│               │   │   │   ├── checkbox.svg
+│               │   │   │   ├── dash-placeholder.svg
+│               │   │   │   ├── no-events.svg
+│               │   │   │   ├── noise-texture.svg
+│               │   │   │   ├── no-notifications.svg
+│               │   │   │   ├── process-working.svg
+│               │   │   │   ├── toggle-off.svg
+│               │   │   │   ├── toggle-on-dark.svg
+│               │   │   │   └── toggle-on.svg
+│               │   │   ├── gnome-shell.css
+│               │   │   ├── no-events.svg -> assets/no-events.svg
+│               │   │   ├── no-notifications.svg -> assets/no-notifications.svg
+│               │   │   ├── pad-osd.css
+│               │   │   └── process-working.svg -> assets/process-working.svg
+│               │   ├── gtk-2.0
+│               │   │   ├── apps.rc
+│               │   │   ├── assets
+│               │   │   │   ├── border.png
+│               │   │   │   ├── button-active.png
+│               │   │   │   ├── button-disabled.png
+│               │   │   │   ├── button-hover.png
+│               │   │   │   ├── button.png
+│               │   │   │   ├── checkbox-checked-active.png
+│               │   │   │   ├── checkbox-checked-disabled.png
+│               │   │   │   ├── checkbox-checked-hover.png
+│               │   │   │   ├── checkbox-checked.png
+│               │   │   │   ├── checkbox-mixed-active.png
+│               │   │   │   ├── checkbox-mixed-disabled.png
+│               │   │   │   ├── checkbox-mixed-hover.png
+│               │   │   │   ├── checkbox-mixed.png
+│               │   │   │   ├── checkbox-unchecked-active.png
+│               │   │   │   ├── checkbox-unchecked-disabled.png
+│               │   │   │   ├── checkbox-unchecked-hover.png
+│               │   │   │   ├── checkbox-unchecked.png
+│               │   │   │   ├── combo-left-entry-active.png
+│               │   │   │   ├── combo-left-entry-disabled.png
+│               │   │   │   ├── combo-left-entry-hover.png
+│               │   │   │   ├── combo-left-entry.png
+│               │   │   │   ├── combo-right-entry-active.png
+│               │   │   │   ├── combo-right-entry-disabled.png
+│               │   │   │   ├── combo-right-entry-hover.png
+│               │   │   │   ├── combo-right-entry.png
+│               │   │   │   ├── entry-active.png
+│               │   │   │   ├── entry-background-disabled.png
+│               │   │   │   ├── entry-background.png
+│               │   │   │   ├── entry-disabled.png
+│               │   │   │   ├── entry-hover.png
+│               │   │   │   ├── entry.png
+│               │   │   │   ├── flat-button-active.png
+│               │   │   │   ├── flat-button-disabled.png
+│               │   │   │   ├── flat-button-hover.png
+│               │   │   │   ├── flat-button.png
+│               │   │   │   ├── focus.png
+│               │   │   │   ├── frame-inline.png
+│               │   │   │   ├── frame-notebook.png
+│               │   │   │   ├── frame.png
+│               │   │   │   ├── handle-horz-active.png
+│               │   │   │   ├── handle-horz-hover.png
+│               │   │   │   ├── handle-horz.png
+│               │   │   │   ├── handle-vert-active.png
+│               │   │   │   ├── handle-vert-hover.png
+│               │   │   │   ├── handle-vert.png
+│               │   │   │   ├── menu-checkbox-checked-disabled.png
+│               │   │   │   ├── menu-checkbox-checked.png
+│               │   │   │   ├── menu-checkbox-mixed-disabled.png
+│               │   │   │   ├── menu-checkbox-mixed.png
+│               │   │   │   ├── menu-checkbox-unchecked-disabled.png
+│               │   │   │   ├── menu-checkbox-unchecked.png
+│               │   │   │   ├── menu-radio-checked-disabled.png
+│               │   │   │   ├── menu-radio-checked.png
+│               │   │   │   ├── menu-radio-mixed-disabled.png
+│               │   │   │   ├── menu-radio-mixed.png
+│               │   │   │   ├── menu-radio-unchecked-disabled.png
+│               │   │   │   ├── menu-radio-unchecked.png
+│               │   │   │   ├── pan-down-alt-disabled.png
+│               │   │   │   ├── pan-down-alt.png
+│               │   │   │   ├── pan-down-disabled.png
+│               │   │   │   ├── pan-down.png
+│               │   │   │   ├── pan-left-alt-disabled.png
+│               │   │   │   ├── pan-left-alt.png
+│               │   │   │   ├── pan-left-disabled.png
+│               │   │   │   ├── pan-left.png
+│               │   │   │   ├── pan-left-semi.png
+│               │   │   │   ├── pan-right-alt-disabled.png
+│               │   │   │   ├── pan-right-alt.png
+│               │   │   │   ├── pan-right-disabled.png
+│               │   │   │   ├── pan-right.png
+│               │   │   │   ├── pan-right-semi.png
+│               │   │   │   ├── pan-up-alt-disabled.png
+│               │   │   │   ├── pan-up-alt.png
+│               │   │   │   ├── pan-up-disabled.png
+│               │   │   │   ├── pan-up.png
+│               │   │   │   ├── progressbar-progress.png
+│               │   │   │   ├── progressbar-trough.png
+│               │   │   │   ├── radio-checked-active.png
+│               │   │   │   ├── radio-checked-disabled.png
+│               │   │   │   ├── radio-checked-hover.png
+│               │   │   │   ├── radio-checked.png
+│               │   │   │   ├── radio-mixed-active.png
+│               │   │   │   ├── radio-mixed-disabled.png
+│               │   │   │   ├── radio-mixed-hover.png
+│               │   │   │   ├── radio-mixed.png
+│               │   │   │   ├── radio-unchecked-active.png
+│               │   │   │   ├── radio-unchecked-disabled.png
+│               │   │   │   ├── radio-unchecked-hover.png
+│               │   │   │   ├── radio-unchecked.png
+│               │   │   │   ├── scale-horz-trough-active.png
+│               │   │   │   ├── scale-horz-trough-disabled.png
+│               │   │   │   ├── scale-horz-trough.png
+│               │   │   │   ├── scale-slider-active.png
+│               │   │   │   ├── scale-slider-disabled.png
+│               │   │   │   ├── scale-slider-hover.png
+│               │   │   │   ├── scale-slider.png
+│               │   │   │   ├── scale-vert-trough-active.png
+│               │   │   │   ├── scale-vert-trough-disabled.png
+│               │   │   │   ├── scale-vert-trough.png
+│               │   │   │   ├── scrollbar-horz-slider-active.png
+│               │   │   │   ├── scrollbar-horz-slider-disabled.png
+│               │   │   │   ├── scrollbar-horz-slider-hover.png
+│               │   │   │   ├── scrollbar-horz-slider.png
+│               │   │   │   ├── scrollbar-horz-trough.png
+│               │   │   │   ├── scrollbar-vert-ltr-slider-active.png
+│               │   │   │   ├── scrollbar-vert-ltr-slider-disabled.png
+│               │   │   │   ├── scrollbar-vert-ltr-slider-hover.png
+│               │   │   │   ├── scrollbar-vert-ltr-slider.png
+│               │   │   │   ├── scrollbar-vert-ltr-trough.png
+│               │   │   │   ├── scrollbar-vert-rtl-slider-active.png
+│               │   │   │   ├── scrollbar-vert-rtl-slider-disabled.png
+│               │   │   │   ├── scrollbar-vert-rtl-slider-hover.png
+│               │   │   │   ├── scrollbar-vert-rtl-slider.png
+│               │   │   │   ├── scrollbar-vert-rtl-trough.png
+│               │   │   │   ├── spin-ltr-down-active.png
+│               │   │   │   ├── spin-ltr-down-disabled.png
+│               │   │   │   ├── spin-ltr-down-hover.png
+│               │   │   │   ├── spin-ltr-down.png
+│               │   │   │   ├── spin-ltr-up-active.png
+│               │   │   │   ├── spin-ltr-up-disabled.png
+│               │   │   │   ├── spin-ltr-up-hover.png
+│               │   │   │   ├── spin-ltr-up.png
+│               │   │   │   ├── spin-rtl-down-active.png
+│               │   │   │   ├── spin-rtl-down-disabled.png
+│               │   │   │   ├── spin-rtl-down-hover.png
+│               │   │   │   ├── spin-rtl-down.png
+│               │   │   │   ├── spin-rtl-up-active.png
+│               │   │   │   ├── spin-rtl-up-disabled.png
+│               │   │   │   ├── spin-rtl-up-hover.png
+│               │   │   │   ├── spin-rtl-up.png
+│               │   │   │   ├── tab.png
+│               │   │   │   ├── treeview-ltr-button-active.png
+│               │   │   │   ├── treeview-ltr-button-hover.png
+│               │   │   │   ├── treeview-ltr-button.png
+│               │   │   │   ├── treeview-rtl-button-active.png
+│               │   │   │   ├── treeview-rtl-button-hover.png
+│               │   │   │   └── treeview-rtl-button.png
+│               │   │   ├── gtkrc
+│               │   │   ├── hacks.rc
+│               │   │   └── main.rc
+│               │   ├── gtk-3.0
+│               │   │   ├── assets
+│               │   │   │   ├── scalable
+│               │   │   │   │   ├── checkbox-checked-symbolic@2.svg
+│               │   │   │   │   ├── checkbox-checked-symbolic.svg
+│               │   │   │   │   ├── checkbox-mixed-symbolic@2.svg
+│               │   │   │   │   ├── checkbox-mixed-symbolic.svg
+│               │   │   │   │   ├── close.svg
+│               │   │   │   │   ├── cursor-handle-symbolic.svg
+│               │   │   │   │   ├── maximize.svg
+│               │   │   │   │   ├── minimize.svg
+│               │   │   │   │   ├── radio-checked-symbolic@2.svg
+│               │   │   │   │   ├── radio-checked-symbolic.svg
+│               │   │   │   │   ├── radio-mixed-symbolic@2.svg -> checkbox-mixed-symbolic@2.svg
+│               │   │   │   │   ├── radio-mixed-symbolic.svg -> checkbox-mixed-symbolic.svg
+│               │   │   │   │   ├── scale-horz-marks-after-slider-symbolic.svg
+│               │   │   │   │   ├── scale-horz-marks-before-slider-symbolic.svg
+│               │   │   │   │   ├── scale-slider-hover-symbolic@2.svg
+│               │   │   │   │   ├── scale-slider-hover-symbolic.svg
+│               │   │   │   │   ├── scale-slider-symbolic@2.svg
+│               │   │   │   │   ├── scale-slider-symbolic.svg
+│               │   │   │   │   ├── scale-vert-marks-after-slider-symbolic.svg
+│               │   │   │   │   ├── scale-vert-marks-before-slider-symbolic.svg
+│               │   │   │   │   ├── small-checkbox-checked-symbolic@2.svg
+│               │   │   │   │   ├── small-checkbox-checked-symbolic.svg
+│               │   │   │   │   ├── small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   │   ├── small-checkbox-mixed-symbolic.svg
+│               │   │   │   │   ├── small-radio-checked-symbolic@2.svg
+│               │   │   │   │   ├── small-radio-checked-symbolic.svg
+│               │   │   │   │   ├── small-radio-mixed-symbolic@2.svg -> small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   │   ├── small-radio-mixed-symbolic.svg -> small-checkbox-mixed-symbolic.svg
+│               │   │   │   │   └── unmaximize.svg
+│               │   │   │   ├── scale-horz-marks-after-slider@2.png
+│               │   │   │   ├── scale-horz-marks-after-slider-dark@2.png
+│               │   │   │   ├── scale-horz-marks-after-slider-dark.png
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled@2.png
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark@2.png
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled-dark.png
+│               │   │   │   ├── scale-horz-marks-after-slider-disabled.png
+│               │   │   │   ├── scale-horz-marks-after-slider.png
+│               │   │   │   ├── scale-horz-marks-before-slider@2.png
+│               │   │   │   ├── scale-horz-marks-before-slider-dark@2.png
+│               │   │   │   ├── scale-horz-marks-before-slider-dark.png
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled@2.png
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark@2.png
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled-dark.png
+│               │   │   │   ├── scale-horz-marks-before-slider-disabled.png
+│               │   │   │   ├── scale-horz-marks-before-slider.png
+│               │   │   │   ├── scale-vert-marks-after-slider@2.png
+│               │   │   │   ├── scale-vert-marks-after-slider-dark@2.png
+│               │   │   │   ├── scale-vert-marks-after-slider-dark.png
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled@2.png
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark@2.png
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled-dark.png
+│               │   │   │   ├── scale-vert-marks-after-slider-disabled.png
+│               │   │   │   ├── scale-vert-marks-after-slider.png
+│               │   │   │   ├── scale-vert-marks-before-slider@2.png
+│               │   │   │   ├── scale-vert-marks-before-slider-dark@2.png
+│               │   │   │   ├── scale-vert-marks-before-slider-dark.png
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled@2.png
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark@2.png
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled-dark.png
+│               │   │   │   ├── scale-vert-marks-before-slider-disabled.png
+│               │   │   │   ├── scale-vert-marks-before-slider.png
+│               │   │   │   ├── selectionmode-checkbox-checked@2.png
+│               │   │   │   ├── selectionmode-checkbox-checked-dark@2.png
+│               │   │   │   ├── selectionmode-checkbox-checked-dark.png
+│               │   │   │   ├── selectionmode-checkbox-checked.png
+│               │   │   │   ├── selectionmode-checkbox-unchecked@2.png
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark@2.png
+│               │   │   │   ├── selectionmode-checkbox-unchecked-dark.png
+│               │   │   │   └── selectionmode-checkbox-unchecked.png
+│               │   │   ├── gtk.css
+│               │   │   ├── gtk-dark.css
+│               │   │   └── thumbnail.png
+│               │   ├── gtk-4.0
+│               │   │   ├── assets
+│               │   │   │   ├── checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── checkbox-checked-symbolic.svg
+│               │   │   │   ├── checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── checkbox-mixed-symbolic.svg
+│               │   │   │   ├── close.svg
+│               │   │   │   ├── cursor-handle-symbolic.svg
+│               │   │   │   ├── maximize.svg
+│               │   │   │   ├── minimize.svg
+│               │   │   │   ├── radio-checked-symbolic@2.svg
+│               │   │   │   ├── radio-checked-symbolic.svg
+│               │   │   │   ├── radio-mixed-symbolic@2.svg -> checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── radio-mixed-symbolic.svg -> checkbox-mixed-symbolic.svg
+│               │   │   │   ├── scale-horz-marks-after-slider-symbolic.svg
+│               │   │   │   ├── scale-horz-marks-before-slider-symbolic.svg
+│               │   │   │   ├── scale-slider-hover-symbolic@2.svg
+│               │   │   │   ├── scale-slider-hover-symbolic.svg
+│               │   │   │   ├── scale-slider-symbolic@2.svg
+│               │   │   │   ├── scale-slider-symbolic.svg
+│               │   │   │   ├── scale-vert-marks-after-slider-symbolic.svg
+│               │   │   │   ├── scale-vert-marks-before-slider-symbolic.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-checked-symbolic.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── small-checkbox-mixed-symbolic.svg
+│               │   │   │   ├── small-radio-checked-symbolic@2.svg
+│               │   │   │   ├── small-radio-checked-symbolic.svg
+│               │   │   │   ├── small-radio-mixed-symbolic@2.svg -> small-checkbox-mixed-symbolic@2.svg
+│               │   │   │   ├── small-radio-mixed-symbolic.svg -> small-checkbox-mixed-symbolic.svg
+│               │   │   │   └── unmaximize.svg
+│               │   │   ├── gtk.css
+│               │   │   ├── gtk-dark.css
+│               │   │   └── thumbnail.png
+│               │   ├── index.theme
+│               │   ├── metacity-1
+│               │   │   ├── assets
+│               │   │   │   ├── button.svg
+│               │   │   │   ├── close.svg
+│               │   │   │   ├── maximize.svg
+│               │   │   │   ├── menu.svg
+│               │   │   │   ├── minimize.svg
+│               │   │   │   ├── shade.svg
+│               │   │   │   ├── unmaximize.svg
+│               │   │   │   └── unshade.svg
+│               │   │   ├── metacity-theme-1.xml -> metacity-theme-3.xml
+│               │   │   ├── metacity-theme-2.xml -> metacity-theme-3.xml
+│               │   │   ├── metacity-theme-3.xml
+│               │   │   └── thumbnail.png
+│               │   ├── plank
+│               │   │   └── dock.theme
+│               │   └── xfwm4
+│               │       ├── bottom-active.png
+│               │       ├── bottom-inactive.png
+│               │       ├── bottom-left-active.png
+│               │       ├── bottom-left-inactive.png
+│               │       ├── bottom-right-active.png
+│               │       ├── bottom-right-inactive.png
+│               │       ├── close-active.png
+│               │       ├── close-inactive.png
+│               │       ├── close-prelight.png
+│               │       ├── close-pressed.png
+│               │       ├── hide-active.png
+│               │       ├── hide-inactive.png
+│               │       ├── hide-prelight.png
+│               │       ├── hide-pressed.png
+│               │       ├── left-active.png
+│               │       ├── left-inactive.png
+│               │       ├── maximize-active.png
+│               │       ├── maximize-inactive.png
+│               │       ├── maximize-prelight.png
+│               │       ├── maximize-pressed.png
+│               │       ├── maximize-toggled-active.png
+│               │       ├── maximize-toggled-inactive.png
+│               │       ├── maximize-toggled-prelight.png
+│               │       ├── maximize-toggled-pressed.png
+│               │       ├── menu-active.png
+│               │       ├── menu-inactive.png
+│               │       ├── menu-prelight.png
+│               │       ├── menu-pressed.png
+│               │       ├── right-active.png
+│               │       ├── right-inactive.png
+│               │       ├── shade-active.png
+│               │       ├── shade-inactive.png
+│               │       ├── shade-prelight.png
+│               │       ├── shade-pressed.png
+│               │       ├── shade-toggled-active.png
+│               │       ├── shade-toggled-inactive.png
+│               │       ├── shade-toggled-prelight.png
+│               │       ├── shade-toggled-pressed.png
+│               │       ├── stick-active.png
+│               │       ├── stick-inactive.png
+│               │       ├── stick-prelight.png
+│               │       ├── stick-pressed.png
+│               │       ├── stick-toggled-active.png
+│               │       ├── stick-toggled-inactive.png
+│               │       ├── stick-toggled-prelight.png
+│               │       ├── stick-toggled-pressed.png
+│               │       ├── themerc
+│               │       ├── title-1-active.png
+│               │       ├── title-1-inactive.png
+│               │       ├── title-2-active.png
+│               │       ├── title-2-inactive.png
+│               │       ├── title-3-active.png
+│               │       ├── title-3-inactive.png
+│               │       ├── title-4-active.png
+│               │       ├── title-4-inactive.png
+│               │       ├── title-5-active.png
+│               │       ├── title-5-inactive.png
+│               │       ├── top-left-active.png
+│               │       ├── top-left-inactive.png
+│               │       ├── top-right-active.png
+│               │       └── top-right-inactive.png
+│               ├── Gruvbox-Light-hdpi
+│               │   └── xfwm4
+│               │       ├── bottom-active.png
+│               │       ├── bottom-inactive.png
+│               │       ├── bottom-left-active.png
+│               │       ├── bottom-left-inactive.png
+│               │       ├── bottom-right-active.png
+│               │       ├── bottom-right-inactive.png
+│               │       ├── close-active.png
+│               │       ├── close-inactive.png
+│               │       ├── close-prelight.png
+│               │       ├── close-pressed.png
+│               │       ├── hide-active.png
+│               │       ├── hide-inactive.png
+│               │       ├── hide-prelight.png
+│               │       ├── hide-pressed.png
+│               │       ├── left-active.png
+│               │       ├── left-inactive.png
+│               │       ├── maximize-active.png
+│               │       ├── maximize-inactive.png
+│               │       ├── maximize-prelight.png
+│               │       ├── maximize-pressed.png
+│               │       ├── maximize-toggled-active.png
+│               │       ├── maximize-toggled-inactive.png
+│               │       ├── maximize-toggled-prelight.png
+│               │       ├── maximize-toggled-pressed.png
+│               │       ├── menu-active.png
+│               │       ├── menu-inactive.png
+│               │       ├── menu-prelight.png
+│               │       ├── menu-pressed.png
+│               │       ├── right-active.png
+│               │       ├── right-inactive.png
+│               │       ├── shade-active.png
+│               │       ├── shade-inactive.png
+│               │       ├── shade-prelight.png
+│               │       ├── shade-pressed.png
+│               │       ├── shade-toggled-active.png
+│               │       ├── shade-toggled-inactive.png
+│               │       ├── shade-toggled-prelight.png
+│               │       ├── shade-toggled-pressed.png
+│               │       ├── stick-active.png
+│               │       ├── stick-inactive.png
+│               │       ├── stick-prelight.png
+│               │       ├── stick-pressed.png
+│               │       ├── stick-toggled-active.png
+│               │       ├── stick-toggled-inactive.png
+│               │       ├── stick-toggled-prelight.png
+│               │       ├── stick-toggled-pressed.png
+│               │       ├── themerc
+│               │       ├── title-1-active.png
+│               │       ├── title-1-inactive.png
+│               │       ├── title-2-active.png
+│               │       ├── title-2-inactive.png
+│               │       ├── title-3-active.png
+│               │       ├── title-3-inactive.png
+│               │       ├── title-4-active.png
+│               │       ├── title-4-inactive.png
+│               │       ├── title-5-active.png
+│               │       ├── title-5-inactive.png
+│               │       ├── top-left-active.png
+│               │       ├── top-left-inactive.png
+│               │       ├── top-right-active.png
+│               │       └── top-right-inactive.png
+│               └── Gruvbox-Light-xhdpi
+│                   └── xfwm4
+│                       ├── bottom-active.png
+│                       ├── bottom-inactive.png
+│                       ├── bottom-left-active.png
+│                       ├── bottom-left-inactive.png
+│                       ├── bottom-right-active.png
+│                       ├── bottom-right-inactive.png
+│                       ├── close-active.png
+│                       ├── close-inactive.png
+│                       ├── close-prelight.png
+│                       ├── close-pressed.png
+│                       ├── hide-active.png
+│                       ├── hide-inactive.png
+│                       ├── hide-prelight.png
+│                       ├── hide-pressed.png
+│                       ├── left-active.png
+│                       ├── left-inactive.png
+│                       ├── maximize-active.png
+│                       ├── maximize-inactive.png
+│                       ├── maximize-prelight.png
+│                       ├── maximize-pressed.png
+│                       ├── maximize-toggled-active.png
+│                       ├── maximize-toggled-inactive.png
+│                       ├── maximize-toggled-prelight.png
+│                       ├── maximize-toggled-pressed.png
+│                       ├── menu-active.png
+│                       ├── menu-inactive.png
+│                       ├── menu-prelight.png
+│                       ├── menu-pressed.png
+│                       ├── right-active.png
+│                       ├── right-inactive.png
+│                       ├── shade-active.png
+│                       ├── shade-inactive.png
+│                       ├── shade-prelight.png
+│                       ├── shade-pressed.png
+│                       ├── shade-toggled-active.png
+│                       ├── shade-toggled-inactive.png
+│                       ├── shade-toggled-prelight.png
+│                       ├── shade-toggled-pressed.png
+│                       ├── stick-active.png
+│                       ├── stick-inactive.png
+│                       ├── stick-prelight.png
+│                       ├── stick-pressed.png
+│                       ├── stick-toggled-active.png
+│                       ├── stick-toggled-inactive.png
+│                       ├── stick-toggled-prelight.png
+│                       ├── stick-toggled-pressed.png
+│                       ├── themerc
+│                       ├── title-1-active.png
+│                       ├── title-1-inactive.png
+│                       ├── title-2-active.png
+│                       ├── title-2-inactive.png
+│                       ├── title-3-active.png
+│                       ├── title-3-inactive.png
+│                       ├── title-4-active.png
+│                       ├── title-4-inactive.png
+│                       ├── title-5-active.png
+│                       ├── title-5-inactive.png
+│                       ├── top-left-active.png
+│                       ├── top-left-inactive.png
+│                       ├── top-right-active.png
+│                       └── top-right-inactive.png
+├── tree.txt
+├── waybar
+│   └── .config
+│       └── waybar
+│           ├── colors
+│           │   ├── catppuccin-macchiato.css
+│           │   ├── catppuccin-mocha.css
+│           │   ├── gruvbox.css
+│           │   ├── nord.css
+│           │   └── tokyo-night.css
+│           ├── config.jsonc
+│           ├── current
+│           │   ├── color.css -> /home/mlj/dotfiles/waybar/.config/waybar/colors/gruvbox.css
+│           │   ├── style.css -> /home/mlj/dotfiles/waybar/.config/waybar/styles/rounded.css
+│           │   └── style.jsonc -> /home/mlj/dotfiles/waybar/.config/waybar/styles/rounded.jsonc
+│           ├── language.jsonc
+│           ├── scripts
+│           │   ├── launch-btop.sh
+│           │   ├── rofi-cliphist.sh
+│           │   └── rofi-power-menu.sh
+│           ├── style.css
+│           ├── styles
+│           │   ├── flat.css
+│           │   ├── flat.jsonc
+│           │   ├── rounded.css
+│           │   └── rounded.jsonc
+│           └── workspaces.jsonc
+├── weather-app
+│   └── .config
+│       └── weather-app
+│           ├── geolocation
+│           ├── geolocation.example
+│           └── weather.sh
+├── zed
+│   └── .config
+│       └── zed
+│           ├── settings.json
+│           └── themes
+└── zsh
+    └── .zshrc
+
+298 directories, 1771 files

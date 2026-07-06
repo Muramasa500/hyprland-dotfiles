@@ -1,0 +1,31 @@
+/* ========================================== */
+/* =====          COLOR PALETTE         ===== */
+/* ========================================== */
+/* --- Tokyo Night --- */
+/* --- Text --- */
+@define-color text #c0caf5;
+@define-color subtext0 #a9b1d6;
+@define-color overlay0 #565f89;
+@define-color red #f7768e;
+/* --- Surfaces --- */
+@define-color surface1 #292e42;
+@define-color base #1a1b26;
+@define-color mantle #16161e;
+@define-color crust #13131a;
+/* --- Accents --- */
+@define-color accent-cyan #7dcfff;
+@define-color accent-green #9ece6a;
+@define-color ws-accent #bb9af7;
+/* --- Workspace Accent Colors --- */
+@define-color ws-1 #ff9e64;
+@define-color ws-2 #e0af68;
+@define-color ws-3 #9ece6a;
+@define-color ws-4 #73daca;
+@define-color ws-5 #7dcfff;
+@define-color ws-6 #7aa2f7;
+@define-color ws-7 #9d7cd8;
+@define-color ws-8 #bb9af7;
+@define-color ws-9 #db4b4b;
+@define-color ws-10 #f7768e;
+@define-color black #000000;
+@define-color white #ffffff;
