@@ -5,24 +5,26 @@ HYPR_DIR="$HOME/dotfiles/hyprland/.config/hypr"
 WAYBAR_DIR="$HOME/dotfiles/waybar/.config/waybar"
 GTK_THEMES_DIR="$HOME/.local/share/themes"
 QT6_DIR="$HOME/.config/qt6ct"
+ICONS_DIR="$HOME/.local/share/icons"
 
-# label | hyprland-colour | hyprland-style | waybar-colour | waybar-style | gtk-theme-folder / qt6-theme-folder
+# label | hyprland-colour | hyprland-style | waybar-colour | waybar-style | gtk-theme-folder | qt6-theme-folder | icon-theme | icon-accent
 THEMES=(
-    "Catppuccin Mocha - Rounded|catppuccin-mocha|rounded|catppuccin-mocha|rounded|catppuccin-mocha-blue-standard+default|catppuccin-mocha-blue.conf"
-    "Catppuccin Mocha - Flat|catppuccin-mocha|flat|catppuccin-mocha|flat|catppuccin-mocha-blue-standard+default|catppuccin-mocha-blue.conf"
-    "Catppuccin Macchiato - Rounded|catppuccin-macchiato|rounded|catppuccin-macchiato|rounded|catppuccin-macchiato-blue-standard+default|catppuccin-macchiato-blue.conf"
-    "Catppuccin Macchiato - Flat|catppuccin-macchiato|flat|catppuccin-macchiato|flat|catppuccin-macchiato-blue-standard+default|catppuccin-macchiato-blue.conf"
-    "Nord - Rounded|nord|rounded|nord|rounded|???|???"
-    "Nord - Flat|nord|flat|nord|flat|???|???"
-    "Tokyo Night - Rounded|tokyo-night|rounded|tokyo-night|rounded|Tokyonight-Dark|???"
-    "Tokyo Night - Flat|tokyo-night|flat|tokyo-night|flat|Tokyonight-Dark|???"
-    "Gruvbox - Dark - Rounded|gruvbox|rounded|gruvbox|rounded|Gruvbox-Dark|gruvbox-dark.conf"
-    "Gruvbox - Dark - Flat|gruvbox|flat|gruvbox|flat|Gruvbox-Dark|gruvbox-dark.conf"
-    # "Gruvbox - Light - Rounded|gruvbox|rounded|gruvbox|rounded|Gruvbox-Light|gruvbox-light.conf"
-    # "Gruvbox - Light - Flat|gruvbox|flat|gruvbox|flat|Gruvbox-Light|gruvbox-light.conf"
+    "Catppuccin Mocha - Rounded|catppuccin-mocha|rounded|catppuccin-mocha|rounded|Catppuccin-Dark|catppuccin-mocha-blue.conf|Papirus-Dark|blue"
+    "Catppuccin Mocha - Flat|catppuccin-mocha|flat|catppuccin-mocha|flat|Catppuccin-Dark|catppuccin-mocha-blue.conf|Papirus-Dark|blue"
+    "Catppuccin Macchiato - Rounded|catppuccin-macchiato|rounded|catppuccin-macchiato|rounded|Catppuccin-Dark|catppuccin-macchiato-blue.conf|Papirus-Dark|blue"
+    "Catppuccin Macchiato - Flat|catppuccin-macchiato|flat|catppuccin-macchiato|flat|Catppuccin-Dark|catppuccin-macchiato-blue.conf|Papirus-Dark|blue"
+    "Nord - Rounded|nord|rounded|nord|rounded|???|???|Papirus-Dark|nordic"
+    "Nord - Flat|nord|flat|nord|flat|???|???|Papirus-Dark|nordic"
+    "Tokyo Night - Rounded|tokyo-night|rounded|tokyo-night|rounded|Tokyonight-Dark|???|Papirus-Dark|violet"
+    "Tokyo Night - Flat|tokyo-night|flat|tokyo-night|flat|Tokyonight-Dark|???|Papirus-Dark|violet"
+    "Gruvbox - Dark - Rounded|gruvbox|rounded|gruvbox|rounded|Gruvbox-Dark|??|Papirus-Dark|deeporange"
+    "Gruvbox - Dark - Flat|gruvbox|flat|gruvbox|flat|Gruvbox-Dark|??|Papirus-Dark|deeporange"
+    "Gruvbox - Light - Rounded|gruvbox|rounded|gruvbox|rounded|Gruvbox-Light|gruvbox-light.confP|Papirus-Light|deeporange"
+    "Gruvbox - Light - Flat|gruvbox|flat|gruvbox|flat|Gruvbox-Light|gruvbox-light.conf|Papirus-Light|deeporange"
 )
 
 labels=()
+
 for entry in "${THEMES[@]}"; do
     labels+=("${entry%%|*}")
 done
@@ -31,7 +33,7 @@ choice=$(printf '%s\n' "${labels[@]}" | rofi -dmenu -p "Theme")
 [ -z "$choice" ] && exit 0
 
 for entry in "${THEMES[@]}"; do
-    IFS='|' read -r label h_colour h_style w_colour w_style gtk_theme qt6_theme <<< "$entry"
+    IFS='|' read -r label h_colour h_style w_colour w_style gtk_theme qt6_theme icon_theme icon_accent <<< "$entry"
     if [ "$label" == "$choice" ]; then
 
         # --- Hyprland ---
@@ -51,6 +53,11 @@ for entry in "${THEMES[@]}"; do
 
         # --- Qt6 ---
         ln -sfn "$QT6_DIR/colors/${qt6_theme}" "$QT6_DIR/current/current.conf"
+
+        # -- Icons --
+        ln -sfn "$ICONS_DIR/${icon_theme}" "$ICONS_DIR/current"
+        papirus-folders -C "$icon_accent" -t Papirus-Dark
+
 
         exit 0
     fi

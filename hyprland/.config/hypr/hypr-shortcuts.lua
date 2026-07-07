@@ -9,7 +9,7 @@ local mainMod = "SUPER"
 -- HACK: Need to have GTK_IM_MODULE=simple for terminal, to avoid issues with keyboard in Ghostty
 local terminal = "GTK_IM_MODULE=simple ghostty"
 local terminal_command = "GTK_IM_MODULE=simple ghostty -e"
-local fileManager = "thunar"
+local fileManager = "nautilus"
 local menu = "rofi -show drun -display-drun ''"
 local screenLocker = "hyprlock"
 local browser = "firefox"

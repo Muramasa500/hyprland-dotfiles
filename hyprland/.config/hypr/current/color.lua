@@ -1,1 +1,1 @@
-/home/mlj/dotfiles/hyprland/.config/hypr/colors/tokyo-night.lua
+/home/mlj/dotfiles/hyprland/.config/hypr/colors/catppuccin-mocha.lua

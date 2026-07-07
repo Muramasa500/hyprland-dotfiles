@@ -73,7 +73,6 @@ This configuration uses the following third-party assets:
 ├── btop             # btop config
 ├── fastfetch        # Fastfetch config
 ├── ghostty/         # Ghostty terminal config
-├── gtk-3.0/         # gtk config / themes
 ├── hyprland/        # Hyprland config (hyprland.lua)
 ├── kitty/           # Kitty terminal config
 ├── qt6ct/           # qt6 config / themes
@@ -81,7 +80,6 @@ This configuration uses the following third-party assets:
 ├── screenshots/     # Screenshots
 ├── scripts/         # Custom scripts
 ├── starship/        # Starship prompt config
-├── themes/          # GTK themes
 ├── waybar/          # Waybar config, style.css, scripts
 ├── weather-app/     # Custom weather script + config
 ├── zed/             # Zed config / themes
@@ -96,7 +94,7 @@ Run the following commands to install the dotfiles using the `install.sh` script
 
 ```bash
 git clone git@github.com:Muramasa500/hyprland-dotfiles.git ~/dotfiles
-cd ~/dotfiles/scripts
+cd ~/dotfiles/
 chmod +x install.sh
 ./install.sh
 ```
@@ -109,7 +107,7 @@ sudo curl -o /usr/local/bin/rofi-power-menu https://raw.githubusercontent.com/jl
 sudo chmod +x /usr/local/bin/rofi-power-menu
 sudo pacman -S stow
 cd ~/dotfiles
-stow btop fastfetch ghostty gtk-3.0 hyprland kitty qt6ct rofi starship themes waybar weather-app zedn zsh
+stow btop fastfetch ghostty hyprland kitty qt6ct rofi starship waybar weather-app zedn zsh
 ```
 
 
@@ -142,7 +140,8 @@ sudo pacman -S \
   zsh-syntax-highlighting slurp eza dust fd bat \
   ripgrep procs fzf zoxide btop direnv zed \
   qalculate-gtk brightnessctl fastfetch sudo-rs  \
-  hyprshot ttf-jetbrains-mono-nerd noto-fonts papirus-icon-theme 
+  hyprshot ttf-jetbrains-mono-nerd noto-fonts papirus-icon-theme \
+  gstreamer
   ```
 
 ## Post-install Configuration

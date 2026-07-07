@@ -29,6 +29,7 @@ floating_dialog({ class = "thunar", title = "^Rename .*$" }, 800, 600)
 floating_dialog({ class = "app.zen_browser.zen", title = "About Zen Browser" }, 800, 600)
 floating_dialog({ class = "app.zen_browser.zen", title = "Library" }, 1000, 800)
 floating_dialog({ class = "org.gnome.FileRoller" }, 900, 600)
+floating_dialog({ class = "org.qbittorrent.qBittorrent", title = "Preferences" }, 1000, 800)
 floating_dialog({ title = "btop" }, 1000, 800)
 
 hl.on("hyprland.start", function()
